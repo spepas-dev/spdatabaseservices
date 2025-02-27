@@ -1,0 +1,56 @@
+version: '3.9'
+services:
+  spdbservice:
+    container_name: spdb_container
+    image: matkofbass/spdbservice:stable
+    ports:
+      - '9006:9006'
+    env_file: ./.env
+    environment:
+      - DATABASE_URL="postgresql://spepasdb_owner:aivI8TsYcu7K@ep-hidden-leaf-a231vqsn-pooler.eu-central-1.aws.neon.tech/spepasdb?sslmode=require"
+      - NODE_ENV=development
+      - PORT=9006
+      - ServiceName=ApplicationManager
+      - DATABASE_NAME=ApplicationManager
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=Temp123$
+      - DATABASE_PORT=5432
+      - DB_HOST=localhost
+      - ACCESS_TOKEN_SECRET=c276921190be471cc382c700c37e01018a3d038d615d1d038865f0e1a86c43f82103f7a4c9e54b992df0a27813ebcce7
+      - INVITE_TOKEN_SECRET=279b5609891f7f94f02ecad586eaa6619a721e0e13b87ddbc557d7398e05c361dabb4ee8f53c1591c7a5cc3da4f14033
+      - JWT_SECRET=279b5609891f7f94f02ecad586eaa6619a721e0e13b87ddbc557d7398e05c361dabb4ee8f53c1591c7a5cc3da4f14033
+  spdbservicelive:
+    container_name: spdbservice
+    image: matkofbass/spdbservice:stable
+    #restart: always
+    environment:
+      - DATABASE_URL="postgresql://spepasdb_owner:aivI8TsYcu7K@ep-hidden-leaf-a231vqsn-pooler.eu-central-1.aws.neon.tech/spepasdb?sslmode=require"
+      - NODE_ENV=development
+      - PORT=9006
+      - ServiceName=ApplicationManager
+      - DATABASE_NAME=ApplicationManager
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=Temp123$
+      - DATABASE_PORT=5432
+      - DB_HOST=localhost
+      - ACCESS_TOKEN_SECRET=c276921190be471cc382c700c37e01018a3d038d615d1d038865f0e1a86c43f82103f7a4c9e54b992df0a27813ebcce7
+      - INVITE_TOKEN_SECRET=279b5609891f7f94f02ecad586eaa6619a721e0e13b87ddbc557d7398e05c361dabb4ee8f53c1591c7a5cc3da4f14033
+      - JWT_SECRET=279b5609891f7f94f02ecad586eaa6619a721e0e13b87ddbc557d7398e05c361dabb4ee8f53c1591c7a5cc3da4f14033
+    ports:
+      - '9006:9006'
+  gatewayservice:
+    container_name: gateway_service_container
+    image: jboadi/spepas-gateway:stable
+    restart: always
+    environment:
+      - ENABLE_APM=0
+      - GATEWAY_JWT_TOKEN=1282722b942e08c8a6cb033aa6ce850e
+      - JWT_TOKEN=e080d15c8dbad0c7644a401f747a9597
+      - NODE_ENV=development
+      - SECRET_KEY_ONE=013bfec1c5198b5a819c25f4a95ed46f
+      - SECRET_KEY_TWO=81374e5d58b9237d2d7547c5f4e74297
+      - CLIENT_URL=http://localhost:3000
+      - AUTH_BASE_URL=http://host.docker.internal:9007
+      - REDIS_HOST=rediss://red-ct4332a3esus73fc9psg:eRFLu6utqE91ZJswST5vy9GEoSpX5CuN@frankfurt-redis.render.com:6379
+    ports:
+      - '4000:4000'

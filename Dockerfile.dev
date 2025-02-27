@@ -1,0 +1,21 @@
+FROM node:21-alpine3.18
+
+WORKDIR /app
+COPY package*.json ./
+COPY config ./config
+COPY controllers ./controllers
+COPY DBFunctions ./DBFunctions
+COPY helper ./helper
+COPY logs ./logs
+COPY middleware ./middleware
+COPY prisma ./prisma
+COPY routes ./routes
+COPY config ./config
+COPY utils ./utils
+COPY server.js ./
+RUN ls -a
+RUN npm install && npm install -g nodemon
+
+EXPOSE 4000
+
+CMD [ "npm", "run", "spdb" ]

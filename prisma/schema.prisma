@@ -1,0 +1,759 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model OTPManager{
+  id    Int    @default(autoincrement())
+  otpID String   @id  @default(uuid()) 
+  dateAdded DateTime      @default(now())
+  expiryDate DateTime 
+  otpHarshed String
+  otpEncrypted String 
+  sendSms Int
+  smsMessage String 
+  phoneNumber String 
+  sendEmail Int 
+  emailMessage String
+  expiryCounter Int
+  counterType OTPCOUNTER
+  status Int @default(0)
+  dateValidated DateTime?
+  email String?
+  extraData Json?
+  User_ID  String?
+  user      User?   @relation(fields: [User_ID], references: [User_ID])
+}
+
+
+
+model User {
+  id            Int           @default(autoincrement())
+  User_ID       String        @id @default(uuid())
+  name          String
+  email         String        @unique
+  password      String
+  phoneNumber   String
+  verificationStatus Int @default(0)
+  status Int @default(1)
+  user_type          USER_TYPE
+  Seller_ID     String?
+  referral_Code String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  sellerDetails Seller?       @relation(fields: [Seller_ID], references: [Seller_ID])
+  orders        Order[]       @relation("UserOrders")
+  reviews       Review[]
+  wishlist      Wishlist[]
+  administrators Administrator[]
+  otps OTPManager[]
+  user_roles UserRole[]
+  ermission_profiled Permission[] @relation("permission_input")
+  role_profiled Role[] @relation("role_input")
+  
+  role_permission_profiled RolePermission[] @relation("rolepermission_input")
+  application_profiled Application[]
+  application_menu_profiled ApplicationMenu[] @relation("application_menu_input")
+  group_application_menu_inputters GroupApplicationMenu[] @relation("group_application_menu_inputer")
+  group_application_menu_approvers GroupApplicationMenu[] @relation("group_application_menu_approved")
+  user_groups UserGroup[] @relation("user")
+  user_group_inputters UserGroup[] @relation("user_group_inputer")
+  user_group_approvers UserGroup[] @relation("user_group_approved")
+  group_profiled Group[] @relation("group_input")
+  grouo_application_profiled GroupApplication[] @relation("group_application_inputer")
+  approved GroupApplication[] @relation("group_application_approved")
+  gopa Gopa?
+  mepa Mepa?
+  deliver Deliver?
+  vihecles DeliverVehicle[]
+  paymentAccounts PaymentAccount[]
+  identifications UserIdentification[]
+  IdentificationProfiled UserIdentification[] @relation("identification_input")  
+  deliver_inputter Deliver[] @relation("Deliver_inputter")
+  deliver_vehicle_inputter DeliverVehicle[] @relation("Deliver_Vehicle_inputter")
+  payment_account_inputter PaymentAccount[] @relation("payment_account_inputter")
+  orderRequests OrderRequest[] @relation("order_requester")
+  orderRequestsCreated OrderRequest[] @relation("order_creater")
+  
+  biddindAssigns Bidding[] @relation("bidding_assigner")
+  gopaBiddings   Bidding[] @relation("gopa_biding")
+  bidsAccepted  Bidding[] @relation("bidding_accepter")
+  carts Cart[]
+}
+
+
+
+
+model UserIdentification {
+  id            Int          @default(autoincrement())
+  identification_id       String       @id @default(uuid()) 
+  User_ID        String
+  added_by       String?
+  idType ID_TYPE
+  idN_number       String 
+  issue_date       DateTime
+  expiry_date       DateTime?
+  date_added DateTime @default(now())
+  status     Int @default(1)
+  user   User    @relation(fields: [User_ID], references: [User_ID])
+  inputter User?  @relation(fields: [added_by], references: [User_ID], name: "identification_input")
+}
+
+
+
+
+model UserRole{
+  id Int @default(autoincrement())
+  user_role_id String @id @default(uuid())
+  status Int @default(1)
+  date_added DateTime @default(now())
+  added_by String
+  User_ID String
+  role_id String
+  user User  @relation(fields: [User_ID], references: [User_ID])
+  role Role  @relation(fields: [role_id], references: [role_id])
+}
+
+
+
+model Role{
+  id Int @default(autoincrement())
+  role_id String @id @default(uuid())
+  role_name String 
+  status Int @default(1)
+  date_added DateTime @default(now())
+  added_by String?
+  users UserRole[]
+  rolePermissions RolePermission[]
+ inputter User?  @relation(fields: [added_by], references: [User_ID], name: "role_input")
+}
+
+
+model Permission {
+    id Int @default(autoincrement())
+    permissionID String @id @default(uuid())
+    title String?
+    added_by String?
+    approved_by String?
+    status Int @default(1)
+    date_added DateTime @default(now())
+    inputter User?  @relation(fields: [added_by], references: [User_ID], name: "permission_input")
+    rolePermissions RolePermission[]
+}
+
+
+
+
+model RolePermission {
+    id Int @default(autoincrement())
+    rolePermissionID String @id @default(uuid())
+    title String?
+    added_by String
+    approved_by String?
+    rolID String
+    permissionID String
+    status Int @default(0)
+    permision Permission  @relation(fields: [permissionID], references: [permissionID])
+    role Role  @relation(fields: [rolID], references: [role_id])
+    inputter User  @relation(fields: [added_by], references: [User_ID], name: "rolepermission_input")
+    @@unique([rolID, permissionID])
+}
+
+
+
+
+
+model Application{
+  id   Int @default(autoincrement())
+  application_id String @id @default(uuid())
+  status Int @default(1)
+  date_added DateTime @default(now())
+  added_by String? 
+  name String
+  user User?  @relation(fields: [added_by], references: [User_ID])
+  //logs Log[]
+  //user_sessions UserSession[]
+  menus ApplicationMenu[]
+  group_applications GroupApplication [] @relation("group_application")
+}
+
+
+
+model ApplicationMenu {
+    id Int @default(autoincrement())
+    menuID String @id @default(uuid())
+    title String?
+    added_by String
+    application_id String
+    status Int @default(1)
+    date_added DateTime @default(now())
+    application Application  @relation(fields: [application_id], references: [application_id])
+    inputter User  @relation(fields: [added_by], references: [User_ID], name: "application_menu_input")
+
+    groups GroupApplicationMenu[] @relation("menu")
+}
+
+
+
+
+model Group {
+    id Int @default(autoincrement())
+    group_id String @id @default(uuid())
+    title String?
+    added_by String
+    status Int @default(1)
+    date_added   DateTime   @default(now())
+    inputter User  @relation(fields: [added_by], references: [User_ID], name: "group_input")
+
+     group_applications GroupApplication[] @relation("group")
+     user_groups UserGroup[] @relation("group")
+     menus GroupApplicationMenu[] @relation("group")
+}
+
+
+
+
+model GroupApplicationMenu{
+  id Int @default(autoincrement())
+  group_application_menu_id String @id @default(uuid())
+  date_added   DateTime   @default(now())
+  status Int @default(1)
+  menuID String
+  group_id String
+  added_by String
+  approved_by String?
+  approval_comment String?
+  date_approved   DateTime? 
+
+  group Group  @relation(fields: [group_id], references: [group_id], name: "group")
+  menu ApplicationMenu  @relation(fields: [menuID], references: [menuID], name: "menu")
+  inputter User  @relation(fields: [added_by], references: [User_ID], name: "group_application_menu_inputer")
+  approver User?  @relation(fields: [approved_by], references: [User_ID], name: "group_application_menu_approved") 
+ @@unique([group_id, menuID])
+}
+
+
+model UserGroup{
+  id Int @default(autoincrement())
+  user_group_id String @id @default(uuid())
+  date_added   DateTime   @default(now())
+  date_approved  DateTime?  
+  status Int @default(1)
+  User_ID String
+  group_id String
+  added_by String
+  approved_by String?
+  approval_comment String?
+
+
+  group Group  @relation(fields: [group_id], references: [group_id], name: "group")
+  user User  @relation(fields: [User_ID], references: [User_ID], name: "user")
+  inputter User  @relation(fields: [added_by], references: [User_ID], name: "user_group_inputer")
+  approver User?  @relation(fields: [approved_by], references: [User_ID], name: "user_group_approved") 
+
+ @@unique([User_ID, group_id])
+}
+
+
+
+
+
+
+model GroupApplication{
+  id Int @default(autoincrement())
+  groupApplicationID String @id @default(uuid())
+  date_added   DateTime   @default(now())
+  status Int @default(0)
+  application_id String
+  group_id String
+  added_by String
+  approved_by String?
+  approvalComment String?
+  date_approved   DateTime? 
+
+  group Group  @relation(fields: [group_id], references: [group_id], name: "group")
+  application Application  @relation(fields: [application_id], references: [application_id], name: "group_application")
+  inputter User  @relation(fields: [added_by], references: [User_ID], name: "group_application_inputer")
+  approver User?  @relation(fields: [approved_by], references: [User_ID], name: "group_application_approved") 
+}
+
+
+
+
+
+
+model Wishlist {
+  id            Int          @default(autoincrement())
+  Wishlist_ID   String       @id  @default(uuid()) 
+  user_ID       String       
+  user          User          @relation(fields: [user_ID], references: [User_ID])
+  SparePart_ID  String 
+  spareParts    SparePart    @relation(fields: [SparePart_ID], references: [SparePart_ID])
+  createdAt     DateTime      @default(now())
+}
+
+
+
+
+model Seller {
+  id            Int            @default(autoincrement())
+  Seller_ID     String       @id @default(uuid()) 
+  storeName     String
+  business_reg_url String?
+  business_reg_obj Json?
+  Location Json?
+  Gopa_ID String?
+  date_added DateTime @default(now())
+  status Int @default(1)
+  spareParts    SparePart[]
+  commissions   Commission[]
+  promotions    Promotion[]
+  inventory     Inventory[]
+  advertisements Advertisement[]
+  users User[]
+  gopa Gopa?  @relation(fields: [Gopa_ID], references: [Gopa_ID])
+  biddings Bidding []
+}
+
+
+
+model Gopa {
+  id            Int          @default(autoincrement())
+  Gopa_ID       String       @id @default(uuid()) 
+  Specialties   String[]
+  User_ID       String @unique
+  status        Int @default(1)
+  date_added DateTime @default(now())
+  commissions   Commission[]
+  user   User    @relation(fields: [User_ID], references: [User_ID])
+  sellers Seller[]
+}
+
+
+
+model Mepa {
+  id            Int          @default(autoincrement())
+  Mepa_ID       String       @id @default(uuid()) 
+  User_ID       String @unique
+  address       String
+  shop_name     String @default("")
+  location      Json?
+  status        Int @default(1)
+  date_added DateTime @default(now())
+  commissions   Commission[]
+  user   User    @relation(fields: [User_ID], references: [User_ID])
+}
+
+
+
+model Deliver {
+  id               Int    @default(autoincrement())
+  Deliver_ID       String       @id @default(uuid()) 
+  User_ID          String @unique
+  added_by         String
+  licenseNumber    String
+  front_license_url String?
+  back_license_url  String?
+  front_license_obj Json?
+  back_license_obj  Json?
+  location      Json?
+  status        Int @default(1)
+  date_added DateTime @default(now())
+  commissions   Commission[]
+  user   User    @relation(fields: [User_ID], references: [User_ID])
+  inputter   User    @relation(fields: [added_by], references: [User_ID], name: "Deliver_inputter")
+  vehicles DeliverVehicle[]
+}
+
+model DeliverVehicle {
+  id               Int    @default(autoincrement())
+  Vehicle_ID       String       @id @default(uuid()) 
+  User_ID          String
+  added_by         String
+  Deliver_ID       String 
+  type             VIHICLE_TYPE
+  model            String
+  front_image_url String?
+  front_image_obj Json?
+  back_image_url String?
+  back_image_obj Json?
+  color            String
+  registrationNumber  String
+  date_added DateTime @default(now())
+  location      Json?
+  status        Int @default(1)
+  user   User    @relation(fields: [User_ID], references: [User_ID])
+  deliver Deliver    @relation(fields: [Deliver_ID], references: [Deliver_ID])
+  inputter   User    @relation(fields: [added_by], references: [User_ID], name: "Deliver_Vehicle_inputter")
+}
+
+
+
+model PaymentAccount {
+  id               Int    @default(autoincrement())
+  Account_ID       String       @id @default(uuid()) 
+  User_ID          String
+  added_by         String
+  mode             PAYMENT_TYPE
+  accountNumber    String
+  provider         String
+  name         String
+  date_added       DateTime @default(now())
+  status        Int @default(1)
+  user   User    @relation(fields: [User_ID], references: [User_ID])
+  inputter   User    @relation(fields: [added_by], references: [User_ID], name: "payment_account_inputter")
+}
+
+
+
+
+
+
+
+model Inventory {
+  id            Int            @default(autoincrement())
+  Inventory_ID  String       @id  @default(uuid()) 
+  seller_ID     String        
+  seller        Seller        @relation(fields: [seller_ID], references: [Seller_ID])
+  SparePart_ID String
+  spareParts    SparePart   @relation(fields: [SparePart_ID], references: [SparePart_ID])
+  createdAt     DateTime      @default(now())
+}
+
+
+model Administrator {
+  id                Int           @default(autoincrement())
+  Administrator_ID  String       @id  @default(uuid()) 
+  user              User          @relation(fields: [Administrator_ID], references: [User_ID])
+  permissions       String
+}
+
+model SparePart {
+  id            Int           @default(autoincrement())
+  SparePart_ID  String       @id   @default(uuid()) 
+  name          String
+  description   String
+  price         Float     @default(0)
+  status       Int @default(1)
+  discount_ID   String?       
+  discount      Discount?     @relation(fields: [discount_ID], references: [Discount_ID])
+  category_ID   String?       
+  category      Category?     @relation(fields: [category_ID], references: [Category_ID])
+  carModel_ID   String?       
+  carModel      CarModel?     @relation(fields: [carModel_ID], references: [CarModel_ID])
+  seller_ID     String?        
+  seller        Seller?        @relation(fields: [seller_ID], references: [Seller_ID])
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  sp        OrderItem[]
+  reviews       Review[]
+  whiteLists   Wishlist[]
+  inventories  Inventory []
+  advertisements Advertisement[]
+  images     SparePartImage[]
+  orderRequests OrderRequest[]
+}
+
+model CarModel {
+  id            Int           @default(autoincrement())
+  CarModel_ID   String       @id  @default(uuid()) 
+  name          String
+  yearOfMake    Int
+  carBrand_ID   String  
+  status        Int @default(1)
+  createdAt     DateTime      @default(now())      
+  carBrand      CarBrand    @relation(fields: [carBrand_ID], references: [CarBrand_ID])
+  spareParts    SparePart[]
+}
+
+model CarBrand {
+  id            Int            @default(autoincrement())
+  CarBrand_ID   String       @id @default(uuid()) 
+  name          String
+  status        Int @default(1)
+  manufacturer_ID String? 
+  createdAt     DateTime      @default(now()) 
+  type          VIHICLE_TYPE
+  models        CarModel[]   
+  manufacturer  Manufacturer? @relation(fields: [manufacturer_ID], references: [Manufacturer_ID])
+}
+
+
+model Manufacturer {
+  id            Int              @default(autoincrement())
+  Manufacturer_ID String     @id @default(uuid()) 
+  name          String
+  country       String
+  status        Int @default(1)
+  brands        CarBrand[]
+  createdAt     DateTime      @default(now())
+}
+
+model SparePartImage {
+id Int @default(autoincrement())
+image_ID String @id @default(uuid())
+SparePart_ID   String
+createdAt     DateTime      @default(now())
+status        Int @default(1)
+image_url    String
+image_ob     Json
+sparePart    SparePart @relation(fields: [SparePart_ID], references: [SparePart_ID])
+}
+
+
+
+model OrderRequest{
+id Int @default(autoincrement())
+request_ID String @id @default(uuid())
+SparePart_ID String
+User_ID      String
+added_by      String
+status       Int @default(0)
+require_image Int @default(0)
+quantity Int @default(1)
+createdAt    DateTime      @default(now())
+sparePart    SparePart @relation(fields: [SparePart_ID], references: [SparePart_ID])
+requester    User @relation(fields: [User_ID], references: [User_ID] ,name: "order_requester")
+creater    User @relation(fields: [added_by], references: [User_ID] ,name: "order_creater")
+bidings Bidding[]
+}
+
+model Bidding{
+id Int @default(autoincrement())
+bidding_ID String @id @default(uuid())
+request_ID String
+assigned_by String?
+Seller_ID   String?
+gopa_user_ID String?
+date_assigned DateTime?
+status Int @default(0)
+price  Float @default(0) 
+unitPrice Float @default(0) 
+totalPrice Float @default(0) 
+discount Float @default(0) 
+description String?
+createdAt    DateTime   @default(now())
+date_accepted DateTime?
+accepted_by String?
+
+
+orderRequest    OrderRequest @relation(fields: [request_ID], references: [request_ID])
+assigner       User? @relation(fields: [assigned_by], references: [User_ID], name: "bidding_assigner")   
+seller       Seller? @relation(fields: [Seller_ID], references: [Seller_ID])  
+gopa    User? @relation(fields: [gopa_user_ID], references: [User_ID] ,name: "gopa_biding")
+accepter       User? @relation(fields: [accepted_by], references: [User_ID], name: "bidding_accepter")  
+images BiddingImage[]
+carts Cart[]
+}
+
+model BiddingImage {
+id Int @default(autoincrement())
+image_ID String @id @default(uuid())
+bidding_ID   String
+createdAt     DateTime      @default(now())
+status        Int @default(1)
+image_url    String
+image_ob     Json
+bid    Bidding @relation(fields: [bidding_ID], references: [bidding_ID])
+}
+
+
+
+model Cart{
+id Int @default(autoincrement())
+cart_ID String @id @default(uuid())
+User_ID      String
+createdAt     DateTime      @default(now())
+status        Int @default(0)
+bidding_ID    String?
+
+bid    Bidding? @relation(fields: [bidding_ID], references: [bidding_ID])
+user   User @relation(fields: [User_ID], references: [User_ID])
+@@unique([bidding_ID,User_ID])
+}
+
+
+
+
+
+model Discount {
+  id            Int           @id @default(autoincrement())
+  Discount_ID   String        @default(uuid()) @unique
+  name          String
+  description   String
+  percentage    Float         //@min(0) @max(100)
+  validFrom     DateTime
+  validTo       DateTime
+  spareParts    SparePart[]
+  createdAt     DateTime      @default(now())
+}
+
+model Commission {
+  id            Int              @default(autoincrement())
+  Commission_ID String       @id @default(uuid()) 
+  seller_ID     String?
+  Gopa_ID       String?   
+  Mepa_ID       String? 
+  Deliver_ID    String?      
+  rate          Float        // @min(0) @max(100)
+  description   String
+  createdAt     DateTime      @default(now())
+  gopa          Gopa?         @relation(fields: [Gopa_ID], references: [Gopa_ID])
+  mepa          Mepa?         @relation(fields: [Mepa_ID], references: [Mepa_ID])
+  seller        Seller?       @relation(fields: [seller_ID], references: [Seller_ID])
+  deliver        Deliver?       @relation(fields: [Deliver_ID], references: [Deliver_ID])
+}
+
+model Promotion {
+  id            Int           @id @default(autoincrement())
+  Promotion_ID  String        @default(uuid()) @unique
+  seller_ID     String        
+  seller        Seller       @relation(fields: [seller_ID], references: [Seller_ID])
+  name          String
+  description   String
+  validFrom     DateTime
+  validTo       DateTime
+  createdAt     DateTime      @default(now())
+}
+
+model Advertisement {
+  id               Int            @default(autoincrement())
+  Advertisement_ID String       @id @default(uuid()) 
+  seller_ID        String        
+  seller           Seller       @relation(fields: [seller_ID], references: [Seller_ID])
+  sparePart_ID     String?       
+  sparePart        SparePart?   @relation(fields: [sparePart_ID], references: [SparePart_ID])
+  content          String
+  startDate        DateTime
+  endDate          DateTime
+  status           AdStatus
+  createdAt        DateTime      @default(now())
+}
+
+model Category {
+  id            Int           @default(autoincrement())
+  Category_ID   String        @id @default(uuid()) 
+  name          String
+  parent_ID     String?       
+  parent       Category?  @relation("SubCategoryParent", fields: [parent_ID], references: [Category_ID])
+  subCategories Category[]    @relation("SubCategoryParent")
+  spareParts    SparePart[]
+}
+
+model Order {
+  id            Int            @default(autoincrement())
+  Order_ID      String        @id @default(uuid()) 
+  user_ID       String       
+  user          User          @relation("UserOrders", fields: [user_ID], references: [User_ID])
+  totalAmount   Float
+  orderItems    OrderItem[]
+
+  Delivery_ID  String? 
+  delivery      Delivery?  @relation("orderDelivery", fields: [Delivery_ID], references: [Delivery_ID])
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+model OrderItem {
+  id            Int            @default(autoincrement())
+  OrderItem_ID  String       @id @default(uuid()) 
+  sparePart_ID  String       
+  sparePart     SparePart      @relation(fields: [sparePart_ID], references: [SparePart_ID])
+  order_ID      String        
+  order         Order         @relation(fields: [order_ID], references: [Order_ID])
+  quantity      Int
+  price         Float         // Price at the time of order
+}
+
+model Delivery {
+  id            Int            @default(autoincrement())
+  Delivery_ID   String       @id @default(uuid())       
+       
+  deliveryDate  DateTime
+  status        DeliveryStatus
+   Order         Order[]  @relation("orderDelivery")
+}
+
+model Review {
+  id            Int            @default(autoincrement())
+  Review_ID     String       @id @default(uuid()) 
+  sparePart_ID  String        
+  sparePart     SparePart     @relation(fields: [sparePart_ID], references: [SparePart_ID])
+  user_ID       String       
+  user          User          @relation(fields: [user_ID], references: [User_ID])
+  rating        Int          // @min(1) @max(5)
+  comment       String?
+  createdAt     DateTime      @default(now())
+
+  @@unique([user_ID, sparePart_ID])
+}
+
+
+enum USER_TYPE {
+  ADMIN
+  SELLER
+  DELIVERY
+  BUYER
+  GOPA
+  MEPA
+}
+
+enum DeliveryStatus {
+  PENDING
+  SHIPPED
+  DELIVERED
+  CANCELED
+}
+
+enum AdStatus {
+  ACTIVE
+  INACTIVE
+  EXPIRED
+}
+
+
+enum OTPCOUNTER {
+  SECOND
+  MINUTE
+  HOUR
+}
+
+
+
+enum VIHICLE_TYPE {
+  MOTOR
+  CAR
+  TRUCK
+  BYCICLE
+}
+
+
+
+enum PAYMENT_TYPE {
+  BANK_ACCOUNT
+  WALLET
+  PAYPAL
+}
+
+
+enum ID_TYPE {
+  NATIONAL
+  PASSPORT
+  DRIVERS
+  VOTERS
+}
+
+
+//Bank Account or Momo Wallet or PayPal

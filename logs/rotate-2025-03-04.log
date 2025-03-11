@@ -1,0 +1,171 @@
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"clientVersion":"5.22.0","label":"Spare Spart api logs","level":"error","message":"\nInvalid `prisma.serviceCharges.create()` invocation in\n/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/DBFunctions/ServiceChargeDb.js:17:58\n\n  14 \n  15 ussd.add = async (data) => {\n  16     try {\n→ 17         const newContinent = await prisma.serviceCharges.create({\n               data: {\n                 charge_type: \"SERVICE_CHARGE\",\n                 description: \"charge details for sevices\",\n                 percentage: 1,\n                 minAmnt: 5,\n                 maxAmount: 500,\n                 flatAmount: 0,\n                 percentage_base: \"MAIN_AMOUNT\",\n                 soure_type: \"FEE\",\n                 added_by: \"4298e2e3-4215-4884-9bb1-3fc7d9695e49\",\n                 ~~~~~~~~\n             ?   chargeID?: String,\n             ?   createdAt?: DateTime,\n             ?   status?: Int\n               }\n             })\n\nUnknown argument `added_by`. Available options are marked with ?.","name":"PrismaClientValidationError","stack":"PrismaClientValidationError: \nInvalid `prisma.serviceCharges.create()` invocation in\n/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/DBFunctions/ServiceChargeDb.js:17:58\n\n  14 \n  15 ussd.add = async (data) => {\n  16     try {\n→ 17         const newContinent = await prisma.serviceCharges.create({\n               data: {\n                 charge_type: \"SERVICE_CHARGE\",\n                 description: \"charge details for sevices\",\n                 percentage: 1,\n                 minAmnt: 5,\n                 maxAmount: 500,\n                 flatAmount: 0,\n                 percentage_base: \"MAIN_AMOUNT\",\n                 soure_type: \"FEE\",\n                 added_by: \"4298e2e3-4215-4884-9bb1-3fc7d9695e49\",\n                 ~~~~~~~~\n             ?   chargeID?: String,\n             ?   createdAt?: DateTime,\n             ?   status?: Int\n               }\n             })\n\nUnknown argument `added_by`. Available options are marked with ?.\n    at wn (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at $n.handleRequestError (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:121:6958)\n    at $n.handleAndLogRequestError (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:121:6623)\n    at $n.request (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:121:6307)\n    at async l (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async ussd.add (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/DBFunctions/ServiceChargeDb.js:17:30)\n    at async /Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/controllers/ServiceChargeController.js:13:18"}
+{"label":"Spare Spart api logs","level":"error","message":"\nInvalid `prisma.serviceCharges.create()` invocation in\n/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/DBFunctions/ServiceChargeDb.js:17:58\n\n  14 \n  15 ussd.add = async (data) => {\n  16     try {\n→ 17         const newContinent = await prisma.serviceCharges.create({\n               data: {\n                 charge_type: \"SERVICE_CHARGE\",\n                 description: \"charge details for sevices\",\n                 percentage: 1,\n                 minAmnt: 5,\n                 maxAmount: 500,\n                 flatAmount: 0,\n                 percentage_base: \"MAIN_AMOUNT\",\n                 soure_type: \"FEE\",\n                 added_by: \"4298e2e3-4215-4884-9bb1-3fc7d9695e49\",\n                 ~~~~~~~~\n             ?   chargeID?: String,\n             ?   createdAt?: DateTime,\n             ?   status?: Int\n               }\n             })\n\nUnknown argument `added_by`. Available options are marked with ?."}
+{"content_length":"997","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":1188.138,"status":500,"url":"/spdatbaseservice/api/v1/service-charge/add"}
+{"clientVersion":"5.22.0","label":"Spare Spart api logs","level":"error","message":"\nInvalid `prisma.serviceCharges.create()` invocation in\n/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/DBFunctions/ServiceChargeDb.js:17:58\n\n  14 \n  15 ussd.add = async (data) => {\n  16     try {\n→ 17         const newContinent = await prisma.serviceCharges.create({\n               data: {\n                 charge_type: \"SERVICE_CHARGE\",\n                 description: \"charge details for sevices\",\n                 percentage: 1,\n                 minAmnt: 5,\n                 maxAmount: 500,\n                 flatAmount: 0,\n                 percentage_base: \"MAIN_AMOUNT\",\n                 soure_type: \"FEE\",\n                 added_by: \"4298e2e3-4215-4884-9bb1-3fc7d9695e49\",\n                 ~~~~~~~~\n             ?   chargeID?: String,\n             ?   createdAt?: DateTime,\n             ?   status?: Int\n               }\n             })\n\nUnknown argument `added_by`. Available options are marked with ?.","name":"PrismaClientValidationError","stack":"PrismaClientValidationError: \nInvalid `prisma.serviceCharges.create()` invocation in\n/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/DBFunctions/ServiceChargeDb.js:17:58\n\n  14 \n  15 ussd.add = async (data) => {\n  16     try {\n→ 17         const newContinent = await prisma.serviceCharges.create({\n               data: {\n                 charge_type: \"SERVICE_CHARGE\",\n                 description: \"charge details for sevices\",\n                 percentage: 1,\n                 minAmnt: 5,\n                 maxAmount: 500,\n                 flatAmount: 0,\n                 percentage_base: \"MAIN_AMOUNT\",\n                 soure_type: \"FEE\",\n                 added_by: \"4298e2e3-4215-4884-9bb1-3fc7d9695e49\",\n                 ~~~~~~~~\n             ?   chargeID?: String,\n             ?   createdAt?: DateTime,\n             ?   status?: Int\n               }\n             })\n\nUnknown argument `added_by`. Available options are marked with ?.\n    at wn (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:29:1363)\n    at $n.handleRequestError (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:121:6958)\n    at $n.handleAndLogRequestError (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:121:6623)\n    at $n.request (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:121:6307)\n    at async l (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async ussd.add (/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/DBFunctions/ServiceChargeDb.js:17:30)\n    at async /Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/controllers/ServiceChargeController.js:13:18"}
+{"label":"Spare Spart api logs","level":"error","message":"\nInvalid `prisma.serviceCharges.create()` invocation in\n/Users/testdevice/Desktop/Source Code/Node JS/Spare Part/SPDatabaseServices/DBFunctions/ServiceChargeDb.js:17:58\n\n  14 \n  15 ussd.add = async (data) => {\n  16     try {\n→ 17         const newContinent = await prisma.serviceCharges.create({\n               data: {\n                 charge_type: \"SERVICE_CHARGE\",\n                 description: \"charge details for sevices\",\n                 percentage: 1,\n                 minAmnt: 5,\n                 maxAmount: 500,\n                 flatAmount: 0,\n                 percentage_base: \"MAIN_AMOUNT\",\n                 soure_type: \"FEE\",\n                 added_by: \"4298e2e3-4215-4884-9bb1-3fc7d9695e49\",\n                 ~~~~~~~~\n             ?   chargeID?: String,\n             ?   createdAt?: DateTime,\n             ?   status?: Int\n               }\n             })\n\nUnknown argument `added_by`. Available options are marked with ?."}
+{"content_length":"997","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":1080.525,"status":500,"url":"/spdatbaseservice/api/v1/service-charge/add"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":1818.158,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/add"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":1390.824,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/update"}
+{"label":"Spare Spart api logs","level":"error","message":"Not found"}
+{"content_length":"34","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":3.798,"status":404,"url":"/spdatbaseservice/api/v1/details-by-charge-id/51b3d68e-6cef-4dce-8b9c-329028765e68"}
+{"label":"Spare Spart api logs","level":"error","message":"Not found"}
+{"content_length":"34","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1.304,"status":404,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-id/51b3d68e-6cef-4dce-8b9c-329028765e68"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":3075.221,"status":200,"url":"/spdatbaseservice/api/v1//service-charg/details-by-charge-id/51b3d68e-6cef-4dce-8b9c-329028765e68"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1536.908,"status":200,"url":"/spdatbaseservice/api/v1//service-charge/details-by-charge-id/51b3d68e-6cef-4dce-8b9c-329028765e68"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1439.16,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/SERVICE_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"1749","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":4436.318,"status":200,"url":"/spdatbaseservice/api/v1/user/login"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1410.004,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1753.102,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/SERVICE_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":1726.688,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/update"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":1513.646,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/add"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"373","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":2452.091,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/add"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"360","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"POST","response_time":1654.004,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/add"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1835.221,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":4921.691,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1349.661,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":5529.517,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1549.275,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":4893.103,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1493.805,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":4846.6,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1397.265,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":4907.15,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1592.025,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/SERVICE_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"373","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1537.569,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/DELIVERY_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"373","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1299.13,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/DELIVERY_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":2631.745,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":5295.479,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1488.614,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/SERVICE_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"373","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1569.671,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/DELIVERY_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"373","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1541.677,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/DELIVERY_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1503.671,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":5476.336,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1506.641,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/SERVICE_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"373","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1533.756,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/DELIVERY_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"360","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1474.787,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/TAX"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1714.396,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":5332.933,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1499.645,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/SERVICE_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"373","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1470.045,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/DELIVERY_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"360","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1515.353,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/TAX"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"402","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1619.341,"status":200,"url":"/spdatbaseservice/api/v1/user/by-id/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"3607","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":5332.437,"status":200,"url":"/spdatbaseservice/api/v1/cart/full-user-carts/4298e2e3-4215-4884-9bb1-3fc7d9695e49"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"381","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1485.095,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/SERVICE_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"373","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1933.602,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/DELIVERY_CHARGE"}
+{"label":"Spare Spart api logs","level":"info","message":"Success"}
+{"content_length":"360","label":"Spare Spart api logs","level":"http","message":"incoming-api-request","method":"GET","response_time":1470.656,"status":200,"url":"/spdatbaseservice/api/v1/service-charge/details-by-charge-type/TAX"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}
+{"label":"Spare Spart api logs","level":"debug","message":"Spare Part Database Service: Running in development mode and listening on port http://:9006"}

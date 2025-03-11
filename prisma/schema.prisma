@@ -91,9 +91,27 @@ model User {
   gopaBiddings   Bidding[] @relation("gopa_biding")
   bidsAccepted  Bidding[] @relation("bidding_accepter")
   carts Cart[]
+   serviceChargesInputed  ServiceCharges[] @relation("service_charge_inputer")
+wallet_user  Wallet[] @relation("wallet_user")
+addresses userAddress[]
+   
 }
 
 
+model userAddress{
+    id            Int          @default(autoincrement())
+    address_id    String       @id @default(uuid()) 
+    User_ID       String
+    location      Json
+    title         String
+    addressDetails String
+    date_added DateTime @default(now())
+    status Int @default(1)
+    user   User    @relation(fields: [User_ID], references: [User_ID])
+}
+
+
+  
 
 
 model UserIdentification {
@@ -701,6 +719,43 @@ model Review {
 }
 
 
+
+
+model ServiceCharges {
+  id            Int           @id @default(autoincrement())
+  chargeID   String        @default(uuid()) @unique
+  createdAt     DateTime      @default(now())
+  status        Int @default(1)
+  charge_type    CHARGE_TYPE
+  description   String
+  percentage    Float        @default(0)
+  minAmnt       Float        @default(0)
+  maxAmount     Float        @default(0)
+  flatAmount    Float        @default(0)
+  percentage_base CHARGE_TYPE?
+  soure_type SOURCE_TYPE
+  added_by String 
+  inputter       User? @relation(fields: [added_by], references: [User_ID], name: "service_charge_inputer")  
+}
+
+
+
+model Wallet {
+  id            Int            @default(autoincrement())
+  walletID   String       @id @default(uuid())        
+  date_created  DateTime @default(now())
+  status        Int  @default(1)
+  wallet_type WALLET_TYPE
+  User_ID    String?
+  WalletNumber String @unique
+  balance Float @default(0)
+  user       User? @relation(fields: [User_ID], references: [User_ID], name: "wallet_user")  
+}
+
+
+
+
+
 enum USER_TYPE {
   ADMIN
   SELLER
@@ -753,6 +808,31 @@ enum ID_TYPE {
   PASSPORT
   DRIVERS
   VOTERS
+}
+
+
+enum CHARGE_TYPE {
+  DELIVERY_CHARGE
+  SERVICE_CHARGE
+  GOPA_CHARGE
+  TAX
+  MAIN_AMOUNT
+}
+
+
+
+enum SOURCE_TYPE {
+FEE // by customer
+COMMISSION // bore by company
+SPLIT // Split a charge
+}
+
+
+enum WALLET_TYPE {
+  USER
+  REVENUE
+  DEBIT_SUSPENSE
+  CREDIT_SUSPENSE
 }
 
 

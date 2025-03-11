@@ -196,6 +196,43 @@ const {
 
 
 
+const {
+   SERVICE_CHARGE_ADD,
+   SERVICE_CHARGE_UPDATE,
+   SERVICE_CHARGE_BY_ID,
+   SERVICE_CHARGE_BY_TYPE
+} = require("../controllers/ServiceChargeController");
+
+
+
+
+
+
+
+const {
+   WALLET_ADD,
+   WALLET_UPDATE,
+   WALLET_BY_ID,
+   WALLET_BY_WALLET_NUMBER,
+   WALLET_BY_USER_ID,
+   WALLET_SYSTEM_WALLETS
+} = require("../controllers/WalletController");
+
+
+
+
+
+const {
+   ADD_ADDRESS,
+   UPDATE_ADDRESS,
+   ADDRESS_DETAILS,
+   USER_ADDRESSES
+} = require("../controllers/AddressController");
+
+
+
+
+
 //test routes link
 router.route("/testapi").get(TestController);
 
@@ -352,8 +389,26 @@ router.route("/cart/full-details/:cart_id").get(CART_DETAILS_FULL);
 router.route("/cart/user-carts/:user_id").get(USER_CART);
 router.route("/cart/full-user-carts/:user_id").get(USER_CART_FULL);
 
-//
 
 
+//Service charge
+router.route("/service-charge/add").post(SERVICE_CHARGE_ADD);
+router.route("/service-charge/update").post(SERVICE_CHARGE_UPDATE);
+router.route("/service-charge/details-by-charge-id/:chargeID").get(SERVICE_CHARGE_BY_ID);
+router.route("/service-charge/details-by-charge-type/:charge_type").get(SERVICE_CHARGE_BY_TYPE);
 
+
+//wallet
+router.route("/wallet/add").post(WALLET_ADD);
+router.route("/wallet/update").post(WALLET_UPDATE);
+router.route("/wallet/details-by-id/:walletID").get(WALLET_BY_ID);
+router.route("/wallet/details-by-wallet-number/:WalletNumber").get(WALLET_BY_WALLET_NUMBER);
+router.route("/wallet/details-by-user-id/:User_ID").get(WALLET_BY_USER_ID);
+router.route("/wallet/system-wallets").get(WALLET_SYSTEM_WALLETS);
+
+//address
+router.route("/address/add").post(ADD_ADDRESS);
+router.route("/address/update").post(UPDATE_ADDRESS);
+router.route("/address/details/:address_id").get(ADDRESS_DETAILS);
+router.route("/address/user-address/:user_id").get(USER_ADDRESSES);
 module.exports = router;

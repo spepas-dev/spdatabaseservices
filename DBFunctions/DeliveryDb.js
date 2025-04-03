@@ -3,25 +3,22 @@ require('dotenv').config({ path: './.env' });
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 const { logger } = require("../logs/winston");
-const { ProcessStatus } = require("../helper/vars");
+const { ProcessStatus,INVOICE_STATUS } = require("../helper/vars");
 const UtilityHelper = require("../helper/utilfunc");
 
 let ussd = {};
 
 
-
-
-
-ussd.add = async (address) => {
+ussd.add = async (delivery) => {
     try {
         
-        const newContinent = await prisma.userAddress.create({
-            data: address
+        const newContinent = await prisma.delivery.create({
+            data: delivery
           });
           
         return newContinent;
     } catch (error) {
-        console.error("Error creating address record:", error);
+        console.error("Error creating delivery record:", error);
         if (typeof logger !== 'undefined') {
             logger.error(error);
         }
@@ -32,18 +29,19 @@ ussd.add = async (address) => {
 };
 
 
-ussd.update = async (address) => {
+
+ussd.updateInvoice = async (delivery) => {
     try {
-        const updatedContinent = await prisma.userAddress.update({
+        const updatedContinent = await prisma.delivery.update({
             where:{
-                address_id: address.address_id
+                delivery_id: delivery.delivery_id
             },
-            data: address
+            data: delivery
           });
           
         return updatedContinent;
     } catch (error) {
-        console.error("Error updating address record:", error);
+        console.error("Error updating delivery record:", error);
         if (typeof logger !== 'undefined') {
             logger.error(error);
         }
@@ -55,11 +53,12 @@ ussd.update = async (address) => {
 
 
 
-ussd.details = async (address_id) => {
+
+ussd.details = async (delivery_id) => {
     try {
-        const user = await prisma.userAddress.findFirst({
+        const user = await prisma.delivery.findFirst({
             where: {
-                address_id: address_id
+                delivery_id: delivery_id
             },
           });
   
@@ -74,29 +73,20 @@ ussd.details = async (address_id) => {
         await prisma.$disconnect();
     }
   };
-  
 
 
-  ussd.userAddress = async (user_id) => {
-    try {
-        const user = await prisma.userAddress.findMany({
-            where: {
-                User_ID: user_id
-            },
-          });
-  
-        return user;
-    } catch (error) {
-        console.error("Error retrieving record:", error);
-        if (typeof logger !== 'undefined') {
-            logger.error(error);
-        }
-        throw error;
-    } finally {
-        await prisma.$disconnect();
-    }
-  };
-  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

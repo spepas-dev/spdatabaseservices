@@ -54,7 +54,7 @@ model User {
   createdAt     DateTime      @default(now())
   updatedAt     DateTime      @updatedAt
   sellerDetails Seller?       @relation(fields: [Seller_ID], references: [Seller_ID])
-  orders        Order[]       @relation("UserOrders")
+  //orders        Order[]       @relation("UserOrders")
   reviews       Review[]
   wishlist      Wishlist[]
   administrators Administrator[]
@@ -94,6 +94,9 @@ model User {
    serviceChargesInputed  ServiceCharges[] @relation("service_charge_inputer")
 wallet_user  Wallet[] @relation("wallet_user")
 addresses userAddress[]
+invoices Invoice[]
+gopa_invoices Invoice[] @relation("gopa_invoices")
+deliveries Delivery[]
    
 }
 
@@ -108,6 +111,7 @@ model userAddress{
     date_added DateTime @default(now())
     status Int @default(1)
     user   User    @relation(fields: [User_ID], references: [User_ID])
+    invoices Invoice[]
 }
 
 
@@ -168,6 +172,7 @@ model Permission {
     status Int @default(1)
     date_added DateTime @default(now())
     inputter User?  @relation(fields: [added_by], references: [User_ID], name: "permission_input")
+    description String?
     rolePermissions RolePermission[]
 }
 
@@ -475,7 +480,7 @@ model SparePart {
   seller        Seller?        @relation(fields: [seller_ID], references: [Seller_ID])
   createdAt     DateTime      @default(now())
   updatedAt     DateTime      @updatedAt
-  sp        OrderItem[]
+  //sp        OrderItem[]
   reviews       Review[]
   whiteLists   Wishlist[]
   inventories  Inventory []
@@ -596,11 +601,79 @@ User_ID      String
 createdAt     DateTime      @default(now())
 status        Int @default(0)
 bidding_ID    String?
-
 bid    Bidding? @relation(fields: [bidding_ID], references: [bidding_ID])
 user   User @relation(fields: [User_ID], references: [User_ID])
 @@unique([bidding_ID,User_ID])
+
+invoice_item Invoice_Item? 
 }
+
+
+
+model Invoice{
+id Int @default(autoincrement())
+invoice_id String @id @default(uuid())
+total_items Int
+total_amount Float 
+createdAt     DateTime      @default(now())
+status        Int @default(0)
+statusMessage  INVOICE_STATUS
+aggregate Int @default(1)
+gopa_accepted_status Int @default(0)
+qr_value String
+User_ID  String
+gopa_user_id String?
+address_id String
+
+address   userAddress @relation(fields: [address_id], references: [address_id])
+user   User @relation(fields: [User_ID], references: [User_ID])
+gopa   User? @relation(fields: [gopa_user_id], references: [User_ID], name: "gopa_invoices")
+items Invoice_Item[]
+deliveries Delivery[]
+}
+
+
+model Invoice_Item{
+id Int @default(autoincrement())
+item_id String @id @default(uuid())
+total_items Int
+total_amount Float 
+createdAt     DateTime      @default(now())
+status        Int @default(0)
+statusMessage  INVOICE_STATUS
+qr_value String
+invoice_id  String
+user_id String //for confirmation that item belong to user
+aggregate Int @default(0)
+invoice   Invoice @relation(fields: [invoice_id], references: [invoice_id])
+cart  Cart?  @relation(fields: [cart_ID], references: [cart_ID])  
+cart_ID String  @unique
+
+deliveries Delivery[]
+}
+
+
+
+model Delivery{
+ id Int @default(autoincrement()) 
+ delivery_id String @id @default(uuid())
+ status  Int @default(0)
+ statusMessage  INVOICE_STATUS
+ delivery_qr String
+ createdAt     DateTime      @default(now())
+ date_delivered DateTime
+ baseID String  @unique // either item_id or invoice_id
+ delivery_user_id String
+ item_id String? //for individual deliveries
+ invoice_id String? // for bulk deliveries
+ user_id String //for confirmation that item belong to user
+
+
+deliver User @relation(fields: [delivery_user_id], references: [User_ID])
+invoice_item Invoice_Item? @relation(fields: [item_id], references: [item_id])
+invoice Invoice? @relation(fields: [invoice_id], references: [invoice_id])
+}
+
 
 
 
@@ -670,39 +743,7 @@ model Category {
   spareParts    SparePart[]
 }
 
-model Order {
-  id            Int            @default(autoincrement())
-  Order_ID      String        @id @default(uuid()) 
-  user_ID       String       
-  user          User          @relation("UserOrders", fields: [user_ID], references: [User_ID])
-  totalAmount   Float
-  orderItems    OrderItem[]
 
-  Delivery_ID  String? 
-  delivery      Delivery?  @relation("orderDelivery", fields: [Delivery_ID], references: [Delivery_ID])
-  createdAt     DateTime      @default(now())
-  updatedAt     DateTime      @updatedAt
-}
-
-model OrderItem {
-  id            Int            @default(autoincrement())
-  OrderItem_ID  String       @id @default(uuid()) 
-  sparePart_ID  String       
-  sparePart     SparePart      @relation(fields: [sparePart_ID], references: [SparePart_ID])
-  order_ID      String        
-  order         Order         @relation(fields: [order_ID], references: [Order_ID])
-  quantity      Int
-  price         Float         // Price at the time of order
-}
-
-model Delivery {
-  id            Int            @default(autoincrement())
-  Delivery_ID   String       @id @default(uuid())       
-       
-  deliveryDate  DateTime
-  status        DeliveryStatus
-   Order         Order[]  @relation("orderDelivery")
-}
 
 model Review {
   id            Int            @default(autoincrement())
@@ -833,6 +874,16 @@ enum WALLET_TYPE {
   REVENUE
   DEBIT_SUSPENSE
   CREDIT_SUSPENSE
+}
+
+
+enum INVOICE_STATUS {
+  PENDING
+  WARE_HOUSE
+  READY_TO_BE_SHIPPED
+  SHIPPED
+  DELIVERED
+  CANCELLED
 }
 
 

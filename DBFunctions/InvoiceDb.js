@@ -30,6 +30,38 @@ ussd.addInvoice = async (inoice) => {
 };
 
 
+ussd.addInvoiceWithItems = async (invoice, invoiceItems) => {
+    try {
+        console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        console.log(invoice)
+        console.log(invoiceItems)
+        const newInvoice = await prisma.invoice.create({
+            data: {
+                ...invoice,
+                items: {
+                    create: invoiceItems.map(item => ({
+                        ...item
+                    }))
+                }
+            },
+            include: {
+                items: true // Optional: include the created items in response
+            }
+        });
+
+        return newInvoice;
+    } catch (error) {
+        console.error("Error creating invoice with items:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+};
+
+
 
 ussd.updateInvoice = async (invoice) => {
     try {
@@ -92,6 +124,7 @@ ussd.InvoiceDetailsFull = async (invoice_id) => {
                 items:{
                     include:{
                         cart:{
+                           include:{
                             bid:{
                                 include:{
                                     seller:true,
@@ -141,6 +174,91 @@ ussd.InvoiceDetailsFull = async (invoice_id) => {
                                     
                                 }
                             }
+                           }
+                        }
+                    }
+                }
+            }
+          });
+  
+        return user;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
+
+
+
+ussd.InvoiceDetailsByQR = async (qr_value) => {
+    try {
+        const user = await prisma.invoice.findFirst({
+            where: {
+                qr_value: qr_value
+            },
+            include:{
+                address: true,
+                user: true,
+                gopa: true,
+                items:{
+                    include:{
+                        cart:{
+                           include:{
+                            bid:{
+                                include:{
+                                    seller:true,
+                                    images:true,
+                                    gopa: {
+                                        select:{
+                                            User_ID: true,
+                                            name: true
+                                        }
+                                    },
+                                    assigner:{
+                                        select:{
+                                            User_ID: true,
+                                            name: true
+                                        }
+                                    },
+                                    orderRequest:{
+                                        include:{
+                                            requester:{
+                                               select:{
+                                                User_ID: true,
+                                                name: true
+                                               }
+                                            },
+                                            creater:{
+                                               select:{
+                                                User_ID: true,
+                                                name: true
+                                               }
+                                            },
+                                            sparePart:{
+                                                include:{
+                                                    images: true,
+                                                    carModel:{
+                                                        include:{
+                                                            carBrand:{
+                                                                include:{
+                                                                    manufacturer: true
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                           }
                         }
                     }
                 }
@@ -163,12 +281,23 @@ ussd.InvoiceDetailsFull = async (invoice_id) => {
 
 
 
+
+
+
+
+
+
+
 ussd.UserInvoicesByStatus = async (user_id, status) => {
     try {
         const user = await prisma.invoice.findMany({
             where: {
                 User_ID: user_id,
-                status: status
+                ...(status && {
+                    status: {
+                      equals: status
+                    }
+                  })
             },
             orderBy:{
                 createdAt: 'desc',
@@ -180,6 +309,7 @@ ussd.UserInvoicesByStatus = async (user_id, status) => {
                 items:{
                     include:{
                         cart:{
+                           include:{
                             bid:{
                                 include:{
                                     seller:true,
@@ -229,6 +359,7 @@ ussd.UserInvoicesByStatus = async (user_id, status) => {
                                     
                                 }
                             }
+                           }
                         }
                     }
                 }
@@ -259,6 +390,8 @@ ussd.PendingInvoiceForGopa = async () => {
             where: {
                 status: INVOICE_STATUS.PENDING,
                 aggregate: 1,
+                gopa_user_id: null,
+                paymentStatus: 1 //ensure payment is successful before assigned
             },
             orderBy:{
                 createdAt: 'desc',
@@ -270,44 +403,46 @@ ussd.PendingInvoiceForGopa = async () => {
                 items:{
                     include:{
                         cart:{
-                            bid:{
-                                include:{
-                                    seller:true,
-                                    images:true,
-                                    gopa: {
-                                        select:{
-                                            User_ID: true,
-                                            name: true
-                                        }
-                                    },
-                                    assigner:{
-                                        select:{
-                                            User_ID: true,
-                                            name: true
-                                        }
-                                    },
-                                    orderRequest:{
-                                        include:{
-                                            requester:{
-                                               select:{
+                            include:{
+                                bid:{
+                                    include:{
+                                        seller:true,
+                                        images:true,
+                                        gopa: {
+                                            select:{
                                                 User_ID: true,
                                                 name: true
-                                               }
-                                            },
-                                            creater:{
-                                               select:{
+                                            }
+                                        },
+                                        assigner:{
+                                            select:{
                                                 User_ID: true,
                                                 name: true
-                                               }
-                                            },
-                                            sparePart:{
-                                                include:{
-                                                    images: true,
-                                                    carModel:{
-                                                        include:{
-                                                            carBrand:{
-                                                                include:{
-                                                                    manufacturer: true
+                                            }
+                                        },
+                                        orderRequest:{
+                                            include:{
+                                                requester:{
+                                                   select:{
+                                                    User_ID: true,
+                                                    name: true
+                                                   }
+                                                },
+                                                creater:{
+                                                   select:{
+                                                    User_ID: true,
+                                                    name: true
+                                                   }
+                                                },
+                                                sparePart:{
+                                                    include:{
+                                                        images: true,
+                                                        carModel:{
+                                                            include:{
+                                                                carBrand:{
+                                                                    include:{
+                                                                        manufacturer: true
+                                                                    }
                                                                 }
                                                             }
                                                         }
@@ -315,8 +450,8 @@ ussd.PendingInvoiceForGopa = async () => {
                                                 }
                                             }
                                         }
+                                        
                                     }
-                                    
                                 }
                             }
                         }
@@ -346,6 +481,7 @@ ussd.GopaAcceptedInvoices = async (gopa_user_id) => {
         const user = await prisma.invoice.findMany({
             where: {
                 gopa_user_id: gopa_user_id,
+                paymentStatus: 1
             },
             orderBy:{
                 createdAt: 'desc',
@@ -357,44 +493,46 @@ ussd.GopaAcceptedInvoices = async (gopa_user_id) => {
                 items:{
                     include:{
                         cart:{
-                            bid:{
-                                include:{
-                                    seller:true,
-                                    images:true,
-                                    gopa: {
-                                        select:{
-                                            User_ID: true,
-                                            name: true
-                                        }
-                                    },
-                                    assigner:{
-                                        select:{
-                                            User_ID: true,
-                                            name: true
-                                        }
-                                    },
-                                    orderRequest:{
-                                        include:{
-                                            requester:{
-                                               select:{
+                            include:{
+                                bid:{
+                                    include:{
+                                        seller:true,
+                                        images:true,
+                                        gopa: {
+                                            select:{
                                                 User_ID: true,
                                                 name: true
-                                               }
-                                            },
-                                            creater:{
-                                               select:{
+                                            }
+                                        },
+                                        assigner:{
+                                            select:{
                                                 User_ID: true,
                                                 name: true
-                                               }
-                                            },
-                                            sparePart:{
-                                                include:{
-                                                    images: true,
-                                                    carModel:{
-                                                        include:{
-                                                            carBrand:{
-                                                                include:{
-                                                                    manufacturer: true
+                                            }
+                                        },
+                                        orderRequest:{
+                                            include:{
+                                                requester:{
+                                                   select:{
+                                                    User_ID: true,
+                                                    name: true
+                                                   }
+                                                },
+                                                creater:{
+                                                   select:{
+                                                    User_ID: true,
+                                                    name: true
+                                                   }
+                                                },
+                                                sparePart:{
+                                                    include:{
+                                                        images: true,
+                                                        carModel:{
+                                                            include:{
+                                                                carBrand:{
+                                                                    include:{
+                                                                        manufacturer: true
+                                                                    }
                                                                 }
                                                             }
                                                         }
@@ -402,8 +540,8 @@ ussd.GopaAcceptedInvoices = async (gopa_user_id) => {
                                                 }
                                             }
                                         }
+                                        
                                     }
-                                    
                                 }
                             }
                         }
@@ -436,6 +574,7 @@ ussd.InvoiceReadyForPickUpByDelivery = async () => {
             where: {
                 status: INVOICE_STATUS.READY_TO_BE_SHIPPED,
                 aggregate: 1,
+                paymentStatus: 1
             },
             orderBy:{
                 createdAt: 'desc',
@@ -447,6 +586,7 @@ ussd.InvoiceReadyForPickUpByDelivery = async () => {
                 items:{
                     include:{
                         cart:{
+                          include:{
                             bid:{
                                 include:{
                                     seller:true,
@@ -496,6 +636,7 @@ ussd.InvoiceReadyForPickUpByDelivery = async () => {
                                     
                                 }
                             }
+                          }
                         }
                     }
                 }
@@ -520,11 +661,11 @@ ussd.InvoiceReadyForPickUpByDelivery = async () => {
   //Invoice Items management
 
 
-ussd.addInvoiceItem = async (inoicItem) => {
+ussd.addInvoiceItems = async (invoiceItem) => {
     try {
         
         const newContinent = await prisma.invoice_Item.create({
-            data: inoicItem
+            data: invoiceItem
           });
           
         return newContinent;
@@ -600,44 +741,46 @@ ussd.InvoiceItemDetailsFull = async (item_id) => {
             include:{
                 invoice: true,
                 cart:{
-                    bid:{
-                        include:{
-                            seller:true,
-                            images:true,
-                            gopa: {
-                                select:{
-                                    User_ID: true,
-                                    name: true
-                                }
-                            },
-                            assigner:{
-                                select:{
-                                    User_ID: true,
-                                    name: true
-                                }
-                            },
-                            orderRequest:{
-                                include:{
-                                    requester:{
-                                       select:{
+                    include:{
+                        bid:{
+                            include:{
+                                seller:true,
+                                images:true,
+                                gopa: {
+                                    select:{
                                         User_ID: true,
                                         name: true
-                                       }
-                                    },
-                                    creater:{
-                                       select:{
+                                    }
+                                },
+                                assigner:{
+                                    select:{
                                         User_ID: true,
                                         name: true
-                                       }
-                                    },
-                                    sparePart:{
-                                        include:{
-                                            images: true,
-                                            carModel:{
-                                                include:{
-                                                    carBrand:{
-                                                        include:{
-                                                            manufacturer: true
+                                    }
+                                },
+                                orderRequest:{
+                                    include:{
+                                        requester:{
+                                           select:{
+                                            User_ID: true,
+                                            name: true
+                                           }
+                                        },
+                                        creater:{
+                                           select:{
+                                            User_ID: true,
+                                            name: true
+                                           }
+                                        },
+                                        sparePart:{
+                                            include:{
+                                                images: true,
+                                                carModel:{
+                                                    include:{
+                                                        carBrand:{
+                                                            include:{
+                                                                manufacturer: true
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -645,8 +788,8 @@ ussd.InvoiceItemDetailsFull = async (item_id) => {
                                         }
                                     }
                                 }
+                                
                             }
-                            
                         }
                     }
                 }
@@ -667,6 +810,85 @@ ussd.InvoiceItemDetailsFull = async (item_id) => {
 
 
 
+
+
+
+ussd.InvoiceItemDetailsByQR = async (qr_value) => {
+    try {
+        const user = await prisma.invoice_Item.findFirst({
+            where: {
+                qr_value: qr_value
+            },
+          
+            include:{
+                invoice: true,
+                cart:{
+                    include:{
+                        bid:{
+                            include:{
+                                seller:true,
+                                images:true,
+                                gopa: {
+                                    select:{
+                                        User_ID: true,
+                                        name: true
+                                    }
+                                },
+                                assigner:{
+                                    select:{
+                                        User_ID: true,
+                                        name: true
+                                    }
+                                },
+                                orderRequest:{
+                                    include:{
+                                        requester:{
+                                           select:{
+                                            User_ID: true,
+                                            name: true
+                                           }
+                                        },
+                                        creater:{
+                                           select:{
+                                            User_ID: true,
+                                            name: true
+                                           }
+                                        },
+                                        sparePart:{
+                                            include:{
+                                                images: true,
+                                                carModel:{
+                                                    include:{
+                                                        carBrand:{
+                                                            include:{
+                                                                manufacturer: true
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+          });
+  
+        return user;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
 
 
   //this is the function to call when delivery person goes to seller for the Item
@@ -836,6 +1058,39 @@ ussd.GetUnAssaignedInvoiceItemsForDelivery = async () => {
 
 
 
+
+  ussd.InvoiceItems = async (invoice_id, status) => {
+    try {
+        const user = await prisma.invoice_Item.findMany({
+            where: {
+                ...(status && {
+                    status: {
+                      equals: status
+                    }
+                  }),
+                  ...(status && {
+                    status: {
+                      equals: status
+                    }
+                  })
+            },
+            orderBy:{
+                createdAt: 'desc',
+            },
+          
+          });
+  
+        return user;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
 
 
 

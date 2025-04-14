@@ -97,7 +97,7 @@ addresses userAddress[]
 invoices Invoice[]
 gopa_invoices Invoice[] @relation("gopa_invoices")
 deliveries Delivery[]
-   
+items_received Invoice_Item[]  
 }
 
 
@@ -615,8 +615,18 @@ id Int @default(autoincrement())
 invoice_id String @id @default(uuid())
 total_items Int
 total_amount Float 
+amount Float 
+service_charge Float
+delivery_charge Float
+tax Float 
 createdAt     DateTime      @default(now())
 status        Int @default(0)
+paymentStatus  Int @default(0)
+paymentResponseRefrence String?
+paymentResponse Json? 
+paymentMode String
+paymentNumber String?
+paymentProvider String?
 statusMessage  INVOICE_STATUS
 aggregate Int @default(1)
 gopa_accepted_status Int @default(0)
@@ -624,6 +634,7 @@ qr_value String
 User_ID  String
 gopa_user_id String?
 address_id String
+dateGopaAccepted DateTime?
 
 address   userAddress @relation(fields: [address_id], references: [address_id])
 user   User @relation(fields: [User_ID], references: [User_ID])
@@ -648,7 +659,10 @@ aggregate Int @default(0)
 invoice   Invoice @relation(fields: [invoice_id], references: [invoice_id])
 cart  Cart?  @relation(fields: [cart_ID], references: [cart_ID])  
 cart_ID String  @unique
+received_by String?
+date_received DateTime?
 
+receiver   User? @relation(fields: [received_by], references: [User_ID])
 deliveries Delivery[]
 }
 
@@ -795,6 +809,23 @@ model Wallet {
 
 
 
+model Transaction{
+  id   Int   @default(autoincrement())
+  transactionID  String  @id @default(uuid()) 
+  date_created  DateTime @default(now()) 
+  wallet_number String   
+  is_debit Int
+  is_credit Int
+  amount Float
+  balance_before Float
+  balance_after Float
+  base_id String //use find both side of the transaction
+  narration String
+  externalRef String?
+  status Int  @default(1)
+}
+
+
 
 
 enum USER_TYPE {
@@ -879,11 +910,13 @@ enum WALLET_TYPE {
 
 enum INVOICE_STATUS {
   PENDING
+  RECEIVED
   WARE_HOUSE
   READY_TO_BE_SHIPPED
   SHIPPED
   DELIVERED
   CANCELLED
+  FAILED
 }
 
 

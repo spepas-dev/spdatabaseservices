@@ -63,6 +63,7 @@ let INVOICE_STATUS = {
     WARE_HOUSE : 2,
     READY_TO_BE_SHIPPED :3,
     SHIPPED : 4,
+    RECEIVED : 5,
     DELIVERED : 1,
     CANCELLED : 100
 }

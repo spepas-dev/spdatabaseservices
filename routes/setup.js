@@ -233,6 +233,37 @@ const {
 
 
 
+
+
+const {
+   ADD_INVOICE,
+   INVOICE_DEATAILS,
+   UPDATE_INVOICE,
+   INVOICE_DEATAILS_FULL,
+   USER_INVOICES,
+   GOPA_PENDING_INVOICES,
+   GOPA_ACCEPTED_INVOICES,
+   INVOICE_READY_FOR_PICK_UP,
+   ADD_INVOICE_ITEM,
+   UPDATE_INVOICE_ITEM,
+   INVOICE_ITEM_DEATAILS,
+   INVOICE_ITEM_DEATAILS_FULL,
+   ADD_INVOICE_WITH_ITEMS,
+   INVOICE_DEATAILS_BY_QR,
+   INVOICE_ITEM_DETAILS_BY_QR
+} = require("../controllers/InvoiceController");
+
+
+
+
+const {
+   ADD_TRANSACTIONS
+} = require("../controllers/TransactionController");
+
+
+
+
+
 //test routes link
 router.route("/testapi").get(TestController);
 
@@ -411,4 +442,41 @@ router.route("/address/add").post(ADD_ADDRESS);
 router.route("/address/update").post(UPDATE_ADDRESS);
 router.route("/address/details/:address_id").get(ADDRESS_DETAILS);
 router.route("/address/user-address/:user_id").get(USER_ADDRESSES);
+
+
+
+
+
+
+//Invoice and invoice items
+router.route("/invoice/add").post(ADD_INVOICE);
+router.route("/invoice/add-with-items").post(ADD_INVOICE_WITH_ITEMS);
+router.route("/invoice/update").post(UPDATE_INVOICE);
+router.route("/invoice/details/:invoice_id").get(INVOICE_DEATAILS);
+router.route("/invoice/details-by-QR/:qr_value").get(INVOICE_DEATAILS_BY_QR);
+router.route("/invoice/details-full/:invoice_id").get(INVOICE_DEATAILS_FULL);
+router.route("/invoice/user-invoices/:user_id/:status?").get(USER_INVOICES);
+router.route("/invoice/for-gopa-acceptance").get(GOPA_PENDING_INVOICES);
+router.route("/invoice/gopa-accepted-invoices/:gopa_user_id").get(GOPA_ACCEPTED_INVOICES);
+router.route("/invoice/ready-for-pick-up").get(INVOICE_READY_FOR_PICK_UP);
+router.route("/invoice/add-item").post(ADD_INVOICE_ITEM);
+router.route("/invoice/update-item").post(UPDATE_INVOICE_ITEM);
+router.route("/invoice/item-details/:item_id").get(INVOICE_ITEM_DEATAILS);
+router.route("/invoice/item-details-full/:item_id").get(INVOICE_ITEM_DEATAILS_FULL);
+router.route("/invoice/item-details-by-QR/:qr_value").get(INVOICE_ITEM_DETAILS_BY_QR);
+
+
+
+
+
+
+
+//Transactions
+router.route("/transactions/add-many").post(ADD_TRANSACTIONS);
+
+
+
+
+
+
 module.exports = router;

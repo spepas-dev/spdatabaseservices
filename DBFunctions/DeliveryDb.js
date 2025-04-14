@@ -30,7 +30,7 @@ ussd.add = async (delivery) => {
 
 
 
-ussd.updateInvoice = async (delivery) => {
+ussd.update = async (delivery) => {
     try {
         const updatedContinent = await prisma.delivery.update({
             where:{

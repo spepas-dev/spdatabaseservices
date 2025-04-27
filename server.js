@@ -6,7 +6,7 @@ const errorHandler = require("./middleware/error");
 const { logger, morganMiddleware } = require("./logs/winston");
 const routes = require("./routes/setup");
 const path = require("path");
-// const { checkConnection } = require("./logs/elasticsearch");
+const { checkConnection } = require("./logs/elasticsearch");
 //load env vars
 dotenv.config({ path: ".env" });
 require("dotenv").config();
@@ -81,16 +81,16 @@ app.use((error, req, res, next) => {
 //create port
 const PORT = process.env.PORT || 9006;
 
-// function startElasticSearch() {
-//   checkConnection();
-// }
+function startElasticSearch() {
+  checkConnection();
+}
 
 //listen to portnpm
 app.listen(PORT, () => {
   console.log(
     `Spepas Database Service : Running in ${process.env.NODE_ENV} mode and listening on port http://:${PORT}`
   );
-  // startElasticSearch();
+  startElasticSearch();
   logger.info(
     `Spepas Database Service: Running in ${process.env.NODE_ENV} mode and listening on port http://:${PORT}`
   );

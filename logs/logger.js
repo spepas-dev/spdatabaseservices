@@ -10,6 +10,7 @@ const esTransformer = (logData) => {
   return ElasticsearchTransformer(logData);
 };
 
+const { combine, label, json, errors } = winston.format;
 //Label
 const CATEGORY = "Spepas Database Service API Log";
 

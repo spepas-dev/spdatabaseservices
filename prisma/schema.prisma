@@ -43,8 +43,9 @@ model User {
   id            Int           @default(autoincrement())
   User_ID       String        @id @default(uuid())
   name          String
+  registeredBy  String? 
   email         String        @unique
-  password      String
+  password      String?
   phoneNumber   String
   verificationStatus Int @default(0)
   status Int @default(1)

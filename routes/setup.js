@@ -15,7 +15,12 @@ const {
     USER_BY_ID,
     UPDATE,
     GOPA_AND_SELLERS,
-    USER_BY_SELLERS
+    USER_BY_SELLERS,
+    ALL_ADMIN,
+    USER_BY_ID_FULL,
+    ALL_GOPAS,
+    ALL_MEPAS,
+    ALL_BUYERS,
  } = require("../controllers/UserController");
  
 
@@ -276,16 +281,17 @@ router.route("/user/update").post(UPDATE);
 router.route("/user/by-email/:email").get(USER_BY_EMAIL);
 router.route("/user/by-phone/:phoneNumber").get(USER_BY_PHONE);
 router.route("/user/by-id/:user_id").get(USER_BY_ID);
+router.route("/user/by-id-full/:user_id").get(USER_BY_ID_FULL);
 router.route("/user/gopa_sellers").get(GOPA_AND_SELLERS);
 router.route("/user/users-by-sellers").post(USER_BY_SELLERS);
+router.route("/user/all-admin-users").get(ALL_ADMIN);
+router.route("/user/all-gopas").get(ALL_GOPAS);
+router.route("/user/all-mepas").get(ALL_MEPAS);
+router.route("/user/all-buyers").get(ALL_BUYERS);
 
 
 
-
-
-
-
-//otp routes
+//otp routesx
 router.route("/otp/create").post(CREATEOTP);
 router.route("/otp/details").post(DETAILS);
 

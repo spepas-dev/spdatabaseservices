@@ -12,7 +12,11 @@ exports.REGISTER = asynHandler(async (req, res, next) => {
     console.log("###########################");
    let user  = req.body;
 
-   user.password = UtilityHelper.sha256Encrypt(user.password);
+   if(user.password)
+    {
+        user.password = UtilityHelper.sha256Encrypt(user.password);
+    }
+   
   //user.role = "BUYER";
    user.phoneNumber = UtilityHelper.formatPhone(user.phoneNumber);
    //user.User_ID = uuidv4();
@@ -92,7 +96,7 @@ exports.LOGIN = asynHandler(async (req, res, next) => {
 
 exports.USER_BY_EMAIL = asynHandler(async (req, res, next) => {
 
-  
+    console.log("########################### user by email started");
     // console.log(session);
     let {email} = req.params;
  
@@ -103,6 +107,7 @@ exports.USER_BY_EMAIL = asynHandler(async (req, res, next) => {
  
     let newJob = await userModel.userByEmail(email);
  
+    console.log("########################### user by email ended");
  
  
         if(!newJob)
@@ -180,7 +185,7 @@ exports.USER_BY_ID = asynHandler(async (req, res, next) => {
          {
              var resp = {
                  status : RESPONSE_CODES.FAILED,
-                 message : "Email does not exist"
+                 message : "User does not exist"
              };
              return UtilityHelper.sendResponse(res, 200, resp.message, resp);
          }
@@ -197,6 +202,38 @@ exports.USER_BY_ID = asynHandler(async (req, res, next) => {
 
 
 
+
+ exports.USER_BY_ID_FULL = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    let {user_id} = req.params;
+
+    let newJob = await userModel.userByIDFull(user_id);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "User does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+ 
 
 exports.USER_BY_SELLERS = asynHandler(async (req, res, next) => {
 
@@ -299,3 +336,127 @@ exports.GOPA_AND_SELLERS = asynHandler(async (req, res, next) => {
  
 
 
+exports.ALL_ADMIN = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+
+    console.log("================== call user types")
+    let newJob = await userModel.usersByType('ADMIN');
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Email does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+ 
+
+
+
+ exports.ALL_GOPAS = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+
+    console.log("================== call user types")
+    let newJob = await userModel.Gopas();
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Email does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+ exports.ALL_MEPAS = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+
+    console.log("================== call user types")
+    let newJob = await userModel.Mepas();
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Email does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+
+
+exports.ALL_BUYERS = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+
+    console.log("================== call user types")
+    let newJob = await userModel.usersByType('BUYER');
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Email does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+ 
+ 

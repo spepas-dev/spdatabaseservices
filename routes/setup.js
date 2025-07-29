@@ -21,6 +21,8 @@ const {
     ALL_GOPAS,
     ALL_MEPAS,
     ALL_BUYERS,
+    ALL_SELLERS,
+    ALL_RIDERS
  } = require("../controllers/UserController");
  
 
@@ -288,6 +290,10 @@ router.route("/user/all-admin-users").get(ALL_ADMIN);
 router.route("/user/all-gopas").get(ALL_GOPAS);
 router.route("/user/all-mepas").get(ALL_MEPAS);
 router.route("/user/all-buyers").get(ALL_BUYERS);
+router.route("/user/all-sellers").get(ALL_SELLERS);
+router.route("/user/all-riders").get(ALL_RIDERS);
+
+
 
 
 

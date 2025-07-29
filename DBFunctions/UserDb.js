@@ -402,4 +402,67 @@ ussd.Mepas = async () => {
     }
 };
 
+
+ussd.Sellers = async () => {
+    try {
+        const schools = await prisma.user.findMany({
+            where: {
+                sellerDetails: {
+                    isNot: null
+                }
+            },
+            orderBy: {
+                createdAt: 'asc',
+            },
+            include: {
+                gopa: true,
+                sellerDetails: true
+            }
+        });
+
+        return schools;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+};
+
+
+ussd.Riders = async () => {
+    try {
+        const schools = await prisma.user.findMany({
+            where: {
+                deliver: {
+                    isNot: null
+                }
+            },
+            orderBy: {
+                createdAt: 'asc',
+            },
+            include: {
+                gopa: true,
+                sellerDetails: true
+            }
+        });
+
+        return schools;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+};
+
+
+
+
 module.exports = ussd

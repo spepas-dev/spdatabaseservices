@@ -460,3 +460,62 @@ exports.ALL_BUYERS = asynHandler(async (req, res, next) => {
  })
  
  
+ exports.ALL_SELLERS = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+
+    console.log("================== call user types")
+    let newJob = await userModel.Sellers();
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Email does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+ 
+
+ exports.ALL_RIDERS = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+
+    console.log("================== call user types")
+    let newJob = await userModel.Riders();
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Email does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+

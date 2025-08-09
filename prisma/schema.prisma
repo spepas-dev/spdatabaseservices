@@ -571,6 +571,7 @@ description String?
 createdAt    DateTime   @default(now())
 date_accepted DateTime?
 accepted_by String?
+expectedDeliveryDate DateTime?
 
 
 orderRequest    OrderRequest @relation(fields: [request_ID], references: [request_ID])
@@ -662,6 +663,7 @@ cart  Cart?  @relation(fields: [cart_ID], references: [cart_ID])
 cart_ID String  @unique
 received_by String?
 date_received DateTime?
+expectedDeliveryDate DateTime?
 
 receiver   User? @relation(fields: [received_by], references: [User_ID])
 deliveries Delivery[]

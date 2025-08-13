@@ -195,6 +195,64 @@ ussd.pendingGroupApplications = async () => {
 
 
 
+  ussd.group_details = async (group_id) => {
+    try {
+      const applications = await prisma.group.findFirst({
+        where: {
+          group_id: group_id, // Group ID is 1
+          status: {
+            not: ProcessStatus.BLOCKED, // Status is not equal to 100
+          },
+        },
+        include: {
+          inputter: true,
+          user_groups:{
+            include:{
+              group: true,
+              user: true
+            }
+
+          },
+          group_applications:{
+            include:{
+              application: true
+            }
+
+          },
+          menus: {
+            include: {
+              menu: {
+                include:{
+                  application: true
+                }
+              }
+            }
+          }, // Include the related application
+        }
+      });
+  
+      return applications;
+    } catch (error) {
+      console.error("Error retrieving record:", error);
+      if (typeof logger !== 'undefined') {
+        logger.error(error);
+      }
+      throw error;
+    } finally {
+      await prisma.$disconnect();
+    }
+  };
+
+
+
+
+
+
+
+
+
+
+
   ussd.groupMenu = async (group_id) => {
     try {
       const applications = await prisma.groupApplicationMenu.findMany({
@@ -227,7 +285,6 @@ ussd.pendingGroupApplications = async () => {
       await prisma.$disconnect();
     }
   };
-
 
 
 

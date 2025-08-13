@@ -143,6 +143,39 @@ exports.ADD_GROUP = asynHandler(async (req, res, next) => {
 
 
 
+ exports.GROUP_DETAILS = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    let {group_id} = req.params;
+
+    
+    let newJob = await groupModel.group_details(group_id);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Group does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+ 
+
+
+
 
 
  exports.ALL_GROUPS = asynHandler(async (req, res, next) => {

@@ -50,7 +50,8 @@ const {
    ADD_GROUP_APPLICATION_MENUS,
    GROUP_MENUS,
    ALL_GROUPS,
-   ADD_USER_GROUPS
+   ADD_USER_GROUPS,
+   GROUP_DETAILS
 } = require("../controllers/GroupController");
 
  
@@ -316,6 +317,8 @@ router.route("/group/add").post(ADD_GROUP);
 router.route("/group/applications/:group_id").get(GROUP_APPLICATIONS);
 router.route("/group/add-groupApplication-menus").post(ADD_GROUP_APPLICATION_MENUS);
 router.route("/group/menus/:group_id").get(GROUP_MENUS);
+router.route("/group/details-full/:group_id").get(GROUP_DETAILS);
+
 router.route("/group/all").get(ALL_GROUPS);
 router.route("/group/add-users-groups").post(ADD_USER_GROUPS);
 

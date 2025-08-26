@@ -7,6 +7,42 @@ const { REGISTRATION_STATUS, RESPONSE_CODES } = require("../helper/vars");
 
 
 
+
+
+
+exports.ADD_CATEGORIES = asynHandler(async (req, res, next) => {
+
+  
+    let data  = req.body;
+
+  
+    let newJob = await productModel.addCategories(data);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Failed to add category details details"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+ 
+
+
+
+
 exports.ADD_MANUFACTURER = asynHandler(async (req, res, next) => {
 
   
@@ -272,6 +308,41 @@ exports.ADD_IMAGE = asynHandler(async (req, res, next) => {
              var resp = {
                  status : RESPONSE_CODES.FAILED,
                  message : "Failed to retrieve models"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+ 
+
+
+
+
+
+ exports.ALL_CATEGORIES = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+
+
+    
+    let newJob = await productModel.AllCategories();
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Failed to retrieve categories"
              };
              return UtilityHelper.sendResponse(res, 200, resp.message, resp);
          }

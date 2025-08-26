@@ -10,6 +10,28 @@ let ussd = {};
 
 
 
+
+ussd.addCategories = async (data) => {
+    try {
+        const newContinent = await prisma.category.createMany({
+            data: data
+          });
+          
+        return newContinent;
+    } catch (error) {
+        console.error("Error saving manufacturer details:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+};
+
+
+
+
 ussd.addManufacturer = async (data) => {
     try {
         const newContinent = await prisma.manufacturer.createMany({
@@ -220,6 +242,31 @@ ussd.AllBrands = async () => {
                       }
                 }
             }
+        });
+  
+            return schools;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
+  
+
+
+
+  ussd.AllCategories = async () => {
+    try {
+        const schools = await prisma.category.findMany({
+           
+            orderBy: {
+                name: 'asc', // Ensure your field is correct (createdAt or date_added)
+            }
+
         });
   
             return schools;

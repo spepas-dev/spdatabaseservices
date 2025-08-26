@@ -144,7 +144,9 @@ const {
    ALL_SPARE_PART,
    ADD_SPARE_PART_SINGLE,
    SPARE_PART_DETAILS,
-   SPARE_PART_DETAILS_BY_CODE
+   SPARE_PART_DETAILS_BY_CODE,
+   ADD_CATEGORIES,
+   ALL_CATEGORIES
 } = require("../controllers/ProductController");
 
 
@@ -391,6 +393,8 @@ router.route("/product/all-spare-parts").get(ALL_SPARE_PART);
 router.route("/product/add-spare-part_single").post(ADD_SPARE_PART_SINGLE);
 router.route("/product/spare-part-details/:spare_part_id").get(SPARE_PART_DETAILS);
 router.route("/product/spare-part-details-by-code/:spare_part_code").get(SPARE_PART_DETAILS_BY_CODE);
+router.route("/product/add-categories").post(ADD_CATEGORIES);
+router.route("/product/all-categories").get(ALL_CATEGORIES);
 
 
 

@@ -251,6 +251,7 @@ const {
    UPDATE_INVOICE,
    INVOICE_DEATAILS_FULL,
    USER_INVOICES,
+   SELLER_INVOICES,
    GOPA_PENDING_INVOICES,
    GOPA_ACCEPTED_INVOICES,
    INVOICE_READY_FOR_PICK_UP,
@@ -260,7 +261,14 @@ const {
    INVOICE_ITEM_DEATAILS_FULL,
    ADD_INVOICE_WITH_ITEMS,
    INVOICE_DEATAILS_BY_QR,
-   INVOICE_ITEM_DETAILS_BY_QR
+   INVOICE_ITEM_DETAILS_BY_QR,
+   INVOICE_ITEM_LIST,
+   BULK_UPDATE_INVOICE_ITEM,
+   ADD_INVOICE_TRACKER,
+   INVOICES_PENDING_RIDER_ACCEPTANCE,
+   BULK_ACCEPT_INVOICE_ITEM,
+   RIDER_INVOICES_PENDING_PICKUP,
+   RIDER_INVOICES_TO_BE_SHIPPED
 } = require("../controllers/InvoiceController");
 
 
@@ -271,6 +279,18 @@ const {
 } = require("../controllers/TransactionController");
 
 
+
+
+
+
+
+const {
+    ADD_SLIDER,
+    UPDATE_SLIDER,
+    ALL_SLIDERS,
+    ALL_ACTIVE,
+    SLIDER_DETAILS
+} = require("../controllers/SliderController");
 
 
 
@@ -475,15 +495,24 @@ router.route("/invoice/details/:invoice_id").get(INVOICE_DEATAILS);
 router.route("/invoice/details-by-QR/:qr_value").get(INVOICE_DEATAILS_BY_QR);
 router.route("/invoice/details-full/:invoice_id").get(INVOICE_DEATAILS_FULL);
 router.route("/invoice/user-invoices/:user_id/:status?").get(USER_INVOICES);
+router.route("/invoice/seller-invoices/:seller_id/:status?").get(SELLER_INVOICES);
 router.route("/invoice/for-gopa-acceptance").get(GOPA_PENDING_INVOICES);
 router.route("/invoice/gopa-accepted-invoices/:gopa_user_id").get(GOPA_ACCEPTED_INVOICES);
 router.route("/invoice/ready-for-pick-up").get(INVOICE_READY_FOR_PICK_UP);
 router.route("/invoice/add-item").post(ADD_INVOICE_ITEM);
 router.route("/invoice/update-item").post(UPDATE_INVOICE_ITEM);
+router.route("/invoice/bulk-update-item").post(BULK_UPDATE_INVOICE_ITEM);
+router.route("/invoice/add-invoice-tracker").post(ADD_INVOICE_TRACKER);
+
 router.route("/invoice/item-details/:item_id").get(INVOICE_ITEM_DEATAILS);
+router.route("/invoice/item-list").post(INVOICE_ITEM_LIST);
+router.route("/invoice/bulk-accept-invoice-item").post(BULK_ACCEPT_INVOICE_ITEM);
+
+router.route("/invoice/invoice-for-rider-to-accept").get(INVOICES_PENDING_RIDER_ACCEPTANCE);
 router.route("/invoice/item-details-full/:item_id").get(INVOICE_ITEM_DEATAILS_FULL);
 router.route("/invoice/item-details-by-QR/:qr_value").get(INVOICE_ITEM_DETAILS_BY_QR);
-
+router.route("/invoice/rider-pending-pickup/:rider_user_id").get(RIDER_INVOICES_PENDING_PICKUP);
+router.route("/invoice/rider_items_to_ship/:rider_user_id").get(RIDER_INVOICES_TO_BE_SHIPPED);
 
 
 
@@ -495,6 +524,12 @@ router.route("/transactions/add-many").post(ADD_TRANSACTIONS);
 
 
 
+//Sliders
+router.route("/slider/add").post(ADD_SLIDER);
+router.route("/slider/update").post(UPDATE_SLIDER);
+router.route("/slider/all").get(ALL_SLIDERS);
+router.route("/slider/active").get(ALL_ACTIVE);
+router.route("/slider/details/:slider_id").get(SLIDER_DETAILS);
 
 
 

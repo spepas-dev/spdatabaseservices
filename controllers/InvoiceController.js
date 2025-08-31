@@ -229,6 +229,75 @@ exports.UPDATE_INVOICE = asynHandler(async (req, res, next) => {
 
 
 
+ exports.SELLER_INVOICES = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    let {seller_id, status} = req.params;
+
+    if(status)
+        {
+            status = Number(status)
+        }
+
+    let newJob = await invoiceModel.SellerInvoicesByStatus(seller_id,status);
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Invalid invoice ID"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+
+
+
+ exports.INVOICES_PENDING_RIDER_ACCEPTANCE = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+   
+
+    let newJob = await invoiceModel.InvoicesForRidersToAccept();
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Invalid invoice ID"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+
+ 
+
  //to list all invoices available to gopa to accept. these are invoices which is aggregated
  exports.GOPA_PENDING_INVOICES = asynHandler(async (req, res, next) => {
 
@@ -392,6 +461,115 @@ exports.UPDATE_INVOICE = asynHandler(async (req, res, next) => {
 
 
 
+
+
+
+
+
+
+ exports.BULK_UPDATE_INVOICE_ITEM = asynHandler(async (req, res, next) => {
+
+  
+    let items  = req.body;
+
+  
+    let newJob = await invoiceModel.bulkUpdateInvoiceItems(items);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Failed to update invoice item details"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+ 
+
+
+
+
+
+ exports.BULK_ACCEPT_INVOICE_ITEM = asynHandler(async (req, res, next) => {
+
+  
+    let items  = req.body;
+
+  
+    let newJob = await invoiceModel.bulkAcceptInvoiceItemsByRider(items);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Failed to update invoice item details"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+ 
+
+ 
+
+
+
+ exports.ADD_INVOICE_TRACKER = asynHandler(async (req, res, next) => {
+
+  
+    let items  = req.body;
+
+  
+    let newJob = await invoiceModel.addInvoiceItemTracker(items);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Failed to update invoice item details"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+ 
+
+
+
+
  exports.INVOICE_ITEM_DEATAILS = asynHandler(async (req, res, next) => {
 
   
@@ -421,6 +599,42 @@ exports.UPDATE_INVOICE = asynHandler(async (req, res, next) => {
  
  })
 
+
+
+
+
+
+ exports.INVOICE_ITEM_LIST = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    //let {item_id} = req.params;
+    let itemIds  = req.body;
+    console.log("XXXXXXXXXXXXXXXXXXXXXXX in the function");
+
+    console.log(itemIds);
+    let newJob = await invoiceModel.InvoiceItemDetailList(itemIds);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Invalid invoice ID"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
 
 
 
@@ -489,4 +703,77 @@ exports.UPDATE_INVOICE = asynHandler(async (req, res, next) => {
  })
 
 
+
+
+
+
+
+
+
+
+ 
+ exports.RIDER_INVOICES_PENDING_PICKUP = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    let {rider_user_id} = req.params;
+
+   
+    let newJob = await invoiceModel.RiderInvoicesPendingPickups(rider_user_id);
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Invalid invoice ID"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+
+
+ 
+ exports.RIDER_INVOICES_TO_BE_SHIPPED = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    let {rider_user_id} = req.params;
+
+   
+    let newJob = await invoiceModel.RiderInvoicesToBeShipped(rider_user_id);
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Invalid invoice ID"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+  
  //invoice item management

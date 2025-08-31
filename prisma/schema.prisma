@@ -99,7 +99,36 @@ invoices Invoice[]
 gopa_invoices Invoice[] @relation("gopa_invoices")
 deliveries Delivery[]
 items_received Invoice_Item[]  
+sliders SliderImages[]  
+sliderUpdates SliderImages[] @relation("slider_updater")
+trackers Invoice_Item_Tracker[]  
+
+rider_invoice_items  Invoice_Item[] @relation("item_rider")
+invoice_items_delivered  Invoice_Item[] @relation("itemsDelivered")
 }
+
+
+
+
+
+
+model SliderImages{
+    id            Int          @default(autoincrement())
+    slider_id    String       @id @default(uuid()) 
+    added_By       String
+    updated_By       String?
+    image_details      Json
+    title         String
+    description         String
+    url String
+    date_added DateTime @default(now())
+    status Int @default(1)
+    inputter   User    @relation(fields: [added_By], references: [User_ID])
+    updater User?  @relation(fields: [updated_By], references: [User_ID], name: "slider_updater")
+}
+
+
+
 
 
 model userAddress{
@@ -646,6 +675,7 @@ deliveries Delivery[]
 }
 
 
+
 model Invoice_Item{
 id Int @default(autoincrement())
 item_id String @id @default(uuid())
@@ -664,9 +694,33 @@ cart_ID String  @unique
 received_by String?
 date_received DateTime?
 expectedDeliveryDate DateTime?
+readyForPickup   Int @default(0)
+riderAccepted   Int @default(0)
+date_rider_accepted DateTime?
+rider_user_id String?
 
+delivered_by String?
+date_delivered DateTime?
+
+
+shopAttendant   User? @relation(fields: [delivered_by], references: [User_ID], name: "itemsDelivered")
+rider   User? @relation(fields: [rider_user_id], references: [User_ID], name: "item_rider")
 receiver   User? @relation(fields: [received_by], references: [User_ID])
 deliveries Delivery[]
+tracker Invoice_Item_Tracker[]
+}
+
+model Invoice_Item_Tracker{
+id Int @default(autoincrement())
+tracker_id String @id @default(uuid())
+item_id String 
+action String 
+description String 
+createdAt     DateTime      @default(now())
+user_id String
+
+inputter   User? @relation(fields: [user_id], references: [User_ID])
+item   Invoice_Item @relation(fields: [item_id], references: [item_id])
 }
 
 
@@ -916,6 +970,7 @@ enum INVOICE_STATUS {
   RECEIVED
   WARE_HOUSE
   READY_TO_BE_SHIPPED
+  READY_TO_BE_PICKED
   SHIPPED
   DELIVERED
   CANCELLED

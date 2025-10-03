@@ -133,6 +133,45 @@ exports.USER_BY_EMAIL = asynHandler(async (req, res, next) => {
 
 
 
+
+
+exports.USER_BY_PHONE_FULL = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    let {phoneNumber} = req.params;
+ 
+    phoneNumber = UtilityHelper.formatPhone(phoneNumber);
+ 
+ 
+ 
+ 
+    let newJob = await userModel.userByPhoneFull(phoneNumber);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Email does not exist"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+
+
 exports.USER_BY_PHONE = asynHandler(async (req, res, next) => {
 
   

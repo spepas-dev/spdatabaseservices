@@ -111,6 +111,85 @@ ussd.InvoiceDetails = async (invoice_id) => {
 
 
 
+
+  ussd.PendingInvoicesToBeCompleted = async (invoice_ids) => {
+    try {
+        const invoices = await prisma.invoice.findMany({
+            where: {
+                invoice_id: {
+                    in: invoice_ids
+                }
+            },
+            include: {
+                items: true
+            }
+        });
+
+        // Filter invoices that only have items with status 1 or 100
+        const filteredInvoices = invoices.filter(invoice => {
+            return invoice.items.every(item => item.status === INVOICE_STATUS.DELIVERED || item.status === INVOICE_STATUS.CANCELLED);
+        });
+
+        // Transform the results to separate items by status
+        const result = filteredInvoices.map(invoice => {
+            const successList = invoice.items.filter(item => item.status === 1);
+            const cancelledList = invoice.items.filter(item => item.status === 100);
+            
+            // Remove the original items array and add the separated lists
+            const { items, ...invoiceWithoutItems } = invoice;
+            
+            // Update invoice status based on successList
+            const updatedInvoice = {
+                ...invoiceWithoutItems,
+                status: successList.length > 0 ? INVOICE_STATUS.DELIVERED : INVOICE_STATUS.CANCELLED
+            };
+            
+            return updatedInvoice;
+        });
+
+        return result;
+    } catch (error) {
+        console.error("Error retrieving records:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+};
+
+
+
+
+
+
+ussd.bulkUpdateInvoice= async (invoices) => {
+    try {
+        const updatedItems = await prisma.$transaction(
+            invoices.map(invoice => 
+                prisma.invoice.update({
+                    where: {
+                        invoice_id: invoice.invoice_id
+                    },
+                    data: invoice
+                })
+            )
+        );
+          
+        return updatedItems;
+    } catch (error) {
+        console.error("Error updating invoice items records:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+};
+
+
 ussd.InvoiceDetailsFull = async (invoice_id) => {
     try {
         const user = await prisma.invoice.findFirst({

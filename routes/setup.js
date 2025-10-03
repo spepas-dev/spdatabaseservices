@@ -12,6 +12,7 @@ const {
     LOGIN,
     USER_BY_EMAIL,
     USER_BY_PHONE,
+    USER_BY_PHONE_FULL,
     USER_BY_ID,
     UPDATE,
     GOPA_AND_SELLERS,
@@ -268,7 +269,9 @@ const {
    INVOICES_PENDING_RIDER_ACCEPTANCE,
    BULK_ACCEPT_INVOICE_ITEM,
    RIDER_INVOICES_PENDING_PICKUP,
-   RIDER_INVOICES_TO_BE_SHIPPED
+   RIDER_INVOICES_TO_BE_SHIPPED,
+   INVOICE_DETAILS_TO_COMPLETE,
+   BULK_UPDATE_INVOICES
 } = require("../controllers/InvoiceController");
 
 
@@ -305,6 +308,7 @@ router.route("/user/login").post(LOGIN);
 router.route("/user/update").post(UPDATE);
 router.route("/user/by-email/:email").get(USER_BY_EMAIL);
 router.route("/user/by-phone/:phoneNumber").get(USER_BY_PHONE);
+router.route("/user/by-phone-full/:phoneNumber").get(USER_BY_PHONE_FULL);
 router.route("/user/by-id/:user_id").get(USER_BY_ID);
 router.route("/user/by-id-full/:user_id").get(USER_BY_ID_FULL);
 router.route("/user/gopa_sellers").get(GOPA_AND_SELLERS);
@@ -502,10 +506,16 @@ router.route("/invoice/ready-for-pick-up").get(INVOICE_READY_FOR_PICK_UP);
 router.route("/invoice/add-item").post(ADD_INVOICE_ITEM);
 router.route("/invoice/update-item").post(UPDATE_INVOICE_ITEM);
 router.route("/invoice/bulk-update-item").post(BULK_UPDATE_INVOICE_ITEM);
+
+router.route("/invoice/bulk-update-invoice").post(BULK_UPDATE_INVOICES);
+
+
 router.route("/invoice/add-invoice-tracker").post(ADD_INVOICE_TRACKER);
 
 router.route("/invoice/item-details/:item_id").get(INVOICE_ITEM_DEATAILS);
 router.route("/invoice/item-list").post(INVOICE_ITEM_LIST);
+router.route("/invoice/invoice-list-for-completion").post(INVOICE_DETAILS_TO_COMPLETE);
+
 router.route("/invoice/bulk-accept-invoice-item").post(BULK_ACCEPT_INVOICE_ITEM);
 
 router.route("/invoice/invoice-for-rider-to-accept").get(INVOICES_PENDING_RIDER_ACCEPTANCE);

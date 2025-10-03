@@ -160,7 +160,38 @@ ussd.login = async (email, password) => {
 
 
 
+  ussd.userByPhoneFull = async (phoneNumber) => {
+    try {
+        const user = await prisma.user.findFirst({
+            where: {
+                phoneNumber: phoneNumber
+            },
+            include:{
+                gopa:true,
+                mepa: true,
+                sellerDetails: true,
+                deliver: {
+                    include:{
+                        vehicles: true
+                    }
+                }
+            }
+          });
+  
+        return user;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
 
+
+  
 
 
   ussd.userByID = async (User_ID) => {

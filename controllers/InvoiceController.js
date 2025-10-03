@@ -467,6 +467,12 @@ exports.UPDATE_INVOICE = asynHandler(async (req, res, next) => {
 
 
 
+
+
+ 
+
+
+
  exports.BULK_UPDATE_INVOICE_ITEM = asynHandler(async (req, res, next) => {
 
   
@@ -641,6 +647,44 @@ exports.UPDATE_INVOICE = asynHandler(async (req, res, next) => {
 
 
 
+ exports.INVOICE_DETAILS_TO_COMPLETE = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    //let {item_id} = req.params;
+    let invoiceIDs  = req.body;
+    console.log("XXXXXXXXXXXXXXXXXXXXXXX in the function");
+
+    console.log(invoiceIDs);
+    let newJob = await invoiceModel.PendingInvoicesToBeCompleted(invoiceIDs);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Invalid invoice ID"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+
+
+ 
+
+
  exports.INVOICE_ITEM_DEATAILS_FULL = asynHandler(async (req, res, next) => {
 
   
@@ -775,5 +819,38 @@ exports.UPDATE_INVOICE = asynHandler(async (req, res, next) => {
  })
 
 
+
+
+
+ exports.BULK_UPDATE_INVOICES = asynHandler(async (req, res, next) => {
+
+  
+    let invoices  = req.body;
+
+  
+    let newJob = await invoiceModel.bulkUpdateInvoice(invoices);
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Failed to update invoice item details"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+ 
   
  //invoice item management

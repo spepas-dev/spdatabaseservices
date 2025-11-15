@@ -363,4 +363,72 @@ ussd.UserActiveRequestOffer = async (user_id) => {
 
 
 
+
+
+
+
+
+
+  ussd.AllActiveRequest = async () => {
+    try {
+        const schools = await prisma.orderRequest.findMany({
+           
+            where: {
+              status: 0
+            },
+            orderBy: {
+                createdAt: 'desc', // Ensure your field is correct (createdAt or date_added)
+            },
+            include:{
+                requester: {
+                    select: {
+                        User_ID: true,
+                        name: true
+                    }
+                },
+                bidings:{
+                    where:{
+                     status:1
+                    },
+                    include:{
+                        images: true
+                    },
+                    orderBy: {
+                        createdAt: 'desc', // Ensure your field is correct (createdAt or date_added)
+                    }
+                },
+
+                sparePart:{
+                    include:{
+                        images: true,
+                        carModel:{
+                            include:{
+                                carBrand:{
+                                    include:{
+                                        manufacturer: true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        });
+  
+            return schools;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
+  
+
+
+
 module.exports = ussd

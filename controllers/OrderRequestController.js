@@ -141,6 +141,41 @@ exports.USER_ACTIVE_REQUESTS = asynHandler(async (req, res, next) => {
 
 
 
+
+
+exports.ALL_ACTIVE_REQUESTS = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    let {user_id} = req.params;
+
+    let newJob = await orderRequestModel.AllActiveRequest();
+ 
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Invalid user ID"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+ 
+
+
+
  exports.USER_REQUESTS_HISTORY = asynHandler(async (req, res, next) => {
 
   

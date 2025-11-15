@@ -163,6 +163,7 @@ const {
    REQUEST_DETAILS,
    REQUEST_FULL_DETAILS,
    USER_ACTIVE_REQUESTS,
+   ALL_ACTIVE_REQUESTS,
    USER_REQUESTS_HISTORY,
    UPDATE_REQUEST,
    GOPA_SELLERS_FOR_BID_ASSIGNMENT,
@@ -429,6 +430,8 @@ router.route("/order-request/add").post(ADD_ORDER_REQUEST);
 router.route("/order-request/details/:request_id").get(REQUEST_DETAILS);
 router.route("/order-request/full-details/:request_id").get(REQUEST_FULL_DETAILS);
 router.route("/order-request/user-active-requests/:user_id").get(USER_ACTIVE_REQUESTS);
+router.route("/order-request/all-active-requests").get(ALL_ACTIVE_REQUESTS);
+
 router.route("/order-request/user-requests-history/:user_id").get(USER_REQUESTS_HISTORY);
 router.route("/order-request/update").post(UPDATE_REQUEST);
 router.route("/order-request/gopa-sellers-for-bidding/:gopa_id/:request_id").get(GOPA_SELLERS_FOR_BID_ASSIGNMENT);

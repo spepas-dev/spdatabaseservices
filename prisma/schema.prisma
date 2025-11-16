@@ -368,6 +368,8 @@ model Seller {
   business_reg_obj Json?
   Location Json?
   Gopa_ID String?
+  phoneNumber   String?
+  shopAddress   String?
   date_added DateTime @default(now())
   status Int @default(1)
   spareParts    SparePart[]

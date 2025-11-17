@@ -271,6 +271,7 @@ const {
    BULK_ACCEPT_INVOICE_ITEM,
    RIDER_INVOICES_PENDING_PICKUP,
    RIDER_INVOICES_TO_BE_SHIPPED,
+   RIDER_INVOICES_DELIVERED,
    INVOICE_DETAILS_TO_COMPLETE,
    BULK_UPDATE_INVOICES
 } = require("../controllers/InvoiceController");
@@ -526,7 +527,7 @@ router.route("/invoice/item-details-full/:item_id").get(INVOICE_ITEM_DEATAILS_FU
 router.route("/invoice/item-details-by-QR/:qr_value").get(INVOICE_ITEM_DETAILS_BY_QR);
 router.route("/invoice/rider-pending-pickup/:rider_user_id").get(RIDER_INVOICES_PENDING_PICKUP);
 router.route("/invoice/rider_items_to_ship/:rider_user_id").get(RIDER_INVOICES_TO_BE_SHIPPED);
-
+router.route("/invoice/rider_items_delivered/:rider_user_id").get(RIDER_INVOICES_DELIVERED);
 
 
 

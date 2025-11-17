@@ -2072,4 +2072,186 @@ ussd.RiderInvoicesToBeShipped = async (rider_user_id) => {
 };
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ussd.RiderInvoicesDelivered = async (rider_user_id) => {
+    try {
+        // Query invoices with the specified conditions
+        const invoices = await prisma.invoice.findMany({
+            where: {
+                AND: [
+                    {
+                        paymentStatus: 1
+                    },
+                    {
+                        items: {
+                            some: {
+                                AND:[
+                                    {
+                                        status: {
+                                            in: [1]  //ready for pickup, ready to be shipped, Shipped
+                                        }
+                                    },
+                                    {
+                                        rider_user_id: rider_user_id
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            include: {
+                items: {
+                    where: {
+                        AND:[
+                            {
+                                status: {
+                                    in: [1]  //ready for pickup, ready to be shipped, Shipped
+                                }
+                            },
+                            {
+                                rider_user_id: rider_user_id
+                            }
+                        ]
+                       
+                    },
+                    include:{
+                        tracker:true,
+                        rider:{
+                            select:{
+                                User_ID: true,
+                                name: true
+                            }
+                        },
+                        cart:{
+                           include:{
+                            bid:{
+                                include:{
+                                    seller:true,
+                                    images:true,
+                                    gopa: {
+                                        select:{
+                                            User_ID: true,
+                                            name: true
+                                        }
+                                    },
+                                    assigner:{
+                                        select:{
+                                            User_ID: true,
+                                            name: true
+                                        }
+                                    },
+                                    orderRequest:{
+                                        include:{
+                                            requester:{
+                                               select:{
+                                                User_ID: true,
+                                                name: true
+                                               }
+                                            },
+                                            creater:{
+                                               select:{
+                                                User_ID: true,
+                                                name: true
+                                               }
+                                            },
+                                            sparePart:{
+                                                include:{
+                                                    images: true,
+                                                    carModel:{
+                                                        include:{
+                                                            carBrand:{
+                                                                include:{
+                                                                    manufacturer: true
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                           }
+                        }
+                    }
+                },
+                address: true,
+                user: true,
+                gopa: true
+            },
+            orderBy: {
+                createdAt: 'desc'
+            }
+        });
+
+        console.log("XXXXXXXXXXXXXXXX touble shooting")
+        // Process and structure the data as requested
+        const processedInvoices = invoices.map(invoice => {
+            // Separate items by aggregate value
+            console.log("XXXXXXXXXXXXXXXX List items")
+            console.log(invoice.items)
+
+            const aggregateItems = invoice.items.filter(item => item.aggregate === 1);
+            const singleItems = invoice.items.filter(item => item.aggregate === 0);
+            
+            // Group aggregate items by expectedDeliveryDate
+            const groupedByDate = aggregateItems.reduce((groups, item) => {
+                const deliveryDate = item.expectedDeliveryDate 
+                    ? item.expectedDeliveryDate.toISOString().split('T')[0]  // Convert to YYYY-MM-DD
+                    : null;  // Handle null dates
+                
+                if (!groups[deliveryDate]) {
+                    groups[deliveryDate] = [];
+                }
+                groups[deliveryDate].push(item);
+                return groups;
+            }, {});
+
+            // Convert grouped object to array format
+            const aggregatedDeliveries = Object.entries(groupedByDate).map(([date, items]) => ({
+                date: date === 'null' ? null : date,
+                items: items
+            }));
+
+            // Create the final structure (remove items from invoice object)
+            const { items, ...invoiceWithoutItems } = invoice;
+
+            return {
+                invoice: invoiceWithoutItems,
+                aggregatedDeliveries,
+                SingleDeliveries: singleItems
+            };
+        });
+
+        return processedInvoices;
+    } catch (error) {
+        console.error("Error retrieving invoices with structured items:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+};
+
 module.exports = ussd

@@ -822,6 +822,44 @@ exports.UPDATE_INVOICE = asynHandler(async (req, res, next) => {
 
 
 
+
+
+
+
+ 
+ exports.RIDER_INVOICES_DELIVERED = asynHandler(async (req, res, next) => {
+
+  
+    // console.log(session);
+    let {rider_user_id} = req.params;
+
+   
+    let newJob = await invoiceModel.RiderInvoicesDelivered(rider_user_id);
+ 
+ 
+        if(!newJob)
+         {
+             var resp = {
+                 status : RESPONSE_CODES.FAILED,
+                 message : "Invalid invoice ID"
+             };
+             return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+         }
+ 
+    var resp = {
+        status : RESPONSE_CODES.SUCCESS,
+        message : "Success",
+        data : newJob
+    };
+ 
+    return UtilityHelper.sendResponse(res, 200, resp.message, resp);
+ 
+ })
+
+
+ 
+
+
  exports.BULK_UPDATE_INVOICES = asynHandler(async (req, res, next) => {
 
   

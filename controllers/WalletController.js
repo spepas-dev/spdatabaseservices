@@ -39,6 +39,25 @@ exports.WALLET_UPDATE = asynHandler(async (req, res, next) => {
   
     let chargeDetails  = req.body;
 
+
+  var oldChargeDetails = await walletModel.detailsByIDMinor(chargeDetails.walletID);
+
+if(oldChargeDetails)
+    {
+        if(chargeDetails.balance && chargeDetails.balance != oldChargeDetails.balance){
+            if(chargeDetails.balance > oldChargeDetails.balance ){
+                //this is credit
+                let amountToCredit = chargeDetails.balance - oldChargeDetails.balance;
+                chargeDetails.totalCredit = amountToCredit + oldChargeDetails.totalCredit;
+            }else{
+                //its a debit transaction
+                let amountToCredit =oldChargeDetails.balance - chargeDetails.balance ;
+                chargeDetails.totalDebit = amountToCredit + oldChargeDetails.totalDebit;
+            }
+        }
+    }
+
+
   
     let newJob = await walletModel.update(chargeDetails);
  

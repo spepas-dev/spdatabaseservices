@@ -56,6 +56,34 @@ ussd.update = async (wallet) => {
 
 
 
+
+
+ussd.detailsByIDMinor = async (walletID) => {
+    try {
+        const user = await prisma.wallet.findFirst({
+            where: {
+                walletID: walletID
+            },
+          });
+  
+        return user;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
+
+
+
+
+
+
+
 ussd.detailsByID = async (walletID) => {
     try {
         const user = await prisma.wallet.findFirst({

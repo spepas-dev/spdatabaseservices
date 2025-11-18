@@ -863,6 +863,9 @@ model Wallet {
   User_ID    String?
   WalletNumber String @unique
   balance Float @default(0)
+  availableBalance Float @default(0)
+  totalCredit Float @default(0)
+  totalDebit Float @default(0)
   user       User? @relation(fields: [User_ID], references: [User_ID], name: "wallet_user")  
 }
 

@@ -9,6 +9,7 @@ const { REGISTRATION_STATUS, RESPONSE_CODES } = require("../helper/vars");
 exports.ADD_APPLICATION = asynHandler(async (req, res, next) => {
 
   
+    //sample
     let application  = req.body;
  
   

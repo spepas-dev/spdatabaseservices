@@ -227,40 +227,92 @@ ussd.allModels = async (query) => {
 
 ussd.AllBrands = async () => {
   try {
-    const schools = await prisma.carBrand.findMany({
-      where: {
-        status: 1,
-      },
-      orderBy: {
-        name: "asc", // Ensure your field is correct (createdAt or date_added)
-      },
-      include: {
-        manufacturer: true,
-        models: {
-          orderBy: {
-            name: "asc",
-          },
-          where: {
-            status: 1,
-          },
-          include: {
-            spareParts: {
-              where: {
-                status: 1,
-              },
-              orderBy: {
-                name: "asc",
-              },
-              include: {
-                images: true,
+    const { page = 1, limit = 10, search = "", startDate, endDate } = query;
+
+    const startDateParam = startDate;
+    const endDateParam = endDate;
+
+    const skip = (Number(page) - 1) * Number(limit);
+    const take = Number(limit);
+
+    // Build WHERE conditions dynamically
+    const where = {};
+
+    // Search across multiple fields
+    // if (search) {
+    //   where.OR = [
+    //     { country: { contains: search, mode: 'insensitive' } },
+    //     { city: { contains: search, mode: 'insensitive' } },
+    //     { deviceType: { contains: search, mode: 'insensitive' } },
+    //     { browserName: { contains: search, mode: 'insensitive' } }
+    //   ];
+    // }
+
+    // // Filter by channel
+    // if (channel) {
+    //   where.channel = channel;
+    // }
+
+    // // Filter by statusCode
+    // if (statusCode) {
+    //   where.statusCode = Number(statusCode);
+    // }
+
+    // Date range filter
+    if (startDateParam && endDateParam) {
+      where.createdAt = {
+        gte: new Date(startDateParam),
+        lte: new Date(endDateParam),
+      };
+    }
+    where.status = 1;
+    const [carbrands, total] = await Promise.all([
+      prisma.carBrand.findMany({
+        where,
+        skip,
+        take,
+        orderBy: {
+          name: "asc", // Ensure your field is correct (createdAt or date_added)
+        },
+        include: {
+          manufacturer: true,
+          models: {
+            orderBy: {
+              name: "asc",
+            },
+            where: {
+              status: 1,
+            },
+            include: {
+              spareParts: {
+                where: {
+                  status: 1,
+                },
+                orderBy: {
+                  name: "asc",
+                },
+                include: {
+                  images: true,
+                },
               },
             },
           },
         },
-      },
-    });
+      }),
+      prisma.carBrand.count({ where }),
+    ]);
 
-    return schools;
+    const data = {
+      carbrands,
+      meta: {
+        total: total,
+        page: Number(page),
+        limit: Number(limit),
+        totalPages: Math.ceil(total / Number(limit)),
+      },
+    };
+
+    return data;
   } catch (error) {
     console.error("Error retrieving record:", error);
     if (typeof logger !== "undefined") {
@@ -294,44 +346,96 @@ ussd.AllCategories = async () => {
 
 ussd.AllManufacturers = async () => {
   try {
-    const schools = await prisma.manufacturer.findMany({
-      where: {
-        status: 1,
-      },
-      orderBy: {
-        name: "asc", // Ensure your field is correct (createdAt or date_added)
-      },
+    const { page = 1, limit = 10, search = "", startDate, endDate } = query;
 
-      include: {
-        brands: {
-          include: {
-            models: {
-              orderBy: {
-                name: "asc",
-              },
-              where: {
-                status: 1,
-              },
-              include: {
-                spareParts: {
-                  where: {
-                    status: 1,
-                  },
-                  orderBy: {
-                    name: "asc",
-                  },
-                  include: {
-                    images: true,
+    const startDateParam = startDate;
+    const endDateParam = endDate;
+
+    const skip = (Number(page) - 1) * Number(limit);
+    const take = Number(limit);
+
+    // Build WHERE conditions dynamically
+    const where = {};
+
+    // Search across multiple fields
+    // if (search) {
+    //   where.OR = [
+    //     { country: { contains: search, mode: 'insensitive' } },
+    //     { city: { contains: search, mode: 'insensitive' } },
+    //     { deviceType: { contains: search, mode: 'insensitive' } },
+    //     { browserName: { contains: search, mode: 'insensitive' } }
+    //   ];
+    // }
+
+    // // Filter by channel
+    // if (channel) {
+    //   where.channel = channel;
+    // }
+
+    // // Filter by statusCode
+    // if (statusCode) {
+    //   where.statusCode = Number(statusCode);
+    // }
+
+    // Date range filter
+    if (startDateParam && endDateParam) {
+      where.createdAt = {
+        gte: new Date(startDateParam),
+        lte: new Date(endDateParam),
+      };
+    }
+    where.status = 1;
+    const [manufacturers, total] = await Promise.all([
+      prisma.manufacturer.findMany({
+        where,
+        skip,
+        take,
+        orderBy: {
+          name: "asc", // Ensure your field is correct (createdAt or date_added)
+        },
+
+        include: {
+          brands: {
+            include: {
+              models: {
+                orderBy: {
+                  name: "asc",
+                },
+                where: {
+                  status: 1,
+                },
+                include: {
+                  spareParts: {
+                    where: {
+                      status: 1,
+                    },
+                    orderBy: {
+                      name: "asc",
+                    },
+                    include: {
+                      images: true,
+                    },
                   },
                 },
               },
             },
           },
         },
-      },
-    });
+      }),
+      prisma.manufacturer.count({ where }),
+    ]);
 
-    return schools;
+    const data = {
+      manufacturers,
+      meta: {
+        total: total,
+        page: Number(page),
+        limit: Number(limit),
+        totalPages: Math.ceil(total / Number(limit)),
+      },
+    };
+
+    return data;
   } catch (error) {
     console.error("Error retrieving record:", error);
     if (typeof logger !== "undefined") {
@@ -345,28 +449,80 @@ ussd.AllManufacturers = async () => {
 
 ussd.AllSpareParts = async () => {
   try {
-    const schools = await prisma.sparePart.findMany({
-      where: {
-        status: 1,
-      },
-      orderBy: {
-        name: "asc", // Ensure your field is correct (createdAt or date_added)
-      },
-      include: {
-        images: true,
-        carModel: {
-          include: {
-            carBrand: {
-              include: {
-                manufacturer: true,
+    const { page = 1, limit = 10, search = "", startDate, endDate } = query;
+
+    const startDateParam = startDate;
+    const endDateParam = endDate;
+
+    const skip = (Number(page) - 1) * Number(limit);
+    const take = Number(limit);
+
+    // Build WHERE conditions dynamically
+    const where = {};
+
+    // Search across multiple fields
+    // if (search) {
+    //   where.OR = [
+    //     { country: { contains: search, mode: 'insensitive' } },
+    //     { city: { contains: search, mode: 'insensitive' } },
+    //     { deviceType: { contains: search, mode: 'insensitive' } },
+    //     { browserName: { contains: search, mode: 'insensitive' } }
+    //   ];
+    // }
+
+    // // Filter by channel
+    // if (channel) {
+    //   where.channel = channel;
+    // }
+
+    // // Filter by statusCode
+    // if (statusCode) {
+    //   where.statusCode = Number(statusCode);
+    // }
+
+    // Date range filter
+    if (startDateParam && endDateParam) {
+      where.createdAt = {
+        gte: new Date(startDateParam),
+        lte: new Date(endDateParam),
+      };
+    }
+    where.status = 1;
+    const [spareparts, total] = await Promise.all([
+      prisma.sparePart.findMany({
+        where,
+        skip,
+        take,
+        orderBy: {
+          name: "asc", // Ensure your field is correct (createdAt or date_added)
+        },
+        include: {
+          images: true,
+          carModel: {
+            include: {
+              carBrand: {
+                include: {
+                  manufacturer: true,
+                },
               },
             },
           },
         },
-      },
-    });
+      }),
+      prisma.sparePart.count({ where }),
+    ]);
 
-    return schools;
+    const data = {
+      spareparts,
+      meta: {
+        total: total,
+        page: Number(page),
+        limit: Number(limit),
+        totalPages: Math.ceil(total / Number(limit)),
+      },
+    };
+
+    return data;
   } catch (error) {
     console.error("Error retrieving record:", error);
     if (typeof logger !== "undefined") {

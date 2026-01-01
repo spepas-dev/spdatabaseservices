@@ -184,8 +184,10 @@ exports.ALL_MODELS = asynHandler(async (req, res, next) => {
 
 exports.ALL_BRANDS = asynHandler(async (req, res, next) => {
   // console.log(session);
+  // const query = req.query;
+  const query = { page: 1, limit: 10, search: "", startDate: "", endDate: "" };
 
-  let newJob = await productModel.AllBrands();
+  let newJob = await productModel.AllBrands(query);
 
   if (!newJob) {
     var resp = {
@@ -198,7 +200,8 @@ exports.ALL_BRANDS = asynHandler(async (req, res, next) => {
   var resp = {
     status: RESPONSE_CODES.SUCCESS,
     message: "Success",
-    data: newJob,
+    data: newJob.carbrands,
+    meta: newJob.meta,
   };
 
   return UtilityHelper.sendResponse(res, 200, resp.message, resp);
@@ -228,8 +231,10 @@ exports.ALL_CATEGORIES = asynHandler(async (req, res, next) => {
 
 exports.ALL_MANUFATURERS = asynHandler(async (req, res, next) => {
   // console.log(session);
+  // const query = req.query;
+  const query = { page: 1, limit: 10, search: "", startDate: "", endDate: "" };
 
-  let newJob = await productModel.AllManufacturers();
+  let newJob = await productModel.AllManufacturers(query);
 
   if (!newJob) {
     var resp = {
@@ -242,7 +247,8 @@ exports.ALL_MANUFATURERS = asynHandler(async (req, res, next) => {
   var resp = {
     status: RESPONSE_CODES.SUCCESS,
     message: "Success",
-    data: newJob,
+    data: newJob.manufacturers,
+    meta: newJob.meta,
   };
 
   return UtilityHelper.sendResponse(res, 200, resp.message, resp);
@@ -250,8 +256,10 @@ exports.ALL_MANUFATURERS = asynHandler(async (req, res, next) => {
 
 exports.ALL_SPARE_PART = asynHandler(async (req, res, next) => {
   // console.log(session);
+  // const query = req.query;
+  const query = { page: 1, limit: 10, search: "", startDate: "", endDate: "" };
 
-  let newJob = await productModel.AllSpareParts();
+  let newJob = await productModel.AllSpareParts(query);
 
   if (!newJob) {
     var resp = {
@@ -264,7 +272,8 @@ exports.ALL_SPARE_PART = asynHandler(async (req, res, next) => {
   var resp = {
     status: RESPONSE_CODES.SUCCESS,
     message: "Success",
-    data: newJob,
+    data: newJob.spareparts,
+    meta: newJob.meta,
   };
 
   return UtilityHelper.sendResponse(res, 200, resp.message, resp);

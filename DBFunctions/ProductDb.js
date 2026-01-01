@@ -174,7 +174,7 @@ ussd.allModels = async (query) => {
       };
     }
     where.status = 1;
-    const [carbrands, total] = await Promise.all([
+    const [carmodels, total] = await Promise.all([
       prisma.carModel.findMany({
         where,
         skip,
@@ -204,7 +204,7 @@ ussd.allModels = async (query) => {
       prisma.carModel.count({ where }),
     ]);
     const data = {
-      carbrands,
+      carmodels,
       meta: {
         total: total,
         page: Number(page),

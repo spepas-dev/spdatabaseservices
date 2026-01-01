@@ -159,8 +159,10 @@ exports.ADD_IMAGE = asynHandler(async (req, res, next) => {
 
 exports.ALL_MODELS = asynHandler(async (req, res, next) => {
   // console.log(session);
+  // const query = req.query;
+  const query = { page: 1, limit: 10, search: "", startDate: "", endDate: "" };
 
-  let newJob = await productModel.allModels();
+  let newJob = await productModel.allModels(query);
 
   if (!newJob) {
     var resp = {
@@ -173,7 +175,7 @@ exports.ALL_MODELS = asynHandler(async (req, res, next) => {
   var resp = {
     status: RESPONSE_CODES.SUCCESS,
     message: "Success",
-    data: newJob.carbrands,
+    data: newJob.carmodels,
     meta: newJob.meta,
   };
 

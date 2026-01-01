@@ -225,7 +225,7 @@ ussd.allModels = async (query) => {
   }
 };
 
-ussd.AllBrands = async () => {
+ussd.AllBrands = async (query) => {
   try {
     const { page = 1, limit = 10, search = "", startDate, endDate } = query;
 
@@ -344,7 +344,7 @@ ussd.AllCategories = async () => {
   }
 };
 
-ussd.AllManufacturers = async () => {
+ussd.AllManufacturers = async (query) => {
   try {
     const { page = 1, limit = 10, search = "", startDate, endDate } = query;
 
@@ -447,7 +447,7 @@ ussd.AllManufacturers = async () => {
   }
 };
 
-ussd.AllSpareParts = async () => {
+ussd.AllSpareParts = async (query) => {
   try {
     const { page = 1, limit = 10, search = "", startDate, endDate } = query;
 

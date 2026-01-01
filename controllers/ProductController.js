@@ -159,8 +159,7 @@ exports.ADD_IMAGE = asynHandler(async (req, res, next) => {
 
 exports.ALL_MODELS = asynHandler(async (req, res, next) => {
   // console.log(session);
-  // const query = req.query;
-  const query = { page: 1, limit: 10, search: "", startDate: "", endDate: "" };
+  const query = req.query;
 
   let newJob = await productModel.allModels(query);
 
@@ -184,8 +183,7 @@ exports.ALL_MODELS = asynHandler(async (req, res, next) => {
 
 exports.ALL_BRANDS = asynHandler(async (req, res, next) => {
   // console.log(session);
-  // const query = req.query;
-  const query = { page: 1, limit: 10, search: "", startDate: "", endDate: "" };
+  const query = req.query;
 
   let newJob = await productModel.AllBrands(query);
 
@@ -231,8 +229,7 @@ exports.ALL_CATEGORIES = asynHandler(async (req, res, next) => {
 
 exports.ALL_MANUFATURERS = asynHandler(async (req, res, next) => {
   // console.log(session);
-  // const query = req.query;
-  const query = { page: 1, limit: 10, search: "", startDate: "", endDate: "" };
+  const query = req.query;
 
   let newJob = await productModel.AllManufacturers(query);
 
@@ -256,8 +253,7 @@ exports.ALL_MANUFATURERS = asynHandler(async (req, res, next) => {
 
 exports.ALL_SPARE_PART = asynHandler(async (req, res, next) => {
   // console.log(session);
-  // const query = req.query;
-  const query = { page: 1, limit: 10, search: "", startDate: "", endDate: "" };
+  const query = req.query;
 
   let newJob = await productModel.AllSpareParts(query);
 

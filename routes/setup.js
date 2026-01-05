@@ -247,6 +247,8 @@ const {
 
 
 
+
+
 const {
    ADD_INVOICE,
    INVOICE_DEATAILS,
@@ -296,6 +298,20 @@ const {
     ALL_ACTIVE,
     SLIDER_DETAILS
 } = require("../controllers/SliderController");
+
+
+
+//script
+const {
+   LOAD_CATEGORY,
+   LOAD_MANUFACTURERS,
+   LOAD_BRAND,
+   LOAD_MODEL,
+   LOAD_SPARE_PART, 
+   LOAD_SPARE_PART_IMAGES
+} = require("../controllers/ScriptController");
+
+
 
 
 
@@ -544,6 +560,17 @@ router.route("/slider/update").post(UPDATE_SLIDER);
 router.route("/slider/all").get(ALL_SLIDERS);
 router.route("/slider/active").get(ALL_ACTIVE);
 router.route("/slider/details/:slider_id").get(SLIDER_DETAILS);
+
+
+
+//Script
+router.route("/script/load-category").get(LOAD_CATEGORY);
+router.route("/script/load-manufacturers").get(LOAD_MANUFACTURERS);
+router.route("/script/load-brand").get(LOAD_BRAND);
+router.route("/script/load-model").get(LOAD_MODEL);
+router.route("/script/load-spare-part").get(LOAD_SPARE_PART);
+router.route("/script/load-spare-part-images").get(LOAD_SPARE_PART_IMAGES);
+
 
 
 

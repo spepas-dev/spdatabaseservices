@@ -512,6 +512,9 @@ model SparePart {
   seller        Seller?        @relation(fields: [seller_ID], references: [Seller_ID])
   createdAt     DateTime      @default(now())
   updatedAt     DateTime      @updatedAt
+  externalID     Int?  
+  articleNo     String?
+  typeEngineName     String?
   //sp        OrderItem[]
   reviews       Review[]
   whiteLists   Wishlist[]
@@ -526,7 +529,8 @@ model CarModel {
   CarModel_ID   String       @id  @default(uuid()) 
   name          String
   yearOfMake    Int
-  carBrand_ID   String  
+  carBrand_ID   String
+  externalID     Int?    
   status        Int @default(1)
   createdAt     DateTime      @default(now())      
   carBrand      CarBrand    @relation(fields: [carBrand_ID], references: [CarBrand_ID])
@@ -539,6 +543,7 @@ model CarBrand {
   name          String
   status        Int @default(1)
   manufacturer_ID String? 
+  externalID     Int?  
   createdAt     DateTime      @default(now()) 
   type          VIHICLE_TYPE
   models        CarModel[]   
@@ -551,6 +556,7 @@ model Manufacturer {
   Manufacturer_ID String     @id @default(uuid()) 
   name          String
   country       String
+  externalID     Int?  
   status        Int @default(1)
   brands        CarBrand[]
   createdAt     DateTime      @default(now())
@@ -810,7 +816,8 @@ model Category {
   id            Int           @default(autoincrement())
   Category_ID   String        @id @default(uuid()) 
   name          String
-  parent_ID     String?       
+  parent_ID     String?  
+  externalID     Int?      
   parent       Category?  @relation("SubCategoryParent", fields: [parent_ID], references: [Category_ID])
   subCategories Category[]    @relation("SubCategoryParent")
   spareParts    SparePart[]

@@ -33,6 +33,7 @@
     "multer": "^1.4.5-lts.1",
     "node-device-detector": "^2.0.13",
     "otp-generator": "^4.0.1",
+    "papaparse": "^5.5.3",
     "pg": "^8.10.0",
     "pg-promise": "^11.8.0",
     "pino-pretty": "^13.0.0",

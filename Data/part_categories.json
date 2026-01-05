@@ -1,0 +1,7940 @@
+[
+  {
+    "categoryId": 100733,
+    "categoryName": "Accessories",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100860,
+    "categoryName": "Armrest",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 100862,
+    "categoryName": "Boot/Cargo Area/Loading surface",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 104629,
+    "categoryName": "Car Cover",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 100854,
+    "categoryName": "Cigarette Lighter",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 706770,
+    "categoryName": "Comfort",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 100857,
+    "categoryName": "Floor Mats",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 103396,
+    "categoryName": "Footwell Tray",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 100861,
+    "categoryName": "Gas Springs",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 706526,
+    "categoryName": "Hygiene protection film",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 706769,
+    "categoryName": "Jack",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 104736,
+    "categoryName": "Marten Protection",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 706700,
+    "categoryName": "Mud Flap",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 706519,
+    "categoryName": "Other",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 104631,
+    "categoryName": "Pedal Pad Set",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 104730,
+    "categoryName": "Retrofit Set, engine sound system",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 706579,
+    "categoryName": "Safe",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 103485,
+    "categoryName": "Snow Chains",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 706576,
+    "categoryName": "Stowage box/storage box",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 100858,
+    "categoryName": "Warning Triangle",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 103443,
+    "categoryName": "Wind Deflector",
+    "parentCategoryId": 100733,
+    "level": 1
+  },
+  {
+    "categoryId": 100243,
+    "categoryName": "Air Conditioning",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 706826,
+    "categoryName": "Assortment",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100354,
+    "categoryName": "Compressor/Parts",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100355,
+    "categoryName": "Condenser",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100728,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100779,
+    "categoryName": "Controls/Regulation",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100364,
+    "categoryName": "Conversion Kit",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100357,
+    "categoryName": "Dryer",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100356,
+    "categoryName": "Evaporator",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100360,
+    "categoryName": "Hoses/Pipe",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100809,
+    "categoryName": "Mounting",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100732,
+    "categoryName": "Refrigerant/Filter",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100363,
+    "categoryName": "Relay",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 102922,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100365,
+    "categoryName": "Retrofit Kit",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100794,
+    "categoryName": "Sensors",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100865,
+    "categoryName": "Series Resistor",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100366,
+    "categoryName": "Switch",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 706416,
+    "categoryName": "Tools",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100756,
+    "categoryName": "Vacuum System/ Pump",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100358,
+    "categoryName": "Valves",
+    "parentCategoryId": 100243,
+    "level": 1
+  },
+  {
+    "categoryId": 100400,
+    "categoryName": "Axle Drive",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 706814,
+    "categoryName": "Complete axle",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 706520,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 100415,
+    "categoryName": "Differential",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 103456,
+    "categoryName": "Multi-Plate Clutch (all-wheel drive)",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 101996,
+    "categoryName": "Oil",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 100703,
+    "categoryName": "Propshaft",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 100839,
+    "categoryName": "Bearing/Mounting",
+    "parentCategoryId": 100703,
+    "level": 2
+  },
+  {
+    "categoryId": 100805,
+    "categoryName": "Propshaft",
+    "parentCategoryId": 100703,
+    "level": 2
+  },
+  {
+    "categoryId": 100707,
+    "categoryName": "Universal Joint",
+    "parentCategoryId": 100703,
+    "level": 2
+  },
+  {
+    "categoryId": 100768,
+    "categoryName": "Switches/Valves",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 104405,
+    "categoryName": "Tools",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 100416,
+    "categoryName": "Transfer Case",
+    "parentCategoryId": 100400,
+    "level": 1
+  },
+  {
+    "categoryId": 100013,
+    "categoryName": "Axle Mounting/ Steering/ Wheels",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 101837,
+    "categoryName": "Article Search via Graphic",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100212,
+    "categoryName": "Axle Cross Member/Axle Beam/Axle Beam Mounting",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100585,
+    "categoryName": "Axle Beam",
+    "parentCategoryId": 100212,
+    "level": 2
+  },
+  {
+    "categoryId": 100761,
+    "categoryName": "Axle Cross Member/Subframe",
+    "parentCategoryId": 100212,
+    "level": 2
+  },
+  {
+    "categoryId": 100586,
+    "categoryName": "Axle Mounting",
+    "parentCategoryId": 100212,
+    "level": 2
+  },
+  {
+    "categoryId": 100758,
+    "categoryName": "Dome-/Transverse Link Strut",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100211,
+    "categoryName": "Joints",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100581,
+    "categoryName": "Ball Joint",
+    "parentCategoryId": 100211,
+    "level": 2
+  },
+  {
+    "categoryId": 100583,
+    "categoryName": "Knuckle Joint",
+    "parentCategoryId": 100211,
+    "level": 2
+  },
+  {
+    "categoryId": 706782,
+    "categoryName": "Mounting kit, wheel suspension",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100735,
+    "categoryName": "Mounting, suspension strut",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100210,
+    "categoryName": "Stabiliser Bar/Fastening Parts",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100577,
+    "categoryName": "Coupling Rod",
+    "parentCategoryId": 100210,
+    "level": 2
+  },
+  {
+    "categoryId": 100596,
+    "categoryName": "Fasteners",
+    "parentCategoryId": 100210,
+    "level": 2
+  },
+  {
+    "categoryId": 100590,
+    "categoryName": "Self-Aligning Support",
+    "parentCategoryId": 100210,
+    "level": 2
+  },
+  {
+    "categoryId": 100573,
+    "categoryName": "Stabiliser Bar",
+    "parentCategoryId": 100210,
+    "level": 2
+  },
+  {
+    "categoryId": 100574,
+    "categoryName": "Stabiliser Linkage",
+    "parentCategoryId": 100210,
+    "level": 2
+  },
+  {
+    "categoryId": 100207,
+    "categoryName": "Steering Knuckle/Repair Kit",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100588,
+    "categoryName": "Kingpin",
+    "parentCategoryId": 100207,
+    "level": 2
+  },
+  {
+    "categoryId": 100589,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100207,
+    "level": 2
+  },
+  {
+    "categoryId": 100587,
+    "categoryName": "Steering Knuckle",
+    "parentCategoryId": 100207,
+    "level": 2
+  },
+  {
+    "categoryId": 102082,
+    "categoryName": "Steering Knuckle Gasket",
+    "parentCategoryId": 100207,
+    "level": 2
+  },
+  {
+    "categoryId": 100208,
+    "categoryName": "Steering Link/Control/Trailing Arm Mounting",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100572,
+    "categoryName": "Mounting/Fastening",
+    "parentCategoryId": 100208,
+    "level": 2
+  },
+  {
+    "categoryId": 100571,
+    "categoryName": "Steering Links (control arm, trailing link, diagonal arm)",
+    "parentCategoryId": 100208,
+    "level": 2
+  },
+  {
+    "categoryId": 100209,
+    "categoryName": "Struts/Rods",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 103159,
+    "categoryName": "Tools",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 102733,
+    "categoryName": "Track Widening",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100834,
+    "categoryName": "Tyre-Pressure Monitoring System",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100206,
+    "categoryName": "Wheel Hub/Mounting",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 102250,
+    "categoryName": "Mounting, wheel bearing housing",
+    "parentCategoryId": 100206,
+    "level": 2
+  },
+  {
+    "categoryId": 100580,
+    "categoryName": "Radial Shaft Seal",
+    "parentCategoryId": 100206,
+    "level": 2
+  },
+  {
+    "categoryId": 100803,
+    "categoryName": "Stub Axle",
+    "parentCategoryId": 100206,
+    "level": 2
+  },
+  {
+    "categoryId": 100579,
+    "categoryName": "Wheel Bearing",
+    "parentCategoryId": 100206,
+    "level": 2
+  },
+  {
+    "categoryId": 100578,
+    "categoryName": "Wheel Hub",
+    "parentCategoryId": 100206,
+    "level": 2
+  },
+  {
+    "categoryId": 100213,
+    "categoryName": "Wheel/Wheel Fastening",
+    "parentCategoryId": 100013,
+    "level": 1
+  },
+  {
+    "categoryId": 100016,
+    "categoryName": "Belt Drive",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 101482,
+    "categoryName": "Accessories/Small Parts",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 102239,
+    "categoryName": "Alternator Freewheel Clutch",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 102438,
+    "categoryName": "Article Search via Graphic",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 101971,
+    "categoryName": "Belt Pulley",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 102898,
+    "categoryName": "Flexible Coupling Sleeve",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 100085,
+    "categoryName": "Timing Belt/Set",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 100461,
+    "categoryName": "Belt Tensioner (Tensioner Unit)",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 100457,
+    "categoryName": "Deflection Pulley/Guide Pulley",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 102029,
+    "categoryName": "Pulley Kit",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 100459,
+    "categoryName": "Tensioner",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 100455,
+    "categoryName": "Tensioner Pulley",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 100452,
+    "categoryName": "Timing Belt",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 102016,
+    "categoryName": "Timing Belt Cover",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 100453,
+    "categoryName": "Timing Belt Kit",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 100877,
+    "categoryName": "Vibration Damper",
+    "parentCategoryId": 100085,
+    "level": 2
+  },
+  {
+    "categoryId": 103130,
+    "categoryName": "Tools",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 100080,
+    "categoryName": "V-Belt/Set",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 100765,
+    "categoryName": "Deflection Pulley",
+    "parentCategoryId": 100080,
+    "level": 2
+  },
+  {
+    "categoryId": 100887,
+    "categoryName": "Tensioner",
+    "parentCategoryId": 100080,
+    "level": 2
+  },
+  {
+    "categoryId": 100450,
+    "categoryName": "V-Belt",
+    "parentCategoryId": 100080,
+    "level": 2
+  },
+  {
+    "categoryId": 100451,
+    "categoryName": "V-Belt Set",
+    "parentCategoryId": 100080,
+    "level": 2
+  },
+  {
+    "categoryId": 100082,
+    "categoryName": "V-Ribbed Belt/Set",
+    "parentCategoryId": 100016,
+    "level": 1
+  },
+  {
+    "categoryId": 100441,
+    "categoryName": "Belt Tensioner (Tensioner Unit)",
+    "parentCategoryId": 100082,
+    "level": 2
+  },
+  {
+    "categoryId": 100435,
+    "categoryName": "Deflection Pulley/Guide Pulley",
+    "parentCategoryId": 100082,
+    "level": 2
+  },
+  {
+    "categoryId": 102037,
+    "categoryName": "Pulley Kit",
+    "parentCategoryId": 100082,
+    "level": 2
+  },
+  {
+    "categoryId": 100438,
+    "categoryName": "Tensioner",
+    "parentCategoryId": 100082,
+    "level": 2
+  },
+  {
+    "categoryId": 100434,
+    "categoryName": "Tensioner Pulley",
+    "parentCategoryId": 100082,
+    "level": 2
+  },
+  {
+    "categoryId": 100431,
+    "categoryName": "V-Ribbed Belt",
+    "parentCategoryId": 100082,
+    "level": 2
+  },
+  {
+    "categoryId": 100432,
+    "categoryName": "V-Ribbed Belt Set",
+    "parentCategoryId": 100082,
+    "level": 2
+  },
+  {
+    "categoryId": 100876,
+    "categoryName": "Vibration Damper",
+    "parentCategoryId": 100082,
+    "level": 2
+  },
+  {
+    "categoryId": 100001,
+    "categoryName": "Body",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 101340,
+    "categoryName": "Additional Headlight/Parts",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 101341,
+    "categoryName": "Front Fog Light/Parts",
+    "parentCategoryId": 101340,
+    "level": 2
+  },
+  {
+    "categoryId": 101343,
+    "categoryName": "Fog Light Bulb",
+    "parentCategoryId": 101341,
+    "level": 3
+  },
+  {
+    "categoryId": 101344,
+    "categoryName": "Fog Light Parts",
+    "parentCategoryId": 101341,
+    "level": 3
+  },
+  {
+    "categoryId": 101342,
+    "categoryName": "Front Fog Light/Insert",
+    "parentCategoryId": 101341,
+    "level": 3
+  },
+  {
+    "categoryId": 101353,
+    "categoryName": "Searchlight/Parts",
+    "parentCategoryId": 101340,
+    "level": 2
+  },
+  {
+    "categoryId": 101355,
+    "categoryName": "Searchlight Bulb",
+    "parentCategoryId": 101353,
+    "level": 3
+  },
+  {
+    "categoryId": 101356,
+    "categoryName": "Searchlight Parts",
+    "parentCategoryId": 101353,
+    "level": 3
+  },
+  {
+    "categoryId": 101354,
+    "categoryName": "Searchlight/Insert",
+    "parentCategoryId": 101353,
+    "level": 3
+  },
+  {
+    "categoryId": 101345,
+    "categoryName": "Spotlight/Parts",
+    "parentCategoryId": 101340,
+    "level": 2
+  },
+  {
+    "categoryId": 101347,
+    "categoryName": "Spotlight Bulb",
+    "parentCategoryId": 101345,
+    "level": 3
+  },
+  {
+    "categoryId": 101348,
+    "categoryName": "Spotlight Parts",
+    "parentCategoryId": 101345,
+    "level": 3
+  },
+  {
+    "categoryId": 101346,
+    "categoryName": "Spotlight/Insert",
+    "parentCategoryId": 101345,
+    "level": 3
+  },
+  {
+    "categoryId": 101349,
+    "categoryName": "Worklight/Parts",
+    "parentCategoryId": 101340,
+    "level": 2
+  },
+  {
+    "categoryId": 101351,
+    "categoryName": "Worklight Bulb",
+    "parentCategoryId": 101349,
+    "level": 3
+  },
+  {
+    "categoryId": 101352,
+    "categoryName": "Worklight Parts",
+    "parentCategoryId": 101349,
+    "level": 3
+  },
+  {
+    "categoryId": 101350,
+    "categoryName": "Worklight/Insert",
+    "parentCategoryId": 101349,
+    "level": 3
+  },
+  {
+    "categoryId": 100743,
+    "categoryName": "Body Parts/Wing/Bumper",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100166,
+    "categoryName": "Battery Holder",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100187,
+    "categoryName": "Bumper/Parts",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 104382,
+    "categoryName": "Chassis Head",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100699,
+    "categoryName": "Covers/Caps",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 104959,
+    "categoryName": "Fastening Clips",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100168,
+    "categoryName": "Floor Panel",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100169,
+    "categoryName": "Footboard/Door Pillar",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100606,
+    "categoryName": "Licence Plate Holder/Bracket",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100181,
+    "categoryName": "Quarter Panel",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100191,
+    "categoryName": "Radiator Support/Grille",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100739,
+    "categoryName": "Rear-End Cowling",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100737,
+    "categoryName": "Roof/Door Pillars/Frames",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100155,
+    "categoryName": "Side/Cross Member",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100164,
+    "categoryName": "Spare Wheel Well",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100537,
+    "categoryName": "Spoilers",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 101504,
+    "categoryName": "Support Frame/Subframe",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 104812,
+    "categoryName": "Vehicle Frame/-Parts",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100165,
+    "categoryName": "Wheelhouse",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 100185,
+    "categoryName": "Wing/parts",
+    "parentCategoryId": 100743,
+    "level": 2
+  },
+  {
+    "categoryId": 103213,
+    "categoryName": "Driver Cab",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 103215,
+    "categoryName": "Driver Cab Suspension",
+    "parentCategoryId": 103213,
+    "level": 2
+  },
+  {
+    "categoryId": 103469,
+    "categoryName": "Roof/Door Pillars/Frames",
+    "parentCategoryId": 103213,
+    "level": 2
+  },
+  {
+    "categoryId": 105577,
+    "categoryName": "Electric Motor",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100216,
+    "categoryName": "Fuel Tank/Parts",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 101765,
+    "categoryName": "Full Illustration, car body panels",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100826,
+    "categoryName": "Gas Springs",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100744,
+    "categoryName": "Glazing/Mirrors",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100745,
+    "categoryName": "Glazing",
+    "parentCategoryId": 100744,
+    "level": 2
+  },
+  {
+    "categoryId": 100569,
+    "categoryName": "Assembly Parts",
+    "parentCategoryId": 100745,
+    "level": 3
+  },
+  {
+    "categoryId": 102346,
+    "categoryName": "Bonded Windows",
+    "parentCategoryId": 100745,
+    "level": 3
+  },
+  {
+    "categoryId": 100568,
+    "categoryName": "Window Seals",
+    "parentCategoryId": 100745,
+    "level": 3
+  },
+  {
+    "categoryId": 100567,
+    "categoryName": "Windows",
+    "parentCategoryId": 100745,
+    "level": 3
+  },
+  {
+    "categoryId": 100566,
+    "categoryName": "Mirrors",
+    "parentCategoryId": 100744,
+    "level": 2
+  },
+  {
+    "categoryId": 100746,
+    "categoryName": "Hatches/Bonnets/Doors/Sunroof/Panoramic Roof",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100184,
+    "categoryName": "Bonnet/Parts/Noise Insulation",
+    "parentCategoryId": 100746,
+    "level": 2
+  },
+  {
+    "categoryId": 102414,
+    "categoryName": "Convertible Top/Parts",
+    "parentCategoryId": 100746,
+    "level": 2
+  },
+  {
+    "categoryId": 100189,
+    "categoryName": "Doors/Parts",
+    "parentCategoryId": 100746,
+    "level": 2
+  },
+  {
+    "categoryId": 102760,
+    "categoryName": "Folding Roof",
+    "parentCategoryId": 100746,
+    "level": 2
+  },
+  {
+    "categoryId": 102731,
+    "categoryName": "Fuel Filler Flap/-parts",
+    "parentCategoryId": 100746,
+    "level": 2
+  },
+  {
+    "categoryId": 706897,
+    "categoryName": "Panoramic Roof/Parts",
+    "parentCategoryId": 100746,
+    "level": 2
+  },
+  {
+    "categoryId": 100778,
+    "categoryName": "Sunroof/Parts",
+    "parentCategoryId": 100746,
+    "level": 2
+  },
+  {
+    "categoryId": 100192,
+    "categoryName": "Tailgate/Cargo Bay Hatch & Boot Lid/Cargo Bay Cover",
+    "parentCategoryId": 100746,
+    "level": 2
+  },
+  {
+    "categoryId": 101465,
+    "categoryName": "Headlight/Parts",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 101467,
+    "categoryName": "Headlight Bulb",
+    "parentCategoryId": 101465,
+    "level": 2
+  },
+  {
+    "categoryId": 101468,
+    "categoryName": "Headlight Parts",
+    "parentCategoryId": 101465,
+    "level": 2
+  },
+  {
+    "categoryId": 101466,
+    "categoryName": "Headlight/Insert",
+    "parentCategoryId": 101465,
+    "level": 2
+  },
+  {
+    "categoryId": 101469,
+    "categoryName": "Pop-up Headlight",
+    "parentCategoryId": 101465,
+    "level": 2
+  },
+  {
+    "categoryId": 101407,
+    "categoryName": "Lights",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 101420,
+    "categoryName": "Direction Indicator/Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101421,
+    "categoryName": "Direction Indicator",
+    "parentCategoryId": 101420,
+    "level": 3
+  },
+  {
+    "categoryId": 101423,
+    "categoryName": "Indicator Bulb",
+    "parentCategoryId": 101420,
+    "level": 3
+  },
+  {
+    "categoryId": 101422,
+    "categoryName": "Indicator Parts",
+    "parentCategoryId": 101420,
+    "level": 3
+  },
+  {
+    "categoryId": 102406,
+    "categoryName": "Side Indicator",
+    "parentCategoryId": 101420,
+    "level": 3
+  },
+  {
+    "categoryId": 101452,
+    "categoryName": "Door Light",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101424,
+    "categoryName": "Licence Plate Light/-Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101425,
+    "categoryName": "Licence Plate Light",
+    "parentCategoryId": 101424,
+    "level": 3
+  },
+  {
+    "categoryId": 101427,
+    "categoryName": "Licence Plate Light Bulb",
+    "parentCategoryId": 101424,
+    "level": 3
+  },
+  {
+    "categoryId": 101426,
+    "categoryName": "Licence Plate Light Parts",
+    "parentCategoryId": 101424,
+    "level": 3
+  },
+  {
+    "categoryId": 101428,
+    "categoryName": "Rear Fog Light/Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101429,
+    "categoryName": "Rear Fog Light",
+    "parentCategoryId": 101428,
+    "level": 3
+  },
+  {
+    "categoryId": 101431,
+    "categoryName": "Rear Fog Light Bulb",
+    "parentCategoryId": 101428,
+    "level": 3
+  },
+  {
+    "categoryId": 101430,
+    "categoryName": "Rear Fog Light Individual Parts",
+    "parentCategoryId": 101428,
+    "level": 3
+  },
+  {
+    "categoryId": 101432,
+    "categoryName": "Reverse Light/Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101433,
+    "categoryName": "Reverse Light",
+    "parentCategoryId": 101432,
+    "level": 3
+  },
+  {
+    "categoryId": 101435,
+    "categoryName": "Reverse Light Bulb",
+    "parentCategoryId": 101432,
+    "level": 3
+  },
+  {
+    "categoryId": 101434,
+    "categoryName": "Reverse Light Parts",
+    "parentCategoryId": 101432,
+    "level": 3
+  },
+  {
+    "categoryId": 101441,
+    "categoryName": "Side Marker/End Outline Marker Light/Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101445,
+    "categoryName": "Bulb",
+    "parentCategoryId": 101441,
+    "level": 3
+  },
+  {
+    "categoryId": 101443,
+    "categoryName": "End Outline Marker Light",
+    "parentCategoryId": 101441,
+    "level": 3
+  },
+  {
+    "categoryId": 101442,
+    "categoryName": "Park/Position Light",
+    "parentCategoryId": 101441,
+    "level": 3
+  },
+  {
+    "categoryId": 101446,
+    "categoryName": "Parts",
+    "parentCategoryId": 101441,
+    "level": 3
+  },
+  {
+    "categoryId": 101444,
+    "categoryName": "Side Marker Lights",
+    "parentCategoryId": 101441,
+    "level": 3
+  },
+  {
+    "categoryId": 101415,
+    "categoryName": "Stop Light/Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101416,
+    "categoryName": "Auxiliary Stop Light",
+    "parentCategoryId": 101415,
+    "level": 3
+  },
+  {
+    "categoryId": 101417,
+    "categoryName": "Stop Light",
+    "parentCategoryId": 101415,
+    "level": 3
+  },
+  {
+    "categoryId": 101419,
+    "categoryName": "Stop Light Bulb",
+    "parentCategoryId": 101415,
+    "level": 3
+  },
+  {
+    "categoryId": 101418,
+    "categoryName": "Stop Light Parts",
+    "parentCategoryId": 101415,
+    "level": 3
+  },
+  {
+    "categoryId": 101408,
+    "categoryName": "Tail Light Assembly/Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101409,
+    "categoryName": "Tail Light Assembly",
+    "parentCategoryId": 101408,
+    "level": 3
+  },
+  {
+    "categoryId": 101410,
+    "categoryName": "Tail Light Assembly Parts",
+    "parentCategoryId": 101408,
+    "level": 3
+  },
+  {
+    "categoryId": 101411,
+    "categoryName": "Tail Light/Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101412,
+    "categoryName": "Tail Light",
+    "parentCategoryId": 101411,
+    "level": 3
+  },
+  {
+    "categoryId": 101414,
+    "categoryName": "Tail Light Bulb",
+    "parentCategoryId": 101411,
+    "level": 3
+  },
+  {
+    "categoryId": 101413,
+    "categoryName": "Tail Light Individual Parts",
+    "parentCategoryId": 101411,
+    "level": 3
+  },
+  {
+    "categoryId": 103118,
+    "categoryName": "Warning Light/-Parts",
+    "parentCategoryId": 101407,
+    "level": 2
+  },
+  {
+    "categoryId": 101690,
+    "categoryName": "Passenger Cabin",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 101699,
+    "categoryName": "Auxiliary Stop Light",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101697,
+    "categoryName": "Door Window/Side Window",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101694,
+    "categoryName": "Doors/Parts",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101693,
+    "categoryName": "Floor Panel",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 102758,
+    "categoryName": "Folding Roof",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101692,
+    "categoryName": "Footboard/Door Pillar",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101760,
+    "categoryName": "Fuel Tank/Parts",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101698,
+    "categoryName": "Mirrors",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 706898,
+    "categoryName": "Panoramic Roof/Parts",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101700,
+    "categoryName": "Parts",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101703,
+    "categoryName": "Gas Springs",
+    "parentCategoryId": 101700,
+    "level": 3
+  },
+  {
+    "categoryId": 101701,
+    "categoryName": "Spoilers",
+    "parentCategoryId": 101700,
+    "level": 3
+  },
+  {
+    "categoryId": 101702,
+    "categoryName": "Trim/Protection Strips",
+    "parentCategoryId": 101700,
+    "level": 3
+  },
+  {
+    "categoryId": 101696,
+    "categoryName": "Quarter Panel",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101691,
+    "categoryName": "Roof/Door Pillars/Frames",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101695,
+    "categoryName": "Sunroof/Parts",
+    "parentCategoryId": 101690,
+    "level": 2
+  },
+  {
+    "categoryId": 101454,
+    "categoryName": "Racks/Carriers/Frames",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100217,
+    "categoryName": "Radiator Mounting",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 104728,
+    "categoryName": "Rollbar",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 706870,
+    "categoryName": "Spare Wheel Holder",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 103132,
+    "categoryName": "Tools",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100219,
+    "categoryName": "Trim/Protection/Decorative Strips/Emblems",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 100741,
+    "categoryName": "Emblems",
+    "parentCategoryId": 100219,
+    "level": 2
+  },
+  {
+    "categoryId": 100742,
+    "categoryName": "Gravel Protection",
+    "parentCategoryId": 100219,
+    "level": 2
+  },
+  {
+    "categoryId": 100740,
+    "categoryName": "Trim/Protection Strips",
+    "parentCategoryId": 100219,
+    "level": 2
+  },
+  {
+    "categoryId": 101648,
+    "categoryName": "Vehicle Front",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 101654,
+    "categoryName": "Bonnet/Parts/Noise Insulation",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101649,
+    "categoryName": "Bumper/Parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101669,
+    "categoryName": "Direction Indicator/Parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101670,
+    "categoryName": "Direction Indicator",
+    "parentCategoryId": 101669,
+    "level": 3
+  },
+  {
+    "categoryId": 101672,
+    "categoryName": "Indicator Bulb",
+    "parentCategoryId": 101669,
+    "level": 3
+  },
+  {
+    "categoryId": 101671,
+    "categoryName": "Indicator Parts",
+    "parentCategoryId": 101669,
+    "level": 3
+  },
+  {
+    "categoryId": 103035,
+    "categoryName": "Engine Cover",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101661,
+    "categoryName": "Front Fog Light/Parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101663,
+    "categoryName": "Fog Light Bulb",
+    "parentCategoryId": 101661,
+    "level": 3
+  },
+  {
+    "categoryId": 101664,
+    "categoryName": "Fog Light Parts",
+    "parentCategoryId": 101661,
+    "level": 3
+  },
+  {
+    "categoryId": 101662,
+    "categoryName": "Front Fog Light/Insert",
+    "parentCategoryId": 101661,
+    "level": 3
+  },
+  {
+    "categoryId": 104724,
+    "categoryName": "Frontal Protection Bar",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101651,
+    "categoryName": "Fuel Tank/Parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101656,
+    "categoryName": "Headlight/Parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101658,
+    "categoryName": "Headlight Bulb",
+    "parentCategoryId": 101656,
+    "level": 3
+  },
+  {
+    "categoryId": 101659,
+    "categoryName": "Headlight Parts",
+    "parentCategoryId": 101656,
+    "level": 3
+  },
+  {
+    "categoryId": 101657,
+    "categoryName": "Headlight/Insert",
+    "parentCategoryId": 101656,
+    "level": 3
+  },
+  {
+    "categoryId": 101660,
+    "categoryName": "Pop-up Headlight",
+    "parentCategoryId": 101656,
+    "level": 3
+  },
+  {
+    "categoryId": 101673,
+    "categoryName": "Parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 103064,
+    "categoryName": "Assembly Kit",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101772,
+    "categoryName": "Battery Holder",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101674,
+    "categoryName": "Covers/Caps",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101774,
+    "categoryName": "Emblems",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101675,
+    "categoryName": "Front Fairing/ Grille",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101777,
+    "categoryName": "Gas Springs",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101776,
+    "categoryName": "Licence Plate Holder/Bracket",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101773,
+    "categoryName": "Racks/Carriers/Frames",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101775,
+    "categoryName": "Radiator Mounting",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101778,
+    "categoryName": "Spoilers",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101679,
+    "categoryName": "Trim/Protection Strips",
+    "parentCategoryId": 101673,
+    "level": 3
+  },
+  {
+    "categoryId": 101766,
+    "categoryName": "Side Marker/End Outline Marker Light/Parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101770,
+    "categoryName": "Bulb",
+    "parentCategoryId": 101766,
+    "level": 3
+  },
+  {
+    "categoryId": 101768,
+    "categoryName": "End Outline Marker Light",
+    "parentCategoryId": 101766,
+    "level": 3
+  },
+  {
+    "categoryId": 101767,
+    "categoryName": "Park/Position Light",
+    "parentCategoryId": 101766,
+    "level": 3
+  },
+  {
+    "categoryId": 101771,
+    "categoryName": "Parts",
+    "parentCategoryId": 101766,
+    "level": 3
+  },
+  {
+    "categoryId": 101769,
+    "categoryName": "Side Marker Lights",
+    "parentCategoryId": 101766,
+    "level": 3
+  },
+  {
+    "categoryId": 101653,
+    "categoryName": "Spare Wheel Well",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101665,
+    "categoryName": "Spotlight/Parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101667,
+    "categoryName": "Spotlight Bulb",
+    "parentCategoryId": 101665,
+    "level": 3
+  },
+  {
+    "categoryId": 101668,
+    "categoryName": "Spotlight Parts",
+    "parentCategoryId": 101665,
+    "level": 3
+  },
+  {
+    "categoryId": 101666,
+    "categoryName": "Spotlight/Insert",
+    "parentCategoryId": 101665,
+    "level": 3
+  },
+  {
+    "categoryId": 101652,
+    "categoryName": "Wheelhouse",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101655,
+    "categoryName": "Windscreen",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101650,
+    "categoryName": "Wing/parts",
+    "parentCategoryId": 101648,
+    "level": 2
+  },
+  {
+    "categoryId": 101705,
+    "categoryName": "Vehicle Rear",
+    "parentCategoryId": 100001,
+    "level": 1
+  },
+  {
+    "categoryId": 101781,
+    "categoryName": "Back Door/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101783,
+    "categoryName": "Bonnet/Parts/Noise Insulation",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101706,
+    "categoryName": "Bumper/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101727,
+    "categoryName": "Direction Indicator/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101728,
+    "categoryName": "Direction Indicator",
+    "parentCategoryId": 101727,
+    "level": 3
+  },
+  {
+    "categoryId": 101730,
+    "categoryName": "Indicator Bulb",
+    "parentCategoryId": 101727,
+    "level": 3
+  },
+  {
+    "categoryId": 101729,
+    "categoryName": "Indicator Parts",
+    "parentCategoryId": 101727,
+    "level": 3
+  },
+  {
+    "categoryId": 103036,
+    "categoryName": "Engine Cover",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101707,
+    "categoryName": "Floor Panel",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101763,
+    "categoryName": "Fuel Tank/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101731,
+    "categoryName": "Licence Plate Light/-Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101732,
+    "categoryName": "Licence Plate Light",
+    "parentCategoryId": 101731,
+    "level": 3
+  },
+  {
+    "categoryId": 101734,
+    "categoryName": "Licence Plate Light Bulb",
+    "parentCategoryId": 101731,
+    "level": 3
+  },
+  {
+    "categoryId": 101733,
+    "categoryName": "Licence Plate Light Parts",
+    "parentCategoryId": 101731,
+    "level": 3
+  },
+  {
+    "categoryId": 101708,
+    "categoryName": "Panelling",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101745,
+    "categoryName": "Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101748,
+    "categoryName": "Battery Holder",
+    "parentCategoryId": 101745,
+    "level": 3
+  },
+  {
+    "categoryId": 101746,
+    "categoryName": "Covers/Caps",
+    "parentCategoryId": 101745,
+    "level": 3
+  },
+  {
+    "categoryId": 101752,
+    "categoryName": "Gas Springs",
+    "parentCategoryId": 101745,
+    "level": 3
+  },
+  {
+    "categoryId": 101749,
+    "categoryName": "Licence Plate Holder/Bracket",
+    "parentCategoryId": 101745,
+    "level": 3
+  },
+  {
+    "categoryId": 101751,
+    "categoryName": "Light Base",
+    "parentCategoryId": 101745,
+    "level": 3
+  },
+  {
+    "categoryId": 101747,
+    "categoryName": "Spoilers",
+    "parentCategoryId": 101745,
+    "level": 3
+  },
+  {
+    "categoryId": 101750,
+    "categoryName": "Trim/Protection Strips",
+    "parentCategoryId": 101745,
+    "level": 3
+  },
+  {
+    "categoryId": 101780,
+    "categoryName": "Quarter Panel",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101735,
+    "categoryName": "Rear Fog Light/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101736,
+    "categoryName": "Rear Fog Light",
+    "parentCategoryId": 101735,
+    "level": 3
+  },
+  {
+    "categoryId": 101738,
+    "categoryName": "Rear Fog Light Bulb",
+    "parentCategoryId": 101735,
+    "level": 3
+  },
+  {
+    "categoryId": 101737,
+    "categoryName": "Rear Fog Light Individual Parts",
+    "parentCategoryId": 101735,
+    "level": 3
+  },
+  {
+    "categoryId": 101784,
+    "categoryName": "Rear Window",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101739,
+    "categoryName": "Reverse Light/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101740,
+    "categoryName": "Reverse Light",
+    "parentCategoryId": 101739,
+    "level": 3
+  },
+  {
+    "categoryId": 101742,
+    "categoryName": "Reverse Light Bulb",
+    "parentCategoryId": 101739,
+    "level": 3
+  },
+  {
+    "categoryId": 101741,
+    "categoryName": "Reverse Light Parts",
+    "parentCategoryId": 101739,
+    "level": 3
+  },
+  {
+    "categoryId": 101785,
+    "categoryName": "Side Marker/End Outline Marker Light/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101789,
+    "categoryName": "Bulb",
+    "parentCategoryId": 101785,
+    "level": 3
+  },
+  {
+    "categoryId": 101787,
+    "categoryName": "End Outline Marker Light",
+    "parentCategoryId": 101785,
+    "level": 3
+  },
+  {
+    "categoryId": 101786,
+    "categoryName": "Park/Position Light",
+    "parentCategoryId": 101785,
+    "level": 3
+  },
+  {
+    "categoryId": 101790,
+    "categoryName": "Parts",
+    "parentCategoryId": 101785,
+    "level": 3
+  },
+  {
+    "categoryId": 101788,
+    "categoryName": "Side Marker Lights",
+    "parentCategoryId": 101785,
+    "level": 3
+  },
+  {
+    "categoryId": 101711,
+    "categoryName": "Spare Wheel Well",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101722,
+    "categoryName": "Stop Light/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101723,
+    "categoryName": "Auxiliary Stop Light",
+    "parentCategoryId": 101722,
+    "level": 3
+  },
+  {
+    "categoryId": 101724,
+    "categoryName": "Stop Light",
+    "parentCategoryId": 101722,
+    "level": 3
+  },
+  {
+    "categoryId": 101726,
+    "categoryName": "Stop Light Bulb",
+    "parentCategoryId": 101722,
+    "level": 3
+  },
+  {
+    "categoryId": 101725,
+    "categoryName": "Stop Light Parts",
+    "parentCategoryId": 101722,
+    "level": 3
+  },
+  {
+    "categoryId": 101715,
+    "categoryName": "Tail Light Assembly/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101716,
+    "categoryName": "Tail Light Assembly",
+    "parentCategoryId": 101715,
+    "level": 3
+  },
+  {
+    "categoryId": 101717,
+    "categoryName": "Tail Light Assembly Parts",
+    "parentCategoryId": 101715,
+    "level": 3
+  },
+  {
+    "categoryId": 101718,
+    "categoryName": "Tail Light/Parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101719,
+    "categoryName": "Tail Light",
+    "parentCategoryId": 101718,
+    "level": 3
+  },
+  {
+    "categoryId": 101721,
+    "categoryName": "Tail Light Bulb",
+    "parentCategoryId": 101718,
+    "level": 3
+  },
+  {
+    "categoryId": 101720,
+    "categoryName": "Tail Light Individual Parts",
+    "parentCategoryId": 101718,
+    "level": 3
+  },
+  {
+    "categoryId": 101782,
+    "categoryName": "Tailgate/Cargo Bay Hatch & Boot Lid/Cargo Bay Cover",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101710,
+    "categoryName": "Wheelhouse",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 101779,
+    "categoryName": "Wing/parts",
+    "parentCategoryId": 101705,
+    "level": 2
+  },
+  {
+    "categoryId": 100006,
+    "categoryName": "Braking System",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100025,
+    "categoryName": "Brake Booster",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100027,
+    "categoryName": "Brake Caliper",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100807,
+    "categoryName": "Brake Caliper Mounting",
+    "parentCategoryId": 100027,
+    "level": 2
+  },
+  {
+    "categoryId": 100806,
+    "categoryName": "Brake Caliper Parts",
+    "parentCategoryId": 100027,
+    "level": 2
+  },
+  {
+    "categoryId": 102208,
+    "categoryName": "Brake Fluid",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100029,
+    "categoryName": "Brake Fluid Reservoir/parts",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100037,
+    "categoryName": "Brake Force Regulator",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100035,
+    "categoryName": "Brake Hoses",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100036,
+    "categoryName": "Brake Lines",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100026,
+    "categoryName": "Brake Master Cylinder",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 706721,
+    "categoryName": "Brake Pedal Feel Simulator",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100635,
+    "categoryName": "Control Levers/Cables",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100626,
+    "categoryName": "Disc Brake",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100630,
+    "categoryName": "Accessories/Parts",
+    "parentCategoryId": 100626,
+    "level": 2
+  },
+  {
+    "categoryId": 100032,
+    "categoryName": "Brake Disc",
+    "parentCategoryId": 100626,
+    "level": 2
+  },
+  {
+    "categoryId": 102244,
+    "categoryName": "Brake Kit",
+    "parentCategoryId": 100626,
+    "level": 2
+  },
+  {
+    "categoryId": 100030,
+    "categoryName": "Brake Pad",
+    "parentCategoryId": 100626,
+    "level": 2
+  },
+  {
+    "categoryId": 100038,
+    "categoryName": "Drive Dynamics Control",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100627,
+    "categoryName": "Drum Brake",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100634,
+    "categoryName": "Accessories/Parts",
+    "parentCategoryId": 100627,
+    "level": 2
+  },
+  {
+    "categoryId": 103210,
+    "categoryName": "Adjuster/Accessories",
+    "parentCategoryId": 100627,
+    "level": 2
+  },
+  {
+    "categoryId": 100033,
+    "categoryName": "Brake Drum",
+    "parentCategoryId": 100627,
+    "level": 2
+  },
+  {
+    "categoryId": 102763,
+    "categoryName": "Brake Kit",
+    "parentCategoryId": 100627,
+    "level": 2
+  },
+  {
+    "categoryId": 100031,
+    "categoryName": "Brake Lining/Shoe",
+    "parentCategoryId": 100627,
+    "level": 2
+  },
+  {
+    "categoryId": 102964,
+    "categoryName": "Handbrake",
+    "parentCategoryId": 100627,
+    "level": 2
+  },
+  {
+    "categoryId": 100633,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100627,
+    "level": 2
+  },
+  {
+    "categoryId": 102965,
+    "categoryName": "Wheel Cylinders",
+    "parentCategoryId": 100627,
+    "level": 2
+  },
+  {
+    "categoryId": 100808,
+    "categoryName": "Filter",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100034,
+    "categoryName": "Handbrake",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 102224,
+    "categoryName": "High Performance Brakes",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 102231,
+    "categoryName": "Brake Hoses",
+    "parentCategoryId": 102224,
+    "level": 2
+  },
+  {
+    "categoryId": 102228,
+    "categoryName": "High Performance Brake Caliper",
+    "parentCategoryId": 102224,
+    "level": 2
+  },
+  {
+    "categoryId": 102230,
+    "categoryName": "Assembly Kit",
+    "parentCategoryId": 102228,
+    "level": 3
+  },
+  {
+    "categoryId": 102229,
+    "categoryName": "Brake Caliper Mounting",
+    "parentCategoryId": 102228,
+    "level": 3
+  },
+  {
+    "categoryId": 102226,
+    "categoryName": "High Performance Brake Disc",
+    "parentCategoryId": 102224,
+    "level": 2
+  },
+  {
+    "categoryId": 102225,
+    "categoryName": "High Performance Brake Kit",
+    "parentCategoryId": 102224,
+    "level": 2
+  },
+  {
+    "categoryId": 102227,
+    "categoryName": "High Performance Brake Pad",
+    "parentCategoryId": 102224,
+    "level": 2
+  },
+  {
+    "categoryId": 100382,
+    "categoryName": "Pressure Accumulator/Switch",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 102248,
+    "categoryName": "Stop Light Switch",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 103154,
+    "categoryName": "Tools",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100039,
+    "categoryName": "Vacuum Pump",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 101924,
+    "categoryName": "Valves",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100631,
+    "categoryName": "Wear Indicator",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100028,
+    "categoryName": "Wheel Cylinders",
+    "parentCategoryId": 100006,
+    "level": 1
+  },
+  {
+    "categoryId": 100343,
+    "categoryName": "Carrier Equipment",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 103009,
+    "categoryName": "Coupling Carrier",
+    "parentCategoryId": 100343,
+    "level": 1
+  },
+  {
+    "categoryId": 103423,
+    "categoryName": "Interior Holder",
+    "parentCategoryId": 100343,
+    "level": 1
+  },
+  {
+    "categoryId": 100369,
+    "categoryName": "Rack System Fasteners",
+    "parentCategoryId": 100343,
+    "level": 1
+  },
+  {
+    "categoryId": 100368,
+    "categoryName": "Rear Rack",
+    "parentCategoryId": 100343,
+    "level": 1
+  },
+  {
+    "categoryId": 100367,
+    "categoryName": "Roof Rack",
+    "parentCategoryId": 100343,
+    "level": 1
+  },
+  {
+    "categoryId": 100050,
+    "categoryName": "Clutch/Attachment Parts",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100832,
+    "categoryName": "Automatic Clutch",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100079,
+    "categoryName": "Clutch Control",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 706853,
+    "categoryName": "Actuator",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 105589,
+    "categoryName": "Breather",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 102754,
+    "categoryName": "Clutch Actuation System",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 706697,
+    "categoryName": "Clutch Booster",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 100077,
+    "categoryName": "Clutch Cable",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 100780,
+    "categoryName": "Clutch Levers/Linkage",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 100712,
+    "categoryName": "Clutch Pedal",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 100298,
+    "categoryName": "Hoses/Pipes",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 100061,
+    "categoryName": "Master Cylinder",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 100831,
+    "categoryName": "Master/Slave Cylinder Set",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 102673,
+    "categoryName": "Pressure Accumulator",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 706881,
+    "categoryName": "Pressure Regulator",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 101926,
+    "categoryName": "Shuttle Valve",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 100060,
+    "categoryName": "Slave Cylinder",
+    "parentCategoryId": 100079,
+    "level": 2
+  },
+  {
+    "categoryId": 104718,
+    "categoryName": "Clutch Conversion Kit",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100053,
+    "categoryName": "Clutch Disc",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 102877,
+    "categoryName": "Clutch Housing",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100264,
+    "categoryName": "Clutch Hydraulic Filter",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100051,
+    "categoryName": "Clutch Kit",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 706821,
+    "categoryName": "Clutch Module",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 104511,
+    "categoryName": "Clutch Peak Torque Limiter",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100052,
+    "categoryName": "Clutch Pressure Plate",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100054,
+    "categoryName": "Clutch Release Bearing/Central Slave Cylinder",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100237,
+    "categoryName": "Central Slave Cylinder",
+    "parentCategoryId": 100054,
+    "level": 2
+  },
+  {
+    "categoryId": 100055,
+    "categoryName": "Clutch Release Bearing",
+    "parentCategoryId": 100054,
+    "level": 2
+  },
+  {
+    "categoryId": 102080,
+    "categoryName": "Release Fork",
+    "parentCategoryId": 100054,
+    "level": 2
+  },
+  {
+    "categoryId": 100056,
+    "categoryName": "Sleeve",
+    "parentCategoryId": 100054,
+    "level": 2
+  },
+  {
+    "categoryId": 100057,
+    "categoryName": "Flywheel",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 102784,
+    "categoryName": "Gaskets/Gasket Sets",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 104813,
+    "categoryName": "Hydraulic Fluid",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100059,
+    "categoryName": "Pilot Bearing/Thrust Washer",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 706751,
+    "categoryName": "Pressure Plate",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 706728,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 103156,
+    "categoryName": "Tools",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 102370,
+    "categoryName": "Torsion Damper",
+    "parentCategoryId": 100050,
+    "level": 1
+  },
+  {
+    "categoryId": 100335,
+    "categoryName": "Comfort Systems",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100619,
+    "categoryName": "Alarm System",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 105580,
+    "categoryName": "Bonnet Actuation",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 706838,
+    "categoryName": "Camera",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100617,
+    "categoryName": "Central Locking",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 105578,
+    "categoryName": "Coming Home Function",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 706789,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100615,
+    "categoryName": "Cruise Control",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100836,
+    "categoryName": "Door Closing Aid/Door Actuation",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 102736,
+    "categoryName": "Engine Preheater System (electric)",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 706510,
+    "categoryName": "Keyless System",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 104156,
+    "categoryName": "Motor/Relay/Switch",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 104166,
+    "categoryName": "Alarm",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 105584,
+    "categoryName": "Bonnet",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104164,
+    "categoryName": "Central Locking",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104163,
+    "categoryName": "Cruise Control System",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 105588,
+    "categoryName": "Door",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104165,
+    "categoryName": "Door Latch Aid",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104169,
+    "categoryName": "Fuel Filler Flap Release",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 105585,
+    "categoryName": "Hinged Window",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104159,
+    "categoryName": "Mirror",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104161,
+    "categoryName": "park distance control/Back-up Alarm",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104162,
+    "categoryName": "Parking Heater",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104160,
+    "categoryName": "Rear Window",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 105586,
+    "categoryName": "Steering Column Adjustment",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104158,
+    "categoryName": "Sunroof",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 105582,
+    "categoryName": "Tailgate",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104157,
+    "categoryName": "Window Regulator",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 104167,
+    "categoryName": "Windscreen",
+    "parentCategoryId": 104156,
+    "level": 2
+  },
+  {
+    "categoryId": 100618,
+    "categoryName": "park distance control/Back-up Alarm",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100614,
+    "categoryName": "Parking Heater",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100625,
+    "categoryName": "Pumps",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100850,
+    "categoryName": "Rain Sensor",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100863,
+    "categoryName": "Seat Heating",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100616,
+    "categoryName": "Speeding Alarm",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100734,
+    "categoryName": "Sunroof",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 104155,
+    "categoryName": "Tailgate Actuation",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 706318,
+    "categoryName": "Tools",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 100751,
+    "categoryName": "Window Regulator",
+    "parentCategoryId": 100335,
+    "level": 1
+  },
+  {
+    "categoryId": 103168,
+    "categoryName": "Compressed-air System",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 103171,
+    "categoryName": "Air Dryer/Cartridge",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103207,
+    "categoryName": "Air Tank/Accessories",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103208,
+    "categoryName": "Water Drain Valve",
+    "parentCategoryId": 103207,
+    "level": 2
+  },
+  {
+    "categoryId": 103193,
+    "categoryName": "Brake/Slave Cylinder",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103195,
+    "categoryName": "Diaphragm Brake Cylinder",
+    "parentCategoryId": 103193,
+    "level": 2
+  },
+  {
+    "categoryId": 103194,
+    "categoryName": "Slave Cylinder",
+    "parentCategoryId": 103193,
+    "level": 2
+  },
+  {
+    "categoryId": 103196,
+    "categoryName": "Coupling Head",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103197,
+    "categoryName": "Hoses/Connector Pipes",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103183,
+    "categoryName": "Muffler (compressed-air system)",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103169,
+    "categoryName": "Pressure Regulator/Parts",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103170,
+    "categoryName": "Pressure Regulator",
+    "parentCategoryId": 103169,
+    "level": 2
+  },
+  {
+    "categoryId": 706481,
+    "categoryName": "Sensor",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103192,
+    "categoryName": "Shut-off Cock",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 706494,
+    "categoryName": "Switch",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103181,
+    "categoryName": "Test Connection",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103198,
+    "categoryName": "Valves/compressed-air system",
+    "parentCategoryId": 103168,
+    "level": 1
+  },
+  {
+    "categoryId": 103201,
+    "categoryName": "Control Valve, trailer",
+    "parentCategoryId": 103198,
+    "level": 2
+  },
+  {
+    "categoryId": 103199,
+    "categoryName": "Multiple-Circuit Protection Valve",
+    "parentCategoryId": 103198,
+    "level": 2
+  },
+  {
+    "categoryId": 103200,
+    "categoryName": "Other Valves",
+    "parentCategoryId": 103198,
+    "level": 2
+  },
+  {
+    "categoryId": 100007,
+    "categoryName": "Cooling System",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100338,
+    "categoryName": "Air Cooling",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 102205,
+    "categoryName": "Antifreeze",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 103509,
+    "categoryName": "Article Search via Graphic",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 102447,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 100874,
+    "categoryName": "Cooling Module",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 100099,
+    "categoryName": "Hoses/Pipes/Flanges",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 706823,
+    "categoryName": "Assortment",
+    "parentCategoryId": 100099,
+    "level": 2
+  },
+  {
+    "categoryId": 706709,
+    "categoryName": "Connection Piece",
+    "parentCategoryId": 100099,
+    "level": 2
+  },
+  {
+    "categoryId": 100840,
+    "categoryName": "Flanges",
+    "parentCategoryId": 100099,
+    "level": 2
+  },
+  {
+    "categoryId": 100215,
+    "categoryName": "Oil Pipes",
+    "parentCategoryId": 100099,
+    "level": 2
+  },
+  {
+    "categoryId": 100100,
+    "categoryName": "Radiator Hoses",
+    "parentCategoryId": 100099,
+    "level": 2
+  },
+  {
+    "categoryId": 100337,
+    "categoryName": "Radiator Fan",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 100102,
+    "categoryName": "Radiator/Oil Cooler",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 100112,
+    "categoryName": "Expansion Tank",
+    "parentCategoryId": 100102,
+    "level": 2
+  },
+  {
+    "categoryId": 100104,
+    "categoryName": "Interior Heat Exchanger",
+    "parentCategoryId": 100102,
+    "level": 2
+  },
+  {
+    "categoryId": 100108,
+    "categoryName": "Oil Cooler",
+    "parentCategoryId": 100102,
+    "level": 2
+  },
+  {
+    "categoryId": 100105,
+    "categoryName": "Radiator Mounting Parts",
+    "parentCategoryId": 100102,
+    "level": 2
+  },
+  {
+    "categoryId": 100103,
+    "categoryName": "Radiator/Parts",
+    "parentCategoryId": 100102,
+    "level": 2
+  },
+  {
+    "categoryId": 100344,
+    "categoryName": "Relay",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 100334,
+    "categoryName": "Switch/Sensor",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 100094,
+    "categoryName": "Thermostat/Seal",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 100096,
+    "categoryName": "Seal",
+    "parentCategoryId": 100094,
+    "level": 2
+  },
+  {
+    "categoryId": 100095,
+    "categoryName": "Thermostat",
+    "parentCategoryId": 100094,
+    "level": 2
+  },
+  {
+    "categoryId": 103131,
+    "categoryName": "Tools",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 100088,
+    "categoryName": "Water Pump/Gasket",
+    "parentCategoryId": 100007,
+    "level": 1
+  },
+  {
+    "categoryId": 102211,
+    "categoryName": "Belt Pulley",
+    "parentCategoryId": 100088,
+    "level": 2
+  },
+  {
+    "categoryId": 102984,
+    "categoryName": "Crankshaft Gear",
+    "parentCategoryId": 100088,
+    "level": 2
+  },
+  {
+    "categoryId": 706034,
+    "categoryName": "Friction Wheel",
+    "parentCategoryId": 100088,
+    "level": 2
+  },
+  {
+    "categoryId": 100089,
+    "categoryName": "Seal",
+    "parentCategoryId": 100088,
+    "level": 2
+  },
+  {
+    "categoryId": 104956,
+    "categoryName": "Thermal Management Module",
+    "parentCategoryId": 100088,
+    "level": 2
+  },
+  {
+    "categoryId": 100091,
+    "categoryName": "Water Pump",
+    "parentCategoryId": 100088,
+    "level": 2
+  },
+  {
+    "categoryId": 100010,
+    "categoryName": "Electrics",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100787,
+    "categoryName": "Additional Headlight/Parts",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 102671,
+    "categoryName": "Cornering Light/Parts",
+    "parentCategoryId": 100787,
+    "level": 2
+  },
+  {
+    "categoryId": 100869,
+    "categoryName": "Dynamic Bending Light/Parts",
+    "parentCategoryId": 100787,
+    "level": 2
+  },
+  {
+    "categoryId": 100277,
+    "categoryName": "Front Fog Light/Parts",
+    "parentCategoryId": 100787,
+    "level": 2
+  },
+  {
+    "categoryId": 100447,
+    "categoryName": "Fog Light Bulb",
+    "parentCategoryId": 100277,
+    "level": 3
+  },
+  {
+    "categoryId": 100444,
+    "categoryName": "Fog Light Parts",
+    "parentCategoryId": 100277,
+    "level": 3
+  },
+  {
+    "categoryId": 100440,
+    "categoryName": "Front Fog Light/Insert",
+    "parentCategoryId": 100277,
+    "level": 3
+  },
+  {
+    "categoryId": 100281,
+    "categoryName": "Searchlight/Parts",
+    "parentCategoryId": 100787,
+    "level": 2
+  },
+  {
+    "categoryId": 100449,
+    "categoryName": "Searchlight Bulb",
+    "parentCategoryId": 100281,
+    "level": 3
+  },
+  {
+    "categoryId": 100446,
+    "categoryName": "Searchlight Parts",
+    "parentCategoryId": 100281,
+    "level": 3
+  },
+  {
+    "categoryId": 100437,
+    "categoryName": "Searchlight/Insert",
+    "parentCategoryId": 100281,
+    "level": 3
+  },
+  {
+    "categoryId": 100276,
+    "categoryName": "Spotlight/Parts",
+    "parentCategoryId": 100787,
+    "level": 2
+  },
+  {
+    "categoryId": 100442,
+    "categoryName": "Spotlight Bulb",
+    "parentCategoryId": 100276,
+    "level": 3
+  },
+  {
+    "categoryId": 100443,
+    "categoryName": "Spotlight Parts",
+    "parentCategoryId": 100276,
+    "level": 3
+  },
+  {
+    "categoryId": 100439,
+    "categoryName": "Spotlight/Insert",
+    "parentCategoryId": 100276,
+    "level": 3
+  },
+  {
+    "categoryId": 100280,
+    "categoryName": "Worklight/Parts",
+    "parentCategoryId": 100787,
+    "level": 2
+  },
+  {
+    "categoryId": 100448,
+    "categoryName": "Worklight Bulb",
+    "parentCategoryId": 100280,
+    "level": 3
+  },
+  {
+    "categoryId": 100445,
+    "categoryName": "Worklight Parts",
+    "parentCategoryId": 100280,
+    "level": 3
+  },
+  {
+    "categoryId": 100426,
+    "categoryName": "Worklight/Insert",
+    "parentCategoryId": 100280,
+    "level": 3
+  },
+  {
+    "categoryId": 100041,
+    "categoryName": "Alternator/Parts",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100350,
+    "categoryName": "Alternator",
+    "parentCategoryId": 100041,
+    "level": 2
+  },
+  {
+    "categoryId": 100352,
+    "categoryName": "Generator/ Alternator Parts",
+    "parentCategoryId": 100041,
+    "level": 2
+  },
+  {
+    "categoryId": 100351,
+    "categoryName": "Regulator",
+    "parentCategoryId": 100041,
+    "level": 2
+  },
+  {
+    "categoryId": 100042,
+    "categoryName": "Battery",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 105798,
+    "categoryName": "Bulb Set",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 103066,
+    "categoryName": "Cable Set/individual parts",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 102661,
+    "categoryName": "CAN Bus",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100708,
+    "categoryName": "Central Electrics",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100727,
+    "categoryName": "Control Units",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100511,
+    "categoryName": "Flasher Unit/Relay",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 102336,
+    "categoryName": "Fuse Box/Holder",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 706659,
+    "categoryName": "Fuses",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100143,
+    "categoryName": "Headlight/Parts",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100427,
+    "categoryName": "Headlight Bulb",
+    "parentCategoryId": 100143,
+    "level": 2
+  },
+  {
+    "categoryId": 100279,
+    "categoryName": "Headlight Levelling",
+    "parentCategoryId": 100143,
+    "level": 2
+  },
+  {
+    "categoryId": 706161,
+    "categoryName": "Headlight Module/Individual Parts",
+    "parentCategoryId": 100143,
+    "level": 2
+  },
+  {
+    "categoryId": 100430,
+    "categoryName": "Headlight Parts",
+    "parentCategoryId": 100143,
+    "level": 2
+  },
+  {
+    "categoryId": 100433,
+    "categoryName": "Headlight/Insert",
+    "parentCategoryId": 100143,
+    "level": 2
+  },
+  {
+    "categoryId": 100516,
+    "categoryName": "Pop-up Headlight",
+    "parentCategoryId": 100143,
+    "level": 2
+  },
+  {
+    "categoryId": 706742,
+    "categoryName": "Spotlight Bulb",
+    "parentCategoryId": 100143,
+    "level": 2
+  },
+  {
+    "categoryId": 100723,
+    "categoryName": "Xenon Light",
+    "parentCategoryId": 100143,
+    "level": 2
+  },
+  {
+    "categoryId": 100884,
+    "categoryName": "Indicator",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100322,
+    "categoryName": "Instruments",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100555,
+    "categoryName": "Gauges",
+    "parentCategoryId": 100322,
+    "level": 2
+  },
+  {
+    "categoryId": 100553,
+    "categoryName": "Sensors/Switches",
+    "parentCategoryId": 100322,
+    "level": 2
+  },
+  {
+    "categoryId": 100561,
+    "categoryName": "Speedometer Cable",
+    "parentCategoryId": 100322,
+    "level": 2
+  },
+  {
+    "categoryId": 100307,
+    "categoryName": "Light Switches/Relays/Controls",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100724,
+    "categoryName": "Controls",
+    "parentCategoryId": 100307,
+    "level": 2
+  },
+  {
+    "categoryId": 100509,
+    "categoryName": "Light Switch/ Lever",
+    "parentCategoryId": 100307,
+    "level": 2
+  },
+  {
+    "categoryId": 100510,
+    "categoryName": "Relay",
+    "parentCategoryId": 100307,
+    "level": 2
+  },
+  {
+    "categoryId": 100043,
+    "categoryName": "Lights",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100870,
+    "categoryName": "Daytime Running Light",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100145,
+    "categoryName": "Direction Indicator/Parts",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100463,
+    "categoryName": "Direction Indicator",
+    "parentCategoryId": 100145,
+    "level": 3
+  },
+  {
+    "categoryId": 100498,
+    "categoryName": "Indicator Bulb",
+    "parentCategoryId": 100145,
+    "level": 3
+  },
+  {
+    "categoryId": 100480,
+    "categoryName": "Indicator Parts",
+    "parentCategoryId": 100145,
+    "level": 3
+  },
+  {
+    "categoryId": 100291,
+    "categoryName": "Door Light",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100292,
+    "categoryName": "Interior Lights",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100507,
+    "categoryName": "Boot-/Cargo Area Lights",
+    "parentCategoryId": 100292,
+    "level": 3
+  },
+  {
+    "categoryId": 100506,
+    "categoryName": "Engine Bay Lighting",
+    "parentCategoryId": 100292,
+    "level": 3
+  },
+  {
+    "categoryId": 706495,
+    "categoryName": "Footwell Lighting",
+    "parentCategoryId": 100292,
+    "level": 3
+  },
+  {
+    "categoryId": 101794,
+    "categoryName": "Glove Compartment Lighting",
+    "parentCategoryId": 100292,
+    "level": 3
+  },
+  {
+    "categoryId": 100505,
+    "categoryName": "Interior Lighting",
+    "parentCategoryId": 100292,
+    "level": 3
+  },
+  {
+    "categoryId": 100508,
+    "categoryName": "Lighting Controls",
+    "parentCategoryId": 100292,
+    "level": 3
+  },
+  {
+    "categoryId": 101803,
+    "categoryName": "Reading Light",
+    "parentCategoryId": 100292,
+    "level": 3
+  },
+  {
+    "categoryId": 100147,
+    "categoryName": "Licence Plate Light/-Parts",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100464,
+    "categoryName": "Licence Plate Light",
+    "parentCategoryId": 100147,
+    "level": 3
+  },
+  {
+    "categoryId": 100499,
+    "categoryName": "Licence Plate Light Bulb",
+    "parentCategoryId": 100147,
+    "level": 3
+  },
+  {
+    "categoryId": 100482,
+    "categoryName": "Licence Plate Light Parts",
+    "parentCategoryId": 100147,
+    "level": 3
+  },
+  {
+    "categoryId": 100285,
+    "categoryName": "Rear Fog Light/Parts",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100465,
+    "categoryName": "Rear Fog Light",
+    "parentCategoryId": 100285,
+    "level": 3
+  },
+  {
+    "categoryId": 100500,
+    "categoryName": "Rear Fog Light Bulb",
+    "parentCategoryId": 100285,
+    "level": 3
+  },
+  {
+    "categoryId": 100484,
+    "categoryName": "Rear Fog Light Individual Parts",
+    "parentCategoryId": 100285,
+    "level": 3
+  },
+  {
+    "categoryId": 100287,
+    "categoryName": "Reverse Light/Parts",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100466,
+    "categoryName": "Reverse Light",
+    "parentCategoryId": 100287,
+    "level": 3
+  },
+  {
+    "categoryId": 100501,
+    "categoryName": "Reverse Light Bulb",
+    "parentCategoryId": 100287,
+    "level": 3
+  },
+  {
+    "categoryId": 100486,
+    "categoryName": "Reverse Light Parts",
+    "parentCategoryId": 100287,
+    "level": 3
+  },
+  {
+    "categoryId": 100289,
+    "categoryName": "Rotating Beacon/Parts",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100540,
+    "categoryName": "Motor, rotating beacon",
+    "parentCategoryId": 100289,
+    "level": 3
+  },
+  {
+    "categoryId": 100467,
+    "categoryName": "Rotating Beacon",
+    "parentCategoryId": 100289,
+    "level": 3
+  },
+  {
+    "categoryId": 100502,
+    "categoryName": "Rotating Beacon Bulb",
+    "parentCategoryId": 100289,
+    "level": 3
+  },
+  {
+    "categoryId": 100487,
+    "categoryName": "Rotating Beacon Parts",
+    "parentCategoryId": 100289,
+    "level": 3
+  },
+  {
+    "categoryId": 100290,
+    "categoryName": "Side Marker/End Outline Marker Light/Parts",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100503,
+    "categoryName": "Bulb",
+    "parentCategoryId": 100290,
+    "level": 3
+  },
+  {
+    "categoryId": 100469,
+    "categoryName": "End Outline Marker Light",
+    "parentCategoryId": 100290,
+    "level": 3
+  },
+  {
+    "categoryId": 100468,
+    "categoryName": "Park/Position Light",
+    "parentCategoryId": 100290,
+    "level": 3
+  },
+  {
+    "categoryId": 100495,
+    "categoryName": "Parts",
+    "parentCategoryId": 100290,
+    "level": 3
+  },
+  {
+    "categoryId": 100753,
+    "categoryName": "Side Marker Lights",
+    "parentCategoryId": 100290,
+    "level": 3
+  },
+  {
+    "categoryId": 100284,
+    "categoryName": "Stop Light/Parts",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100867,
+    "categoryName": "Auxiliary Stop Light",
+    "parentCategoryId": 100284,
+    "level": 3
+  },
+  {
+    "categoryId": 100460,
+    "categoryName": "Stop Light",
+    "parentCategoryId": 100284,
+    "level": 3
+  },
+  {
+    "categoryId": 100496,
+    "categoryName": "Stop Light Bulb",
+    "parentCategoryId": 100284,
+    "level": 3
+  },
+  {
+    "categoryId": 100471,
+    "categoryName": "Stop Light Parts",
+    "parentCategoryId": 100284,
+    "level": 3
+  },
+  {
+    "categoryId": 100275,
+    "categoryName": "Tail Light Assembly/Parts",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 100454,
+    "categoryName": "Tail Light Assembly",
+    "parentCategoryId": 100275,
+    "level": 3
+  },
+  {
+    "categoryId": 101495,
+    "categoryName": "Tail Light Assembly Bulb",
+    "parentCategoryId": 100275,
+    "level": 3
+  },
+  {
+    "categoryId": 100456,
+    "categoryName": "Tail Light Assembly Parts",
+    "parentCategoryId": 100275,
+    "level": 3
+  },
+  {
+    "categoryId": 101966,
+    "categoryName": "Taxi Toplight",
+    "parentCategoryId": 100043,
+    "level": 2
+  },
+  {
+    "categoryId": 104741,
+    "categoryName": "Multifunction switch/operating unit",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 103428,
+    "categoryName": "Multifunctional Relay",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100295,
+    "categoryName": "Reflectors/Side Reflectors",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100785,
+    "categoryName": "Relay",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 102747,
+    "categoryName": "Sensors",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100320,
+    "categoryName": "Signal Horn/Trumpet Horn",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 101826,
+    "categoryName": "Starter Generator",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100353,
+    "categoryName": "Starter System",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100362,
+    "categoryName": "Solenoid Switch",
+    "parentCategoryId": 100353,
+    "level": 2
+  },
+  {
+    "categoryId": 100359,
+    "categoryName": "Starter",
+    "parentCategoryId": 100353,
+    "level": 2
+  },
+  {
+    "categoryId": 100040,
+    "categoryName": "Starter Parts",
+    "parentCategoryId": 100353,
+    "level": 2
+  },
+  {
+    "categoryId": 103136,
+    "categoryName": "Tools",
+    "parentCategoryId": 100010,
+    "level": 1
+  },
+  {
+    "categoryId": 100002,
+    "categoryName": "Engine",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 706796,
+    "categoryName": "Accessories",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100383,
+    "categoryName": "Air Supply",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100385,
+    "categoryName": "Accelerator Cable/Linkage",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 100384,
+    "categoryName": "Air Filter/ Housing",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 100388,
+    "categoryName": "Bypass Valve Throttle",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 100818,
+    "categoryName": "Charger Management",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 100390,
+    "categoryName": "Charging (supercharged/turbocharged)",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 706817,
+    "categoryName": "Bypass Flap",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 100394,
+    "categoryName": "Charge Air Control",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 100393,
+    "categoryName": "Charge Air Cooler",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 102076,
+    "categoryName": "Charge Air Hose",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 706689,
+    "categoryName": "Charge air pipe",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 100392,
+    "categoryName": "Charger Gasket",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 100391,
+    "categoryName": "Charger/-parts",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 103421,
+    "categoryName": "Low Temperature Cooler",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 103543,
+    "categoryName": "Oil Filter",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 706645,
+    "categoryName": "Resonator",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 706552,
+    "categoryName": "Supercharger",
+    "parentCategoryId": 100390,
+    "level": 3
+  },
+  {
+    "categoryId": 100387,
+    "categoryName": "Control Flap",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 100386,
+    "categoryName": "Intake Manifold",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 706397,
+    "categoryName": "Intake Snorkel",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 102872,
+    "categoryName": "Intake-Air Preheating",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 102235,
+    "categoryName": "Radiator Hoses",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 100704,
+    "categoryName": "Throttle Valve/Sensor",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 102339,
+    "categoryName": "Throttle Body",
+    "parentCategoryId": 100704,
+    "level": 3
+  },
+  {
+    "categoryId": 100706,
+    "categoryName": "Throttle Sensor",
+    "parentCategoryId": 100704,
+    "level": 3
+  },
+  {
+    "categoryId": 100705,
+    "categoryName": "Throttle Valve",
+    "parentCategoryId": 100704,
+    "level": 3
+  },
+  {
+    "categoryId": 706541,
+    "categoryName": "Tools",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 100389,
+    "categoryName": "Warm Air Deflector Plate",
+    "parentCategoryId": 100383,
+    "level": 2
+  },
+  {
+    "categoryId": 102771,
+    "categoryName": "Article Search via Graphic",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 104302,
+    "categoryName": "Belt Drive",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 104328,
+    "categoryName": "Accessories/Small Parts",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104330,
+    "categoryName": "Alternator Freewheel Clutch",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104327,
+    "categoryName": "Article Search via Graphic",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104329,
+    "categoryName": "Belt Pulley",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104331,
+    "categoryName": "Flexible Coupling Sleeve",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104317,
+    "categoryName": "Timing Belt/Set",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104323,
+    "categoryName": "Belt Tensioner (Tensioner Unit)",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104321,
+    "categoryName": "Deflection Pulley/Guide Pulley",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104326,
+    "categoryName": "Pulley Kit",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104322,
+    "categoryName": "Tensioner",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104320,
+    "categoryName": "Tensioner Pulley",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104318,
+    "categoryName": "Timing Belt",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104325,
+    "categoryName": "Timing Belt Cover",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104319,
+    "categoryName": "Timing Belt Kit",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104324,
+    "categoryName": "Vibration Damper",
+    "parentCategoryId": 104317,
+    "level": 3
+  },
+  {
+    "categoryId": 104332,
+    "categoryName": "Tools",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104303,
+    "categoryName": "V-Belt/Set",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104306,
+    "categoryName": "Deflection Pulley",
+    "parentCategoryId": 104303,
+    "level": 3
+  },
+  {
+    "categoryId": 104307,
+    "categoryName": "Tensioner",
+    "parentCategoryId": 104303,
+    "level": 3
+  },
+  {
+    "categoryId": 104304,
+    "categoryName": "V-Belt",
+    "parentCategoryId": 104303,
+    "level": 3
+  },
+  {
+    "categoryId": 104305,
+    "categoryName": "V-Belt Set",
+    "parentCategoryId": 104303,
+    "level": 3
+  },
+  {
+    "categoryId": 104308,
+    "categoryName": "V-Ribbed Belt/Set",
+    "parentCategoryId": 104302,
+    "level": 2
+  },
+  {
+    "categoryId": 104314,
+    "categoryName": "Belt Tensioner (Tensioner Unit)",
+    "parentCategoryId": 104308,
+    "level": 3
+  },
+  {
+    "categoryId": 104312,
+    "categoryName": "Deflection Pulley/Guide Pulley",
+    "parentCategoryId": 104308,
+    "level": 3
+  },
+  {
+    "categoryId": 104316,
+    "categoryName": "Pulley Kit",
+    "parentCategoryId": 104308,
+    "level": 3
+  },
+  {
+    "categoryId": 104313,
+    "categoryName": "Tensioner",
+    "parentCategoryId": 104308,
+    "level": 3
+  },
+  {
+    "categoryId": 104311,
+    "categoryName": "Tensioner Pulley",
+    "parentCategoryId": 104308,
+    "level": 3
+  },
+  {
+    "categoryId": 104309,
+    "categoryName": "V-Ribbed Belt",
+    "parentCategoryId": 104308,
+    "level": 3
+  },
+  {
+    "categoryId": 104310,
+    "categoryName": "V-Ribbed Belt Set",
+    "parentCategoryId": 104308,
+    "level": 3
+  },
+  {
+    "categoryId": 104315,
+    "categoryName": "Vibration Damper",
+    "parentCategoryId": 104308,
+    "level": 3
+  },
+  {
+    "categoryId": 100700,
+    "categoryName": "Complete/Partial Engine",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100701,
+    "categoryName": "Complete Engine",
+    "parentCategoryId": 100700,
+    "level": 2
+  },
+  {
+    "categoryId": 100702,
+    "categoryName": "Partial Engine",
+    "parentCategoryId": 100700,
+    "level": 2
+  },
+  {
+    "categoryId": 100514,
+    "categoryName": "Crankcase",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 105862,
+    "categoryName": "Breather",
+    "parentCategoryId": 100514,
+    "level": 2
+  },
+  {
+    "categoryId": 100533,
+    "categoryName": "Crankcase",
+    "parentCategoryId": 100514,
+    "level": 2
+  },
+  {
+    "categoryId": 105861,
+    "categoryName": "Cylinder",
+    "parentCategoryId": 100514,
+    "level": 2
+  },
+  {
+    "categoryId": 100534,
+    "categoryName": "Cylinder Liners/Set",
+    "parentCategoryId": 100514,
+    "level": 2
+  },
+  {
+    "categoryId": 105860,
+    "categoryName": "Intermediate/Balance Shaft",
+    "parentCategoryId": 100514,
+    "level": 2
+  },
+  {
+    "categoryId": 105864,
+    "categoryName": "Oil Distributor",
+    "parentCategoryId": 100514,
+    "level": 2
+  },
+  {
+    "categoryId": 706423,
+    "categoryName": "Tools",
+    "parentCategoryId": 100514,
+    "level": 2
+  },
+  {
+    "categoryId": 100515,
+    "categoryName": "Crankshaft Drive",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100519,
+    "categoryName": "Connecting Rod",
+    "parentCategoryId": 100515,
+    "level": 2
+  },
+  {
+    "categoryId": 100524,
+    "categoryName": "Connecting Rod",
+    "parentCategoryId": 100519,
+    "level": 3
+  },
+  {
+    "categoryId": 100525,
+    "categoryName": "Connecting Rod Bearing",
+    "parentCategoryId": 100519,
+    "level": 3
+  },
+  {
+    "categoryId": 100526,
+    "categoryName": "Connecting Rod Bearing Cap",
+    "parentCategoryId": 100519,
+    "level": 3
+  },
+  {
+    "categoryId": 100528,
+    "categoryName": "Connecting Rod Bolt/Nut",
+    "parentCategoryId": 100519,
+    "level": 3
+  },
+  {
+    "categoryId": 100527,
+    "categoryName": "Small End Bushes",
+    "parentCategoryId": 100519,
+    "level": 3
+  },
+  {
+    "categoryId": 100517,
+    "categoryName": "Crankshaft",
+    "parentCategoryId": 100515,
+    "level": 2
+  },
+  {
+    "categoryId": 102683,
+    "categoryName": "Crankshaft",
+    "parentCategoryId": 100517,
+    "level": 3
+  },
+  {
+    "categoryId": 100522,
+    "categoryName": "Crankshaft Bearing",
+    "parentCategoryId": 100517,
+    "level": 3
+  },
+  {
+    "categoryId": 100523,
+    "categoryName": "Crankshaft Bearing Cap",
+    "parentCategoryId": 100517,
+    "level": 3
+  },
+  {
+    "categoryId": 100786,
+    "categoryName": "Crankshaft Gear",
+    "parentCategoryId": 100517,
+    "level": 3
+  },
+  {
+    "categoryId": 706454,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 100517,
+    "level": 3
+  },
+  {
+    "categoryId": 100886,
+    "categoryName": "Oil baffle",
+    "parentCategoryId": 100517,
+    "level": 3
+  },
+  {
+    "categoryId": 100759,
+    "categoryName": "Thrust Washers/Thrust Bearing",
+    "parentCategoryId": 100517,
+    "level": 3
+  },
+  {
+    "categoryId": 100518,
+    "categoryName": "Flywheel",
+    "parentCategoryId": 100515,
+    "level": 2
+  },
+  {
+    "categoryId": 103120,
+    "categoryName": "Intermediate/Balance Shaft",
+    "parentCategoryId": 100515,
+    "level": 2
+  },
+  {
+    "categoryId": 100520,
+    "categoryName": "Piston",
+    "parentCategoryId": 100515,
+    "level": 2
+  },
+  {
+    "categoryId": 100529,
+    "categoryName": "Piston",
+    "parentCategoryId": 100520,
+    "level": 3
+  },
+  {
+    "categoryId": 100530,
+    "categoryName": "Piston Complete",
+    "parentCategoryId": 100520,
+    "level": 3
+  },
+  {
+    "categoryId": 100532,
+    "categoryName": "Piston Pin/Circlip",
+    "parentCategoryId": 100520,
+    "level": 3
+  },
+  {
+    "categoryId": 100531,
+    "categoryName": "Piston Ring Set",
+    "parentCategoryId": 100520,
+    "level": 3
+  },
+  {
+    "categoryId": 103270,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100520,
+    "level": 3
+  },
+  {
+    "categoryId": 100521,
+    "categoryName": "Radial Shaft Seal/Set",
+    "parentCategoryId": 100515,
+    "level": 2
+  },
+  {
+    "categoryId": 706358,
+    "categoryName": "Tools",
+    "parentCategoryId": 100515,
+    "level": 2
+  },
+  {
+    "categoryId": 100373,
+    "categoryName": "Cylinder Head/Attachment Parts",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100380,
+    "categoryName": "Cylinder Head",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 100378,
+    "categoryName": "Cylinder Head Bolts",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 100375,
+    "categoryName": "Cylinder Head Cover/-Gasket",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 100374,
+    "categoryName": "Cylinder Head Gasket",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 100376,
+    "categoryName": "Intake-/Exhaust Manifold Gasket/-seal ring",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 100379,
+    "categoryName": "Oil Filler Cap/Seal",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 100788,
+    "categoryName": "Radiator Hoses/Gasket",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 102778,
+    "categoryName": "Shaft Seal Rings",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 706350,
+    "categoryName": "Tools",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 102450,
+    "categoryName": "Vacuum Pump",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 100377,
+    "categoryName": "Valve Guide/Stem Seal/Parts",
+    "parentCategoryId": 100373,
+    "level": 2
+  },
+  {
+    "categoryId": 104377,
+    "categoryName": "Cylinders/Pistons",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 103037,
+    "categoryName": "Engine Cover",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100754,
+    "categoryName": "Engine Electrics",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 103397,
+    "categoryName": "Engine Guard/Skid Plate",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100535,
+    "categoryName": "Engine Mounting System",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100536,
+    "categoryName": "Engine Bracket",
+    "parentCategoryId": 100535,
+    "level": 2
+  },
+  {
+    "categoryId": 100538,
+    "categoryName": "Engine Mounting",
+    "parentCategoryId": 100535,
+    "level": 2
+  },
+  {
+    "categoryId": 100539,
+    "categoryName": "Engine Mounting Rubber Buffer",
+    "parentCategoryId": 100535,
+    "level": 2
+  },
+  {
+    "categoryId": 100698,
+    "categoryName": "Fasteners",
+    "parentCategoryId": 100535,
+    "level": 2
+  },
+  {
+    "categoryId": 100003,
+    "categoryName": "Engine Timing",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 104695,
+    "categoryName": "Belt Pulley",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100397,
+    "categoryName": "Camshaft",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 706314,
+    "categoryName": "Crankshaft Gear",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100852,
+    "categoryName": "Intermediate Shaft",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100398,
+    "categoryName": "Rocker Arm/Finger Follower",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100399,
+    "categoryName": "Tappet/Push Rod/Push Rod Protection Tube",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100396,
+    "categoryName": "Timing Belt/Tensioner/Guide",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100410,
+    "categoryName": "Belt Tensioner (Tensioner Unit)",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 100407,
+    "categoryName": "Deflection Pulley/Guide Pulley",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 102027,
+    "categoryName": "Pulley Kit",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 100409,
+    "categoryName": "Tensioner",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 100406,
+    "categoryName": "Tensioner Pulley",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 100404,
+    "categoryName": "Timing Belt",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 102015,
+    "categoryName": "Timing Belt Cover",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 100405,
+    "categoryName": "Timing Belt Kit",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 100875,
+    "categoryName": "Vibration Damper",
+    "parentCategoryId": 100396,
+    "level": 3
+  },
+  {
+    "categoryId": 100401,
+    "categoryName": "Timing Case/Gasket",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100403,
+    "categoryName": "Timing Chain/Tensioner/Guide",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 101485,
+    "categoryName": "Slide Rail",
+    "parentCategoryId": 100403,
+    "level": 3
+  },
+  {
+    "categoryId": 100411,
+    "categoryName": "Timing Chain",
+    "parentCategoryId": 100403,
+    "level": 3
+  },
+  {
+    "categoryId": 100413,
+    "categoryName": "Timing Chain Guides",
+    "parentCategoryId": 100403,
+    "level": 3
+  },
+  {
+    "categoryId": 103278,
+    "categoryName": "Timing Chain Kit",
+    "parentCategoryId": 100403,
+    "level": 3
+  },
+  {
+    "categoryId": 100414,
+    "categoryName": "Timing Chain Tensioner",
+    "parentCategoryId": 100403,
+    "level": 3
+  },
+  {
+    "categoryId": 100425,
+    "categoryName": "Timing Gear",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 101833,
+    "categoryName": "Timing Gears",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 706307,
+    "categoryName": "Tools",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100422,
+    "categoryName": "Valve Train",
+    "parentCategoryId": 100003,
+    "level": 2
+  },
+  {
+    "categoryId": 100424,
+    "categoryName": "Valve Actuation",
+    "parentCategoryId": 100422,
+    "level": 3
+  },
+  {
+    "categoryId": 100423,
+    "categoryName": "Valves/Parts",
+    "parentCategoryId": 100422,
+    "level": 3
+  },
+  {
+    "categoryId": 100541,
+    "categoryName": "Exhaust Emission Control",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 103254,
+    "categoryName": "Article Search via Graphic",
+    "parentCategoryId": 100541,
+    "level": 2
+  },
+  {
+    "categoryId": 100866,
+    "categoryName": "Euro1-/Euro2-/D3 Conversion",
+    "parentCategoryId": 100541,
+    "level": 2
+  },
+  {
+    "categoryId": 100542,
+    "categoryName": "Exhaust Gas Recirculation",
+    "parentCategoryId": 100541,
+    "level": 2
+  },
+  {
+    "categoryId": 103237,
+    "categoryName": "Cooler",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 100546,
+    "categoryName": "EGR Air Flow Control",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 100545,
+    "categoryName": "EGR Exhaust Control",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 102993,
+    "categoryName": "EGR Module",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 103236,
+    "categoryName": "EGR Vacuum Control Valve",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 100551,
+    "categoryName": "EGR Valve/Intake Manifold",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 103235,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 100543,
+    "categoryName": "Pressure Transducer",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 706496,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 706702,
+    "categoryName": "Sensors",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 103238,
+    "categoryName": "Temperature Switch",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 100549,
+    "categoryName": "Valves, exhaust gas recirculation",
+    "parentCategoryId": 100542,
+    "level": 3
+  },
+  {
+    "categoryId": 100729,
+    "categoryName": "Lambda Control",
+    "parentCategoryId": 100541,
+    "level": 2
+  },
+  {
+    "categoryId": 100552,
+    "categoryName": "Secondary Air Injection",
+    "parentCategoryId": 100541,
+    "level": 2
+  },
+  {
+    "categoryId": 706502,
+    "categoryName": "Cable Repair Set",
+    "parentCategoryId": 100552,
+    "level": 3
+  },
+  {
+    "categoryId": 100559,
+    "categoryName": "Change-over Valve",
+    "parentCategoryId": 100552,
+    "level": 3
+  },
+  {
+    "categoryId": 103444,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 100552,
+    "level": 3
+  },
+  {
+    "categoryId": 100560,
+    "categoryName": "Secondary Air Pump",
+    "parentCategoryId": 100552,
+    "level": 3
+  },
+  {
+    "categoryId": 100558,
+    "categoryName": "Secondary Air Pump System",
+    "parentCategoryId": 100552,
+    "level": 3
+  },
+  {
+    "categoryId": 100557,
+    "categoryName": "Secondary Air Suction System",
+    "parentCategoryId": 100552,
+    "level": 3
+  },
+  {
+    "categoryId": 100564,
+    "categoryName": "Secondary Air System",
+    "parentCategoryId": 100552,
+    "level": 3
+  },
+  {
+    "categoryId": 100556,
+    "categoryName": "Secondary Air Valve",
+    "parentCategoryId": 100552,
+    "level": 3
+  },
+  {
+    "categoryId": 100223,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100683,
+    "categoryName": "Coolant Circuit Seals",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100233,
+    "categoryName": "Crankcase Gasket",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100225,
+    "categoryName": "Cylinder Head Gasket",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100231,
+    "categoryName": "Exhaust Manifold Gasket/seal ring",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100682,
+    "categoryName": "Fuel Circuit Seals",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100224,
+    "categoryName": "Full Gasket Set",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100229,
+    "categoryName": "Intake Manifold Gasket",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100684,
+    "categoryName": "Oil Circuit Seals",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100234,
+    "categoryName": "Oil Sump Gasket",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100789,
+    "categoryName": "Shaft Seal/Set",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100235,
+    "categoryName": "Timing Case Gasket",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100244,
+    "categoryName": "Turbocharger Gasket",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100227,
+    "categoryName": "Valve Cover Gasket",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100228,
+    "categoryName": "Valve Stem Seal",
+    "parentCategoryId": 100223,
+    "level": 2
+  },
+  {
+    "categoryId": 100245,
+    "categoryName": "Lubrication",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100838,
+    "categoryName": "Camshaft Lubrication",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 101994,
+    "categoryName": "Oil",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100474,
+    "categoryName": "Oil Cooler/Attachment Parts",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100485,
+    "categoryName": "Bracket",
+    "parentCategoryId": 100474,
+    "level": 3
+  },
+  {
+    "categoryId": 100483,
+    "categoryName": "Oil Cooler",
+    "parentCategoryId": 100474,
+    "level": 3
+  },
+  {
+    "categoryId": 100488,
+    "categoryName": "Seal",
+    "parentCategoryId": 100474,
+    "level": 3
+  },
+  {
+    "categoryId": 100479,
+    "categoryName": "Oil Dipstick",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100470,
+    "categoryName": "Oil Filter",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100472,
+    "categoryName": "Oil Filter Housing/Seal",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100481,
+    "categoryName": "Oil Hoses/Lines",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 103072,
+    "categoryName": "Oil Jet",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100478,
+    "categoryName": "Oil Pressure Switch/Sensor/Valve",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100476,
+    "categoryName": "Oil Pump/Attachment Parts",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 706087,
+    "categoryName": "Assembly Parts",
+    "parentCategoryId": 100476,
+    "level": 3
+  },
+  {
+    "categoryId": 100885,
+    "categoryName": "Drive Chain",
+    "parentCategoryId": 100476,
+    "level": 3
+  },
+  {
+    "categoryId": 100492,
+    "categoryName": "Oil Pump",
+    "parentCategoryId": 100476,
+    "level": 3
+  },
+  {
+    "categoryId": 100493,
+    "categoryName": "Seal",
+    "parentCategoryId": 100476,
+    "level": 3
+  },
+  {
+    "categoryId": 100494,
+    "categoryName": "Suction Pipe",
+    "parentCategoryId": 100476,
+    "level": 3
+  },
+  {
+    "categoryId": 100477,
+    "categoryName": "Oil Strainer/Gasket",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100512,
+    "categoryName": "Oil Sump",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100475,
+    "categoryName": "Oil Sump/Attachment Parts",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 100491,
+    "categoryName": "Drain Screw",
+    "parentCategoryId": 100475,
+    "level": 3
+  },
+  {
+    "categoryId": 100489,
+    "categoryName": "Oil Sump",
+    "parentCategoryId": 100475,
+    "level": 3
+  },
+  {
+    "categoryId": 100490,
+    "categoryName": "Seal",
+    "parentCategoryId": 100475,
+    "level": 3
+  },
+  {
+    "categoryId": 100513,
+    "categoryName": "Oil Thermostat",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 706449,
+    "categoryName": "Tools",
+    "parentCategoryId": 100245,
+    "level": 2
+  },
+  {
+    "categoryId": 706877,
+    "categoryName": "Oil Change Parts Kit",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 103129,
+    "categoryName": "Tools",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 103437,
+    "categoryName": "Tuning",
+    "parentCategoryId": 100002,
+    "level": 1
+  },
+  {
+    "categoryId": 100004,
+    "categoryName": "Exhaust System",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100222,
+    "categoryName": "Assembly Parts",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100316,
+    "categoryName": "Assembly Kit",
+    "parentCategoryId": 100222,
+    "level": 2
+  },
+  {
+    "categoryId": 100317,
+    "categoryName": "Individual Assembly Parts",
+    "parentCategoryId": 100222,
+    "level": 2
+  },
+  {
+    "categoryId": 100333,
+    "categoryName": "Bolt/Screw/Nut/Rings",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100331,
+    "categoryName": "Bracket",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100329,
+    "categoryName": "Clamping Piece",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 102875,
+    "categoryName": "Exhaust Pipes",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100330,
+    "categoryName": "Flange",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100327,
+    "categoryName": "Holder",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 706766,
+    "categoryName": "Locking clip",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100323,
+    "categoryName": "Pipe Clamp",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 706523,
+    "categoryName": "Reducers",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100325,
+    "categoryName": "Rubber Buffer",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100324,
+    "categoryName": "Rubber Ring",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100326,
+    "categoryName": "Rubber Strip",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100321,
+    "categoryName": "Seal",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 103111,
+    "categoryName": "Spacer Sleeve",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100332,
+    "categoryName": "Spring",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 706788,
+    "categoryName": "Vibration Damper",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100716,
+    "categoryName": "Welded Sleeve",
+    "parentCategoryId": 100317,
+    "level": 3
+  },
+  {
+    "categoryId": 100195,
+    "categoryName": "Baffle",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100047,
+    "categoryName": "Catalytic Converter",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100872,
+    "categoryName": "Charger",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100873,
+    "categoryName": "Euro1-/Euro2-/D3 Conversion",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 102451,
+    "categoryName": "Exhaust Gas Door",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100315,
+    "categoryName": "Exhaust Pipes",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 706574,
+    "categoryName": "Exhaust Spark Arrestor",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100046,
+    "categoryName": "Exhaust System Complete",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100714,
+    "categoryName": "Heat Shield",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100715,
+    "categoryName": "Manifold",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100314,
+    "categoryName": "Muffler",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100048,
+    "categoryName": "Oxygen Sensor",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100319,
+    "categoryName": "Resonator",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 104729,
+    "categoryName": "Retrofit Set, engine sound system",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 103414,
+    "categoryName": "Sensor/Probe",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 100318,
+    "categoryName": "Soot/Particulate Filter",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 104273,
+    "categoryName": "Soot/Particulate Filter Regeneration",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 706707,
+    "categoryName": "Additive",
+    "parentCategoryId": 104273,
+    "level": 2
+  },
+  {
+    "categoryId": 706492,
+    "categoryName": "Additive Pump",
+    "parentCategoryId": 104273,
+    "level": 2
+  },
+  {
+    "categoryId": 104274,
+    "categoryName": "Dosage Module",
+    "parentCategoryId": 104273,
+    "level": 2
+  },
+  {
+    "categoryId": 104275,
+    "categoryName": "Injection Pump",
+    "parentCategoryId": 104273,
+    "level": 2
+  },
+  {
+    "categoryId": 104364,
+    "categoryName": "Radiator Hoses",
+    "parentCategoryId": 104273,
+    "level": 2
+  },
+  {
+    "categoryId": 706718,
+    "categoryName": "Tank Unit",
+    "parentCategoryId": 104273,
+    "level": 2
+  },
+  {
+    "categoryId": 100196,
+    "categoryName": "Sports Muffler",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 104269,
+    "categoryName": "Tools",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 103019,
+    "categoryName": "Urea Injection",
+    "parentCategoryId": 100004,
+    "level": 1
+  },
+  {
+    "categoryId": 103091,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 103020,
+    "categoryName": "Dosage Module",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 103022,
+    "categoryName": "Feed Module",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 103021,
+    "categoryName": "Injector",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 103401,
+    "categoryName": "Radiator Hoses",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 103062,
+    "categoryName": "Sensor",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 103089,
+    "categoryName": "Tank Unit",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 706472,
+    "categoryName": "Urea",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 103023,
+    "categoryName": "Urea Filter",
+    "parentCategoryId": 103019,
+    "level": 2
+  },
+  {
+    "categoryId": 100005,
+    "categoryName": "Filters",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100260,
+    "categoryName": "Air Filter",
+    "parentCategoryId": 100005,
+    "level": 1
+  },
+  {
+    "categoryId": 100263,
+    "categoryName": "Cabin Air Filter",
+    "parentCategoryId": 100005,
+    "level": 1
+  },
+  {
+    "categoryId": 100713,
+    "categoryName": "Coolant Filter",
+    "parentCategoryId": 100005,
+    "level": 1
+  },
+  {
+    "categoryId": 102901,
+    "categoryName": "Filter Set",
+    "parentCategoryId": 100005,
+    "level": 1
+  },
+  {
+    "categoryId": 100261,
+    "categoryName": "Fuel Filter",
+    "parentCategoryId": 100005,
+    "level": 1
+  },
+  {
+    "categoryId": 706725,
+    "categoryName": "Hydraulic Filter",
+    "parentCategoryId": 100005,
+    "level": 1
+  },
+  {
+    "categoryId": 100259,
+    "categoryName": "Oil Filter",
+    "parentCategoryId": 100005,
+    "level": 1
+  },
+  {
+    "categoryId": 706873,
+    "categoryName": "Urea Filter",
+    "parentCategoryId": 100005,
+    "level": 1
+  },
+  {
+    "categoryId": 100254,
+    "categoryName": "Fuel Mixture Formation",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 102903,
+    "categoryName": "Carburettor System",
+    "parentCategoryId": 100254,
+    "level": 1
+  },
+  {
+    "categoryId": 102912,
+    "categoryName": "Cable Harness",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102904,
+    "categoryName": "Carburettor Complete",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102906,
+    "categoryName": "Carburettor Parts",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102910,
+    "categoryName": "Control Linkage/Damper/Chambers",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102913,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102914,
+    "categoryName": "Conversion Kit",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102908,
+    "categoryName": "Flange",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102907,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102905,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102911,
+    "categoryName": "Switch/ Relay",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 102909,
+    "categoryName": "Valves",
+    "parentCategoryId": 102903,
+    "level": 2
+  },
+  {
+    "categoryId": 100790,
+    "categoryName": "Exhaust Emission Control",
+    "parentCategoryId": 100254,
+    "level": 1
+  },
+  {
+    "categoryId": 100833,
+    "categoryName": "Euro1-/Euro2-/D3 Conversion",
+    "parentCategoryId": 100790,
+    "level": 2
+  },
+  {
+    "categoryId": 100791,
+    "categoryName": "Exhaust Gas Recirculation",
+    "parentCategoryId": 100790,
+    "level": 2
+  },
+  {
+    "categoryId": 103241,
+    "categoryName": "Cooler",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 100814,
+    "categoryName": "EGR Air Control",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 100815,
+    "categoryName": "EGR Exhaust Control",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 102992,
+    "categoryName": "EGR Module",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 100812,
+    "categoryName": "EGR Pressure Transducer",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 100811,
+    "categoryName": "EGR Valve/Intake Manifold",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 103239,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 706499,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 103240,
+    "categoryName": "Vacuum Control Valve",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 100816,
+    "categoryName": "Valves, exhaust gas recirculation",
+    "parentCategoryId": 100791,
+    "level": 3
+  },
+  {
+    "categoryId": 100793,
+    "categoryName": "Lambda Control",
+    "parentCategoryId": 100790,
+    "level": 2
+  },
+  {
+    "categoryId": 100792,
+    "categoryName": "Secondary Air Injection",
+    "parentCategoryId": 100790,
+    "level": 2
+  },
+  {
+    "categoryId": 706503,
+    "categoryName": "Cable Repair Set",
+    "parentCategoryId": 100792,
+    "level": 3
+  },
+  {
+    "categoryId": 103445,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 100792,
+    "level": 3
+  },
+  {
+    "categoryId": 100820,
+    "categoryName": "Secondary Air Intake System",
+    "parentCategoryId": 100792,
+    "level": 3
+  },
+  {
+    "categoryId": 100825,
+    "categoryName": "Secondary Air Pump",
+    "parentCategoryId": 100792,
+    "level": 3
+  },
+  {
+    "categoryId": 100824,
+    "categoryName": "Secondary Air Pump System",
+    "parentCategoryId": 100792,
+    "level": 3
+  },
+  {
+    "categoryId": 100823,
+    "categoryName": "Secondary Air Suction System",
+    "parentCategoryId": 100792,
+    "level": 3
+  },
+  {
+    "categoryId": 100822,
+    "categoryName": "Secondary Air Valve",
+    "parentCategoryId": 100792,
+    "level": 3
+  },
+  {
+    "categoryId": 100821,
+    "categoryName": "Valve",
+    "parentCategoryId": 100792,
+    "level": 3
+  },
+  {
+    "categoryId": 103047,
+    "categoryName": "Sensor/Probe",
+    "parentCategoryId": 100790,
+    "level": 2
+  },
+  {
+    "categoryId": 102793,
+    "categoryName": "Mixture Formation",
+    "parentCategoryId": 100254,
+    "level": 1
+  },
+  {
+    "categoryId": 102802,
+    "categoryName": "Accelerator Cable/Linkages",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102801,
+    "categoryName": "Accelerator Pedal",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102810,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102803,
+    "categoryName": "Fuel Injection Pump/High Pressure Pump",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102804,
+    "categoryName": "Fuel Line/Distribution/Allocation",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 103082,
+    "categoryName": "Gas System",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102805,
+    "categoryName": "Idle Control",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102798,
+    "categoryName": "Injection Pump",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102799,
+    "categoryName": "Injector/Nozzle/Nozzle and Holder Assembly/UI",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102806,
+    "categoryName": "Mass Air Flow Sensor/Volume Air Flow Sensor",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102794,
+    "categoryName": "Mechanical Shutoff",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102800,
+    "categoryName": "Nozzle and Holder Assembly/Nozzle Parts",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102797,
+    "categoryName": "Pressure Accumulator",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 104704,
+    "categoryName": "Pressure Transducer",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102807,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102795,
+    "categoryName": "Seal",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102809,
+    "categoryName": "Sensor/Probe",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102808,
+    "categoryName": "Switch/ Relay",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102796,
+    "categoryName": "Throttle Valve/Throttle Body/Vacuum Pipe",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 103150,
+    "categoryName": "Tools",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 102811,
+    "categoryName": "Valves/Valve Unit",
+    "parentCategoryId": 102793,
+    "level": 2
+  },
+  {
+    "categoryId": 100214,
+    "categoryName": "Fuel Supply System",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 706479,
+    "categoryName": "Additive",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 706089,
+    "categoryName": "AKF System",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 102603,
+    "categoryName": "Fuel Cooler",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100267,
+    "categoryName": "Fuel Delivery Unit Complete",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100253,
+    "categoryName": "Fuel Filter/Housing",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100258,
+    "categoryName": "Fuel Lines",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 103086,
+    "categoryName": "Fuel Preheater",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100268,
+    "categoryName": "Fuel Sender Unit",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100250,
+    "categoryName": "Fuel Tank/Accessories",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 104262,
+    "categoryName": "Fuel Tap/Lever",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100270,
+    "categoryName": "Pressure Regulator/Switch",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100269,
+    "categoryName": "Pulsation Damper",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100251,
+    "categoryName": "Pump/Accessories",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100718,
+    "categoryName": "Accessories/Parts",
+    "parentCategoryId": 100251,
+    "level": 2
+  },
+  {
+    "categoryId": 100717,
+    "categoryName": "Fuel Pump",
+    "parentCategoryId": 100251,
+    "level": 2
+  },
+  {
+    "categoryId": 706438,
+    "categoryName": "Hand Feed Pump/ Parts",
+    "parentCategoryId": 100251,
+    "level": 2
+  },
+  {
+    "categoryId": 100719,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100251,
+    "level": 2
+  },
+  {
+    "categoryId": 103148,
+    "categoryName": "Tools",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100252,
+    "categoryName": "Valves",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 103077,
+    "categoryName": "Water Sensor",
+    "parentCategoryId": 100214,
+    "level": 1
+  },
+  {
+    "categoryId": 100342,
+    "categoryName": "Headlight Cleaning",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100241,
+    "categoryName": "Heating/Ventilation",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100726,
+    "categoryName": "Actuators",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 706407,
+    "categoryName": "Auxiliary Water Pump",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 100349,
+    "categoryName": "Blower/Parts",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 100346,
+    "categoryName": "Cabin Air Filter",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 100725,
+    "categoryName": "Control Units",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 101470,
+    "categoryName": "Coolant Water Preheating",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 100348,
+    "categoryName": "Heater Flap Box",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 100777,
+    "categoryName": "Hoses/Pipes",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 100347,
+    "categoryName": "Interior Heat Exchanger",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 102219,
+    "categoryName": "Valves/Controls",
+    "parentCategoryId": 100241,
+    "level": 1
+  },
+  {
+    "categoryId": 706209,
+    "categoryName": "Hybrid/Electric Drive",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 706732,
+    "categoryName": "Battery module",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706211,
+    "categoryName": "Charge Connector",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706421,
+    "categoryName": "Charge Socket",
+    "parentCategoryId": 706211,
+    "level": 2
+  },
+  {
+    "categoryId": 706214,
+    "categoryName": "Charging Cable",
+    "parentCategoryId": 706211,
+    "level": 2
+  },
+  {
+    "categoryId": 706567,
+    "categoryName": "Charger",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706551,
+    "categoryName": "Charging station",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706565,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706210,
+    "categoryName": "Cooling System",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706832,
+    "categoryName": "Coolant",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706220,
+    "categoryName": "Cooler for Hydrogen",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706744,
+    "categoryName": "Expansion Tank",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706213,
+    "categoryName": "Fan for traction battery",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706695,
+    "categoryName": "Filter for traction battery",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706747,
+    "categoryName": "Hoses/Pipes/Flanges",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706215,
+    "categoryName": "Radiator for electric motor",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706212,
+    "categoryName": "Radiator for traction battery",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706816,
+    "categoryName": "Sensors",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706713,
+    "categoryName": "Thermostat for electric drive",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706706,
+    "categoryName": "Water pump for electrical drive",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706557,
+    "categoryName": "Water Pump for traction battery",
+    "parentCategoryId": 706210,
+    "level": 2
+  },
+  {
+    "categoryId": 706715,
+    "categoryName": "Dryer",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706777,
+    "categoryName": "Electric clutch",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706682,
+    "categoryName": "Electric Motor",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706216,
+    "categoryName": "Heat Generator",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706218,
+    "categoryName": "Heat Generator for interior heating",
+    "parentCategoryId": 706216,
+    "level": 2
+  },
+  {
+    "categoryId": 706217,
+    "categoryName": "Heat Generator for traction battery",
+    "parentCategoryId": 706216,
+    "level": 2
+  },
+  {
+    "categoryId": 706566,
+    "categoryName": "Inverter",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706759,
+    "categoryName": "Lubrication",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706731,
+    "categoryName": "Security Box",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706219,
+    "categoryName": "Traction Battery",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706569,
+    "categoryName": "Transmission",
+    "parentCategoryId": 706209,
+    "level": 1
+  },
+  {
+    "categoryId": 706570,
+    "categoryName": "Filters",
+    "parentCategoryId": 706569,
+    "level": 2
+  },
+  {
+    "categoryId": 706764,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 706569,
+    "level": 2
+  },
+  {
+    "categoryId": 706762,
+    "categoryName": "Repair/Maintenance",
+    "parentCategoryId": 706569,
+    "level": 2
+  },
+  {
+    "categoryId": 100339,
+    "categoryName": "Information/ Communication Systems",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100764,
+    "categoryName": "Accident Data Recorder",
+    "parentCategoryId": 100339,
+    "level": 1
+  },
+  {
+    "categoryId": 100695,
+    "categoryName": "Aerial",
+    "parentCategoryId": 100339,
+    "level": 1
+  },
+  {
+    "categoryId": 100694,
+    "categoryName": "Audio System",
+    "parentCategoryId": 100339,
+    "level": 1
+  },
+  {
+    "categoryId": 100696,
+    "categoryName": "Communication",
+    "parentCategoryId": 100339,
+    "level": 1
+  },
+  {
+    "categoryId": 100693,
+    "categoryName": "Instruments",
+    "parentCategoryId": 100339,
+    "level": 1
+  },
+  {
+    "categoryId": 100697,
+    "categoryName": "Navigation",
+    "parentCategoryId": 100339,
+    "level": 1
+  },
+  {
+    "categoryId": 105407,
+    "categoryName": "Tools",
+    "parentCategoryId": 100339,
+    "level": 1
+  },
+  {
+    "categoryId": 100341,
+    "categoryName": "Interior Equipment",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100730,
+    "categoryName": "Accessories",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102689,
+    "categoryName": "Armrest",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102690,
+    "categoryName": "Ashtray",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102697,
+    "categoryName": "Boot",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 103004,
+    "categoryName": "Centre Console",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 103399,
+    "categoryName": "Cupholder",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102998,
+    "categoryName": "Dashboard",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 104958,
+    "categoryName": "Fastening Clips",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102692,
+    "categoryName": "Floor Mats",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 103400,
+    "categoryName": "Footwell Tray",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102693,
+    "categoryName": "Gas Springs",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102696,
+    "categoryName": "Glove Compartment",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102695,
+    "categoryName": "Hand/Foot Lever System",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102694,
+    "categoryName": "Handles",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102706,
+    "categoryName": "Panelling",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 706578,
+    "categoryName": "Safe",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 100673,
+    "categoryName": "Seats",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 706773,
+    "categoryName": "Socket",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 706581,
+    "categoryName": "Stowage Box",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102698,
+    "categoryName": "Sun Visor",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 706489,
+    "categoryName": "Taximeter/Mirror Taximeter/Accessories",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 105405,
+    "categoryName": "Tools",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 706471,
+    "categoryName": "Wind Deflector",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 102691,
+    "categoryName": "Window Regulator",
+    "parentCategoryId": 100341,
+    "level": 1
+  },
+  {
+    "categoryId": 100685,
+    "categoryName": "Locking System",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100686,
+    "categoryName": "Central Locking System",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 100687,
+    "categoryName": "Exterior Locks",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 100691,
+    "categoryName": "Handles",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 100688,
+    "categoryName": "Interior Locks",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 100690,
+    "categoryName": "Lock Barrel/Set",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 100689,
+    "categoryName": "Lock Set",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 100766,
+    "categoryName": "Parts",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 100819,
+    "categoryName": "Remote Control, central locking",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 706506,
+    "categoryName": "Spanner",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 103234,
+    "categoryName": "Tools",
+    "parentCategoryId": 100685,
+    "level": 1
+  },
+  {
+    "categoryId": 100019,
+    "categoryName": "Maintenance Service Parts",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100598,
+    "categoryName": "Additional Repairs",
+    "parentCategoryId": 100019,
+    "level": 1
+  },
+  {
+    "categoryId": 100597,
+    "categoryName": "Service Intervals",
+    "parentCategoryId": 100019,
+    "level": 1
+  },
+  {
+    "categoryId": 103202,
+    "categoryName": "Power Take-off",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 706530,
+    "categoryName": "Belt Drive",
+    "parentCategoryId": 103202,
+    "level": 1
+  },
+  {
+    "categoryId": 706798,
+    "categoryName": "Cable Pull",
+    "parentCategoryId": 103202,
+    "level": 1
+  },
+  {
+    "categoryId": 103203,
+    "categoryName": "Gaskets",
+    "parentCategoryId": 103202,
+    "level": 1
+  },
+  {
+    "categoryId": 706165,
+    "categoryName": "Hydraulic Pump",
+    "parentCategoryId": 103202,
+    "level": 1
+  },
+  {
+    "categoryId": 103352,
+    "categoryName": "Oil",
+    "parentCategoryId": 103202,
+    "level": 1
+  },
+  {
+    "categoryId": 706164,
+    "categoryName": "Power Take-off",
+    "parentCategoryId": 103202,
+    "level": 1
+  },
+  {
+    "categoryId": 103204,
+    "categoryName": "Switch",
+    "parentCategoryId": 103202,
+    "level": 1
+  },
+  {
+    "categoryId": 100417,
+    "categoryName": "Security Systems",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100762,
+    "categoryName": "Air Bag System",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 100420,
+    "categoryName": "Alarm Equipment",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 100419,
+    "categoryName": "Alarm System",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 706455,
+    "categoryName": "Driver Assistance System",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 100680,
+    "categoryName": "Immobilizer",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 104739,
+    "categoryName": "Lane Changing Assist",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 100418,
+    "categoryName": "Position Detection System",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 100421,
+    "categoryName": "Safety Belt System",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 706448,
+    "categoryName": "Starter Parts",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 103141,
+    "categoryName": "Tools",
+    "parentCategoryId": 100417,
+    "level": 1
+  },
+  {
+    "categoryId": 100008,
+    "categoryName": "Spark/Glow Ignition",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100247,
+    "categoryName": "Control Unit/Relay/Sensors",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 706084,
+    "categoryName": "Conversion Kit for Electronic Ignition",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100830,
+    "categoryName": "Flame Start System",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100328,
+    "categoryName": "Glow Control Unit",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100152,
+    "categoryName": "Glow Plug",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100153,
+    "categoryName": "Ignition Cable/Connecting Parts",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100150,
+    "categoryName": "Ignition Coil/Ignition Coil Unit",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100148,
+    "categoryName": "Ignition Distributor/Parts",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100246,
+    "categoryName": "Ignition Module/Control Unit",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100249,
+    "categoryName": "Pulse Generator",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 103016,
+    "categoryName": "Scale (Ignition Timing)",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100757,
+    "categoryName": "Series Resistor",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100151,
+    "categoryName": "Spark Plug",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100848,
+    "categoryName": "Switch",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 103139,
+    "categoryName": "Tools",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 100827,
+    "categoryName": "Vacuum System",
+    "parentCategoryId": 100008,
+    "level": 1
+  },
+  {
+    "categoryId": 706365,
+    "categoryName": "Special Tools",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 706366,
+    "categoryName": "Body Special Tools",
+    "parentCategoryId": 706365,
+    "level": 1
+  },
+  {
+    "categoryId": 706369,
+    "categoryName": "Doors/Windows",
+    "parentCategoryId": 706366,
+    "level": 2
+  },
+  {
+    "categoryId": 706370,
+    "categoryName": "General Mounting Tools",
+    "parentCategoryId": 706366,
+    "level": 2
+  },
+  {
+    "categoryId": 706367,
+    "categoryName": "Locking System",
+    "parentCategoryId": 706366,
+    "level": 2
+  },
+  {
+    "categoryId": 706368,
+    "categoryName": "Panelling",
+    "parentCategoryId": 706366,
+    "level": 2
+  },
+  {
+    "categoryId": 706371,
+    "categoryName": "Wing/Mirror",
+    "parentCategoryId": 706366,
+    "level": 2
+  },
+  {
+    "categoryId": 706372,
+    "categoryName": "Exhaust System Special Tools",
+    "parentCategoryId": 706365,
+    "level": 1
+  },
+  {
+    "categoryId": 706374,
+    "categoryName": "Exhaust Temperature Sensor",
+    "parentCategoryId": 706372,
+    "level": 2
+  },
+  {
+    "categoryId": 706375,
+    "categoryName": "Fastening",
+    "parentCategoryId": 706372,
+    "level": 2
+  },
+  {
+    "categoryId": 706373,
+    "categoryName": "Turbocharger",
+    "parentCategoryId": 706372,
+    "level": 2
+  },
+  {
+    "categoryId": 706390,
+    "categoryName": "Press-in/Extraction Tools/Accessories",
+    "parentCategoryId": 706365,
+    "level": 1
+  },
+  {
+    "categoryId": 706391,
+    "categoryName": "Press-in/Extraction Tools",
+    "parentCategoryId": 706390,
+    "level": 2
+  },
+  {
+    "categoryId": 706392,
+    "categoryName": "Spindles",
+    "parentCategoryId": 706390,
+    "level": 2
+  },
+  {
+    "categoryId": 706376,
+    "categoryName": "Special Tools, axle drive",
+    "parentCategoryId": 706365,
+    "level": 1
+  },
+  {
+    "categoryId": 706377,
+    "categoryName": "Axle Nut",
+    "parentCategoryId": 706376,
+    "level": 2
+  },
+  {
+    "categoryId": 706379,
+    "categoryName": "Drive Shaft",
+    "parentCategoryId": 706376,
+    "level": 2
+  },
+  {
+    "categoryId": 706378,
+    "categoryName": "Groove Nut",
+    "parentCategoryId": 706376,
+    "level": 2
+  },
+  {
+    "categoryId": 706380,
+    "categoryName": "Special Tools, axle mounting/steering/wheels",
+    "parentCategoryId": 706365,
+    "level": 1
+  },
+  {
+    "categoryId": 706388,
+    "categoryName": "Caster/Camber Adjustment",
+    "parentCategoryId": 706380,
+    "level": 2
+  },
+  {
+    "categoryId": 706384,
+    "categoryName": "Control Arm",
+    "parentCategoryId": 706380,
+    "level": 2
+  },
+  {
+    "categoryId": 706383,
+    "categoryName": "Joints",
+    "parentCategoryId": 706380,
+    "level": 2
+  },
+  {
+    "categoryId": 706382,
+    "categoryName": "Silent Bearing",
+    "parentCategoryId": 706380,
+    "level": 2
+  },
+  {
+    "categoryId": 706389,
+    "categoryName": "Steering Knuckle",
+    "parentCategoryId": 706380,
+    "level": 2
+  },
+  {
+    "categoryId": 706385,
+    "categoryName": "Trailing Arm",
+    "parentCategoryId": 706380,
+    "level": 2
+  },
+  {
+    "categoryId": 706381,
+    "categoryName": "Wheel Hub/Mounting",
+    "parentCategoryId": 706380,
+    "level": 2
+  },
+  {
+    "categoryId": 706386,
+    "categoryName": "Suspension/Damping Special Tools",
+    "parentCategoryId": 706365,
+    "level": 1
+  },
+  {
+    "categoryId": 706395,
+    "categoryName": "Shock Absorber",
+    "parentCategoryId": 706386,
+    "level": 2
+  },
+  {
+    "categoryId": 706387,
+    "categoryName": "Spring Compressor",
+    "parentCategoryId": 706386,
+    "level": 2
+  },
+  {
+    "categoryId": 706394,
+    "categoryName": "Suspension Strut",
+    "parentCategoryId": 706386,
+    "level": 2
+  },
+  {
+    "categoryId": 706393,
+    "categoryName": "Torsion Bar",
+    "parentCategoryId": 706386,
+    "level": 2
+  },
+  {
+    "categoryId": 100012,
+    "categoryName": "Steering",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 101835,
+    "categoryName": "Article Search via Graphic",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100201,
+    "categoryName": "Bellow/Seal",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100203,
+    "categoryName": "Control Arm",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100565,
+    "categoryName": "Control/Regulation",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100591,
+    "categoryName": "Filter, power steering",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 101857,
+    "categoryName": "Hydraulic Oil fluid reservoir",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100198,
+    "categoryName": "Joints",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 102203,
+    "categoryName": "Oil",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 706083,
+    "categoryName": "Oil Cooler",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 102928,
+    "categoryName": "Oil Dipstick",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 102766,
+    "categoryName": "Oil Pressure Switch",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 102073,
+    "categoryName": "Steering Angle Sensor",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 103133,
+    "categoryName": "Steering Box",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100202,
+    "categoryName": "Steering Column",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100200,
+    "categoryName": "Steering Damper",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100199,
+    "categoryName": "Steering Gear/Pump",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100592,
+    "categoryName": "Steering Hose/ -Pipe",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100594,
+    "categoryName": "Steering Linkage",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100593,
+    "categoryName": "Steering Mounting",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 104391,
+    "categoryName": "Steering Wheel/Parts",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100204,
+    "categoryName": "Swing Arm Joint",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100601,
+    "categoryName": "Tie Rod Assembly/ Parts",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100603,
+    "categoryName": "Parts, tie rod assy.",
+    "parentCategoryId": 100601,
+    "level": 2
+  },
+  {
+    "categoryId": 100602,
+    "categoryName": "Repair Kit",
+    "parentCategoryId": 100601,
+    "level": 2
+  },
+  {
+    "categoryId": 100197,
+    "categoryName": "Tie Rod Assembly",
+    "parentCategoryId": 100601,
+    "level": 2
+  },
+  {
+    "categoryId": 103158,
+    "categoryName": "Tools",
+    "parentCategoryId": 100012,
+    "level": 1
+  },
+  {
+    "categoryId": 100011,
+    "categoryName": "Suspension/Damping",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 101884,
+    "categoryName": "Air Suspension",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 706755,
+    "categoryName": "Axle load display",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 101830,
+    "categoryName": "Coil Spring Suspension",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100113,
+    "categoryName": "Coil Springs",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100810,
+    "categoryName": "Leaf Spring Suspension",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100340,
+    "categoryName": "Level Control/Suspension Hydraulics",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 102201,
+    "categoryName": "Oil",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100121,
+    "categoryName": "Shock Absorber",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100370,
+    "categoryName": "Suspension Kit, complete",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100371,
+    "categoryName": "Suspension Strut/Shock Absorber Mount",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100381,
+    "categoryName": "Suspension Strut/Shock Absorber/Parts",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100372,
+    "categoryName": "Assembly Parts",
+    "parentCategoryId": 100381,
+    "level": 2
+  },
+  {
+    "categoryId": 100129,
+    "categoryName": "Suspension Strut",
+    "parentCategoryId": 100381,
+    "level": 2
+  },
+  {
+    "categoryId": 104406,
+    "categoryName": "Tools",
+    "parentCategoryId": 100011,
+    "level": 1
+  },
+  {
+    "categoryId": 100015,
+    "categoryName": "Towbar/Attachment Parts",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 105956,
+    "categoryName": "Control Unit",
+    "parentCategoryId": 100015,
+    "level": 1
+  },
+  {
+    "categoryId": 100608,
+    "categoryName": "Electric Parts",
+    "parentCategoryId": 100015,
+    "level": 1
+  },
+  {
+    "categoryId": 100752,
+    "categoryName": "Mounting Kit",
+    "parentCategoryId": 100015,
+    "level": 1
+  },
+  {
+    "categoryId": 100609,
+    "categoryName": "Parts",
+    "parentCategoryId": 100015,
+    "level": 1
+  },
+  {
+    "categoryId": 100607,
+    "categoryName": "Trailer Hitch",
+    "parentCategoryId": 100015,
+    "level": 1
+  },
+  {
+    "categoryId": 100238,
+    "categoryName": "Transmission",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 102773,
+    "categoryName": "Article Search via Graphic",
+    "parentCategoryId": 100238,
+    "level": 1
+  },
+  {
+    "categoryId": 706584,
+    "categoryName": "Automated manual transmission (AMT)",
+    "parentCategoryId": 100238,
+    "level": 1
+  },
+  {
+    "categoryId": 706639,
+    "categoryName": "Anti-rotation actuator",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706606,
+    "categoryName": "Bearing",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706618,
+    "categoryName": "Cooler",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706600,
+    "categoryName": "Holder",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706630,
+    "categoryName": "Oil Dipstick",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706587,
+    "categoryName": "Oil Filter",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706633,
+    "categoryName": "Oil Pump",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706624,
+    "categoryName": "Oil Sump/Attachment Parts",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706625,
+    "categoryName": "Oil Sump",
+    "parentCategoryId": 706624,
+    "level": 3
+  },
+  {
+    "categoryId": 706642,
+    "categoryName": "Seal",
+    "parentCategoryId": 706624,
+    "level": 3
+  },
+  {
+    "categoryId": 706603,
+    "categoryName": "Repair/Maintenance",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706585,
+    "categoryName": "Seals, seal rings",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706636,
+    "categoryName": "Sensors/Switches",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706612,
+    "categoryName": "Shift Cylinder",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706609,
+    "categoryName": "Swing Arm Joint",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706654,
+    "categoryName": "Switch",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706597,
+    "categoryName": "Transmission",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706621,
+    "categoryName": "Transmission Control/Hydraulics",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706586,
+    "categoryName": "Transmission Housing/Parts",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706615,
+    "categoryName": "Transmission shaft/parts",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 706652,
+    "categoryName": "Valves",
+    "parentCategoryId": 706584,
+    "level": 2
+  },
+  {
+    "categoryId": 100240,
+    "categoryName": "Automatic Transmission",
+    "parentCategoryId": 100238,
+    "level": 1
+  },
+  {
+    "categoryId": 102215,
+    "categoryName": "Brake Band",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 103436,
+    "categoryName": "Cable Pull",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 103109,
+    "categoryName": "Cooler",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 706483,
+    "categoryName": "Drive Chain",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 100770,
+    "categoryName": "Gaskets/Seals",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 102783,
+    "categoryName": "Holder",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 706687,
+    "categoryName": "Multi-Plate Clutch",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 101817,
+    "categoryName": "Lining Discs/ -Sets",
+    "parentCategoryId": 706687,
+    "level": 3
+  },
+  {
+    "categoryId": 706688,
+    "categoryName": "Shift piston",
+    "parentCategoryId": 706687,
+    "level": 3
+  },
+  {
+    "categoryId": 103475,
+    "categoryName": "Oil Change Parts Kit",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 105997,
+    "categoryName": "Oil Dipstick",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 706726,
+    "categoryName": "Oil Filter",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 105494,
+    "categoryName": "Oil Pump",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 101853,
+    "categoryName": "Oil Sump/Attachment Parts",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 101854,
+    "categoryName": "Oil Sump",
+    "parentCategoryId": 101853,
+    "level": 3
+  },
+  {
+    "categoryId": 101855,
+    "categoryName": "Seal",
+    "parentCategoryId": 101853,
+    "level": 3
+  },
+  {
+    "categoryId": 101810,
+    "categoryName": "Repair/Maintenance",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 102931,
+    "categoryName": "Sensor",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 706088,
+    "categoryName": "Timing Gears",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 101814,
+    "categoryName": "Torque Converter",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 101812,
+    "categoryName": "Transmission",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 100776,
+    "categoryName": "Transmission Control/Hydraulics",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 100775,
+    "categoryName": "Transmission Housing/Parts",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 100773,
+    "categoryName": "Transmission Mounting",
+    "parentCategoryId": 100240,
+    "level": 2
+  },
+  {
+    "categoryId": 706835,
+    "categoryName": "Dual-Clutch Transmission",
+    "parentCategoryId": 100238,
+    "level": 1
+  },
+  {
+    "categoryId": 706848,
+    "categoryName": "Bearing",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 706847,
+    "categoryName": "Oil Filter",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 706849,
+    "categoryName": "Parking Lock",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 706844,
+    "categoryName": "Seals, seal rings",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 706851,
+    "categoryName": "Sensors",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 706852,
+    "categoryName": "Transmission Control/Hydraulics",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 706846,
+    "categoryName": "Transmission Housing/Parts",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 706850,
+    "categoryName": "Transmission shaft/parts",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 706845,
+    "categoryName": "Valves",
+    "parentCategoryId": 706835,
+    "level": 2
+  },
+  {
+    "categoryId": 100239,
+    "categoryName": "Manual Transmission",
+    "parentCategoryId": 100238,
+    "level": 1
+  },
+  {
+    "categoryId": 706086,
+    "categoryName": "Bearing",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 103110,
+    "categoryName": "Cooler",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 100769,
+    "categoryName": "Gaskets/Seals",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 102781,
+    "categoryName": "Holder",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 105998,
+    "categoryName": "Oil Dipstick",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 706727,
+    "categoryName": "Oil Filter",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 101809,
+    "categoryName": "Repair/Maintenance",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 102930,
+    "categoryName": "Sensor",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 102685,
+    "categoryName": "Synchronizer Ring",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 103065,
+    "categoryName": "Transmission",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 101808,
+    "categoryName": "Transmission Control",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 103103,
+    "categoryName": "Transmission Control/Hydraulics",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 100774,
+    "categoryName": "Transmission Housing/Parts",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 100772,
+    "categoryName": "Transmission Mounting",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 706805,
+    "categoryName": "Vibration Damper",
+    "parentCategoryId": 100239,
+    "level": 2
+  },
+  {
+    "categoryId": 706233,
+    "categoryName": "Oil",
+    "parentCategoryId": 100238,
+    "level": 1
+  },
+  {
+    "categoryId": 103157,
+    "categoryName": "Tools",
+    "parentCategoryId": 100238,
+    "level": 1
+  },
+  {
+    "categoryId": 100014,
+    "categoryName": "Wheel Drive",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100066,
+    "categoryName": "Assembly Parts",
+    "parentCategoryId": 100014,
+    "level": 1
+  },
+  {
+    "categoryId": 100074,
+    "categoryName": "Bellow",
+    "parentCategoryId": 100014,
+    "level": 1
+  },
+  {
+    "categoryId": 100062,
+    "categoryName": "Drive Shaft",
+    "parentCategoryId": 100014,
+    "level": 1
+  },
+  {
+    "categoryId": 103398,
+    "categoryName": "External Planetary Gearbox",
+    "parentCategoryId": 100014,
+    "level": 1
+  },
+  {
+    "categoryId": 100071,
+    "categoryName": "Joint/Set",
+    "parentCategoryId": 100014,
+    "level": 1
+  },
+  {
+    "categoryId": 100070,
+    "categoryName": "Spider Assembly",
+    "parentCategoryId": 100014,
+    "level": 1
+  },
+  {
+    "categoryId": 103161,
+    "categoryName": "Tools",
+    "parentCategoryId": 100014,
+    "level": 1
+  },
+  {
+    "categoryId": 103099,
+    "categoryName": "Wheels/Tyres",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 103102,
+    "categoryName": "Accessories",
+    "parentCategoryId": 103099,
+    "level": 1
+  },
+  {
+    "categoryId": 104295,
+    "categoryName": "Complete Wheel",
+    "parentCategoryId": 103099,
+    "level": 1
+  },
+  {
+    "categoryId": 103101,
+    "categoryName": "Rims",
+    "parentCategoryId": 103099,
+    "level": 1
+  },
+  {
+    "categoryId": 105409,
+    "categoryName": "Tools",
+    "parentCategoryId": 103099,
+    "level": 1
+  },
+  {
+    "categoryId": 103100,
+    "categoryName": "Tyre",
+    "parentCategoryId": 103099,
+    "level": 1
+  },
+  {
+    "categoryId": 706809,
+    "categoryName": "Tyre pressure control system",
+    "parentCategoryId": 103099,
+    "level": 1
+  },
+  {
+    "categoryId": 103479,
+    "categoryName": "Tyre-Pressure Monitoring System",
+    "parentCategoryId": 103099,
+    "level": 1
+  },
+  {
+    "categoryId": 100018,
+    "categoryName": "Window Cleaning",
+    "parentCategoryId": null,
+    "level": 0
+  },
+  {
+    "categoryId": 100613,
+    "categoryName": "Switch/ Relay",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 103410,
+    "categoryName": "Tools",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 100611,
+    "categoryName": "Washer Fluid Jet",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 100135,
+    "categoryName": "Washer Fluid Pump",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 100610,
+    "categoryName": "Water Tank/ Pipe, windscreen",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 100612,
+    "categoryName": "Window Cleaning System",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 100136,
+    "categoryName": "Wiper Arm/Bearing",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 100133,
+    "categoryName": "Wiper Blade/-Rubber",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 100137,
+    "categoryName": "Wiper Linkage/Drive",
+    "parentCategoryId": 100018,
+    "level": 1
+  },
+  {
+    "categoryId": 100134,
+    "categoryName": "Wiper Motor",
+    "parentCategoryId": 100018,
+    "level": 1
+  }
+]

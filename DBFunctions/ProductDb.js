@@ -25,6 +25,27 @@ ussd.addCategories = async (data) => {
   }
 };
 
+
+
+
+
+ussd.CategoryDetailsByExternalID = async (externalID) => {
+    try {
+        return await prisma.category.findFirst({
+            where: {
+                externalID: parseInt(externalID)
+            },
+        });
+    } catch (error) {
+        console.error("Error retrieving category:", error);
+        throw error;
+    }
+};
+
+
+
+
+
 ussd.addManufacturer = async (data) => {
   try {
     const newContinent = await prisma.manufacturer.createMany({
@@ -42,6 +63,32 @@ ussd.addManufacturer = async (data) => {
     await prisma.$disconnect();
   }
 };
+
+
+ussd.ManufacturerByExternalID = async (externalID) => {
+    try {
+        const user = await prisma.manufacturer.findFirst({
+            where: {
+                externalID: externalID
+            },
+          });
+  
+        return user;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
+
+
+
+
+
 
 ussd.addBrand = async (data) => {
   try {
@@ -61,6 +108,30 @@ ussd.addBrand = async (data) => {
   }
 };
 
+
+ussd.BrandByExternalID = async (externalID) => {
+    try {
+        const user = await prisma.carBrand.findFirst({
+            where: {
+                externalID: externalID
+            },
+          });
+  
+        return user;
+    } catch (error) {
+        console.error("Error retrieving record:", error);
+        if (typeof logger !== 'undefined') {
+            logger.error(error);
+        }
+        throw error;
+    } finally {
+        await prisma.$disconnect();
+    }
+  };
+
+
+
+
 ussd.addModel = async (data) => {
   try {
     const newContinent = await prisma.carModel.createMany({
@@ -79,6 +150,25 @@ ussd.addModel = async (data) => {
   }
 };
 
+
+
+ussd.ModelByExternalID = async (externalID) => {
+    try {
+        return await prisma.carModel.findFirst({
+            where: {
+                externalID: parseInt(externalID)
+            },
+        });
+    } catch (error) {
+        console.error("Error retrieving car model:", error);
+        throw error;
+    }
+};
+
+
+
+
+
 ussd.addSparePart = async (data) => {
   try {
     const newContinent = await prisma.sparePart.createMany({
@@ -96,6 +186,27 @@ ussd.addSparePart = async (data) => {
     await prisma.$disconnect();
   }
 };
+
+
+ussd.SparePartByExternalID = async (externalID) => {
+    try {
+        return await prisma.sparePart.findFirst({
+            where: {
+                externalID: parseInt(externalID) // Ensure it's a number
+            },
+        });
+    } catch (error) {
+        console.error("Error retrieving spare part:", error);
+        throw error;
+    }
+    // DO NOT disconnect here - let connection pool manage it
+};
+
+
+
+
+
+
 
 ussd.addSparePartSingle = async (data) => {
   try {
